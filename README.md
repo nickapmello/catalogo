@@ -1,7 +1,4 @@
 # SuperCatalogo
 
-A new Flutter project.
+Criação do catalogo de lojas flutteflow.
 
-## Getting Started
-
-FlutterFlow projects are built to run on the Flutter _stable_ release.
