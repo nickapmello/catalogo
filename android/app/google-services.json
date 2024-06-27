@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "859501350719",
+    "project_id": "app-catalogo-virtual-jiayeb",
+    "storage_bucket": "app-catalogo-virtual-jiayeb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859501350719:android:d26900b7c359f460d64d8a",
+        "android_client_info": {
+          "package_name": "com.mycompany.crmapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnyXegT3YVAbpeT_3gzPc-o_Qr7YmMEzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:859501350719:android:1041935681442fc9d64d8a",
+        "android_client_info": {
+          "package_name": "com.mycompany.sprcatalog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnyXegT3YVAbpeT_3gzPc-o_Qr7YmMEzk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
