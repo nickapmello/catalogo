@@ -3,12 +3,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'esqueci_minha_senha_model.dart';
 export 'esqueci_minha_senha_model.dart';
 
@@ -55,8 +52,8 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -75,8 +72,8 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -95,8 +92,8 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(50.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -115,8 +112,8 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(50.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -141,13 +138,13 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
   @override
   Widget build(BuildContext context) {
     return Container(
-      constraints: BoxConstraints(
+      constraints: const BoxConstraints(
         maxWidth: 450.0,
         maxHeight: 350.0,
       ),
       decoration: BoxDecoration(
         color: FlutterFlowTheme.of(context).secondaryBackground,
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             blurRadius: 4.0,
             color: Color(0x1A000000),
@@ -160,7 +157,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
         borderRadius: BorderRadius.circular(12.0),
       ),
       child: Padding(
-        padding: EdgeInsetsDirectional.fromSTEB(16.0, 32.0, 16.0, 32.0),
+        padding: const EdgeInsetsDirectional.fromSTEB(16.0, 32.0, 16.0, 32.0),
         child: Column(
           mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -171,7 +168,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                 Expanded(
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 8.0, 16.0, 0.0),
                     child: Text(
                       FFLocalizations.of(context).getText(
                         'du1l542h' /* Não lembra sua senha? Digite o... */,
@@ -190,7 +187,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
               ],
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(16.0, 20.0, 16.0, 0.0),
               child: TextFormField(
                 controller: _model.emailAddressTextController,
                 focusNode: _model.emailAddressFocusNode,
@@ -225,21 +222,21 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Color(0x00000000),
                       width: 2.0,
                     ),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Color(0x00000000),
                       width: 2.0,
                     ),
                     borderRadius: BorderRadius.circular(8.0),
                   ),
                   focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+                    borderSide: const BorderSide(
                       color: Color(0x00000000),
                       width: 2.0,
                     ),
@@ -248,11 +245,11 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                   filled: true,
                   fillColor: FlutterFlowTheme.of(context).secondaryBackground,
                   contentPadding:
-                      EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 20.0, 24.0),
+                      const EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 20.0, 24.0),
                 ),
                 style: FlutterFlowTheme.of(context).bodyMedium.override(
                       fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                      color: Color(0xFF0F1113),
+                      color: const Color(0xFF0F1113),
                       letterSpacing: 0.0,
                       useGoogleFonts: GoogleFonts.asMap().containsKey(
                           FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -264,12 +261,12 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                   animationsMap['textFieldOnPageLoadAnimation']!),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   if (_model.emailAddressTextController.text.isEmpty) {
                     ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(
+                      const SnackBar(
                         content: Text(
                           'Email required!',
                         ),
@@ -285,11 +282,11 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                     context: context,
                     builder: (alertDialogContext) {
                       return AlertDialog(
-                        title: Text('Link encaminhado para seu email!'),
+                        title: const Text('Link encaminhado para seu email!'),
                         actions: [
                           TextButton(
                             onPressed: () => Navigator.pop(alertDialogContext),
-                            child: Text('Ok'),
+                            child: const Text('Ok'),
                           ),
                         ],
                       );
@@ -302,9 +299,9 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                 options: FFButtonOptions(
                   width: 230.0,
                   height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).primary,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily:
@@ -315,7 +312,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                             FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                     width: 1.0,
                   ),
@@ -324,7 +321,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
               ).animateOnPageLoad(animationsMap['buttonOnPageLoadAnimation1']!),
             ),
             Padding(
-              padding: EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
+              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 24.0, 0.0, 0.0),
               child: FFButtonWidget(
                 onPressed: () async {
                   Navigator.pop(context);
@@ -335,9 +332,9 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                 options: FFButtonOptions(
                   width: 230.0,
                   height: 50.0,
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   iconPadding:
-                      EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                      const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                   color: FlutterFlowTheme.of(context).secondaryBackground,
                   textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                         fontFamily:
@@ -348,7 +345,7 @@ class _EsqueciMinhaSenhaWidgetState extends State<EsqueciMinhaSenhaWidget>
                             FlutterFlowTheme.of(context).titleSmallFamily),
                       ),
                   elevation: 3.0,
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                     width: 1.0,
                   ),

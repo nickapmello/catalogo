@@ -6,14 +6,10 @@ import '/flutter_flow/flutter_flow_button_tabbar.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'pedidos_model.dart';
 export 'pedidos_model.dart';
 
@@ -21,7 +17,7 @@ class PedidosWidget extends StatefulWidget {
   const PedidosWidget({
     super.key,
     int? moverPedidos,
-  }) : this.moverPedidos = moverPedidos ?? 0;
+  }) : moverPedidos = moverPedidos ?? 0;
 
   final int moverPedidos;
 
@@ -68,8 +64,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -87,8 +83,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(30.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(30.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -106,8 +102,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(30.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(30.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -125,8 +121,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(50.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(50.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -144,8 +140,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -164,8 +160,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -184,8 +180,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -204,8 +200,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -223,8 +219,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -243,8 +239,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -263,8 +259,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -283,8 +279,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -302,8 +298,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -322,8 +318,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -342,8 +338,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -362,8 +358,8 @@ class _PedidosWidgetState extends State<PedidosWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -440,7 +436,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                       colorBgDashboard: Colors.transparent,
                       colorBgProdutos: Colors.transparent,
                       colorBgClientes: Colors.transparent,
-                      colorBgPedidos: Color(0x2C7367F0),
+                      colorBgPedidos: const Color(0x2C7367F0),
                       colorBgMinhaLoja: Colors.transparent,
                       colorBgPerfil: Colors.transparent,
                       iconDashboard: Icon(
@@ -501,9 +497,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 24.0, 24.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -539,7 +535,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                 colorBgDashboard: Colors.transparent,
                                 colorBgProdutos: Colors.transparent,
                                 colorBgClientes: Colors.transparent,
-                                colorBgPedidos: Color(0x2F37C6DA),
+                                colorBgPedidos: const Color(0x2F37C6DA),
                                 colorBgMinhaLoja: Colors.transparent,
                                 colorBgPerfil: Colors.transparent,
                                 iconDashboard: Icon(
@@ -605,7 +601,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 1.0, 0.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
@@ -614,9 +610,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                             .primaryBackground,
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -624,7 +620,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                               MainAxisAlignment.spaceBetween,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       4.0, 16.0, 0.0, 0.0),
                                               child: Text(
@@ -687,7 +683,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                       children: [
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 12.0, 12.0, 12.0),
                                           child: FutureBuilder<int>(
                                             future: queryPedidoRecordCount(
@@ -732,7 +728,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x34090F13),
@@ -753,7 +749,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   ),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 4.0),
                                                   child: Column(
@@ -764,7 +760,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         width: double.infinity,
                                                         height: 120.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0xFFF9BE4B),
                                                           borderRadius:
@@ -785,7 +781,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                           child: Column(
                                                             mainAxisSize:
@@ -803,7 +799,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                 height: 36.0,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x62FFFFFF),
                                                                   borderRadius:
                                                                       BorderRadius
@@ -811,10 +807,10 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                               12.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
-                                                                child: FaIcon(
+                                                                child: const FaIcon(
                                                                   FontAwesomeIcons
                                                                       .solidClock,
                                                                   color: Colors
@@ -852,7 +848,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     12.0,
                                                                     12.0,
@@ -904,7 +900,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                         ),
                                         Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   16.0, 12.0, 12.0, 12.0),
                                           child: FutureBuilder<int>(
                                             future: queryPedidoRecordCount(
@@ -949,7 +945,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x34090F13),
@@ -970,7 +966,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   ),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 4.0),
                                                   child: Column(
@@ -981,7 +977,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         width: double.infinity,
                                                         height: 120.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0xFF74CB48),
                                                           borderRadius:
@@ -1002,7 +998,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                           child: Column(
                                                             mainAxisSize:
@@ -1020,7 +1016,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                 height: 36.0,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x61FFFFFF),
                                                                   borderRadius:
                                                                       BorderRadius
@@ -1028,10 +1024,10 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                               12.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
-                                                                child: Icon(
+                                                                child: const Icon(
                                                                   Icons
                                                                       .attach_money_outlined,
                                                                   color: Colors
@@ -1069,7 +1065,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     12.0,
                                                                     12.0,
@@ -1120,7 +1116,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                           ),
                                         ),
                                         Padding(
-                                          padding: EdgeInsets.all(12.0),
+                                          padding: const EdgeInsets.all(12.0),
                                           child: FutureBuilder<int>(
                                             future: queryPedidoRecordCount(
                                               queryBuilder: (pedidoRecord) =>
@@ -1164,7 +1160,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   color: FlutterFlowTheme.of(
                                                           context)
                                                       .secondaryBackground,
-                                                  boxShadow: [
+                                                  boxShadow: const [
                                                     BoxShadow(
                                                       blurRadius: 4.0,
                                                       color: Color(0x34090F13),
@@ -1185,7 +1181,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   ),
                                                 ),
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 4.0),
                                                   child: Column(
@@ -1196,7 +1192,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         width: double.infinity,
                                                         height: 120.0,
                                                         decoration:
-                                                            BoxDecoration(
+                                                            const BoxDecoration(
                                                           color:
                                                               Color(0xFFF1416C),
                                                           borderRadius:
@@ -1217,7 +1213,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                           child: Column(
                                                             mainAxisSize:
@@ -1235,7 +1231,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                 height: 36.0,
                                                                 decoration:
                                                                     BoxDecoration(
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0x62FFFFFF),
                                                                   borderRadius:
                                                                       BorderRadius
@@ -1243,10 +1239,10 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                               12.0),
                                                                 ),
                                                                 alignment:
-                                                                    AlignmentDirectional(
+                                                                    const AlignmentDirectional(
                                                                         0.0,
                                                                         0.0),
-                                                                child: Icon(
+                                                                child: const Icon(
                                                                   Icons
                                                                       .not_interested_outlined,
                                                                   color: Colors
@@ -1284,7 +1280,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     12.0,
                                                                     12.0,
@@ -1338,7 +1334,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 12.0, 0.0, 12.0),
                                     child: Text(
                                       FFLocalizations.of(context).getText(
@@ -1360,11 +1356,11 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                   ),
                                   Expanded(
                                     child: Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Column(
                                         children: [
                                           Align(
-                                            alignment: Alignment(0.0, 0),
+                                            alignment: const Alignment(0.0, 0),
                                             child: FlutterFlowButtonTabBar(
                                               useToggleButtonStyle: false,
                                               labelStyle:
@@ -1384,7 +1380,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                         context)
                                                                     .titleMediumFamily),
                                                       ),
-                                              unselectedLabelStyle: TextStyle(),
+                                              unselectedLabelStyle: const TextStyle(),
                                               labelColor: Colors.white,
                                               unselectedLabelColor:
                                                   FlutterFlowTheme.of(context)
@@ -1399,10 +1395,10 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                               borderRadius: 8.0,
                                               elevation: 0.0,
                                               buttonMargin:
-                                                  EdgeInsetsDirectional
+                                                  const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           8.0, 0.0, 8.0, 0.0),
-                                              padding: EdgeInsets.all(4.0),
+                                              padding: const EdgeInsets.all(4.0),
                                               tabs: [
                                                 Tab(
                                                   text: FFLocalizations.of(
@@ -1443,7 +1439,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   _model.tabBarController,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: StreamBuilder<
@@ -1504,7 +1500,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   listViewIndex];
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         12.0,
@@ -1547,7 +1543,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           4.0,
@@ -1573,7 +1569,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   ),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           8.0,
@@ -1602,7 +1598,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 8.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -1678,7 +1674,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 (context, listViewIndex) {
                                                                               final listViewProdutoPedidoRecord = listViewProdutoPedidoRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                 child: StreamBuilder<ProdutoRecord>(
                                                                                   stream: ProdutoRecord.getDocument(listViewProdutoPedidoRecord.produto!),
                                                                                   builder: (context, snapshot) {
@@ -1701,7 +1697,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                           child: Card(
                                                                                             clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
@@ -1710,7 +1706,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                               borderRadius: BorderRadius.circular(12.0),
                                                                                             ),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsets.all(2.0),
+                                                                                              padding: const EdgeInsets.all(2.0),
                                                                                               child: ClipRRect(
                                                                                                 borderRadius: BorderRadius.circular(12.0),
                                                                                                 child: Image.network(
@@ -1724,7 +1720,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
                                                                                           child: Text(
                                                                                             '${listViewProdutoPedidoRecord.quantidade.toString()}x',
                                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -1769,7 +1765,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                         ),
                                                                                                   ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation3']!),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewCategoriaRecord.nome,
                                                                                                       style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -1785,7 +1781,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                                           child: Text(
                                                                                             formatNumber(
                                                                                               listViewProdutoPedidoRecord.subTotal,
@@ -1828,7 +1824,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                               child: Text(
                                                                                 'Total: ${formatNumber(
                                                                                   listViewPedidoRecord.valorTotal,
@@ -1849,19 +1845,19 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Container(
                                                                             decoration:
                                                                                 BoxDecoration(
-                                                                              color: Color(0xFFFEF8ED),
+                                                                              color: const Color(0xFFFEF8ED),
                                                                               borderRadius: BorderRadius.circular(100.0),
                                                                             ),
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                                                                                 child: Text(
                                                                                   listViewPedidoRecord.statusPedido,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                        color: Color(0xFFF9BE4B),
+                                                                                        color: const Color(0xFFF9BE4B),
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -1886,7 +1882,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: StreamBuilder<
@@ -1947,7 +1943,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   listViewIndex];
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         12.0,
@@ -1981,7 +1977,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                     'pedido':
                                                                         listViewPedidoRecord,
                                                                     kTransitionInfoKey:
-                                                                        TransitionInfo(
+                                                                        const TransitionInfo(
                                                                       hasTransition:
                                                                           true,
                                                                       transitionType:
@@ -2001,7 +1997,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           4.0,
@@ -2027,7 +2023,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   ),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           8.0,
@@ -2056,7 +2052,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 8.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -2131,7 +2127,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 (context, listViewIndex) {
                                                                               final listViewProdutoPedidoRecord = listViewProdutoPedidoRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                 child: StreamBuilder<ProdutoRecord>(
                                                                                   stream: ProdutoRecord.getDocument(listViewProdutoPedidoRecord.produto!),
                                                                                   builder: (context, snapshot) {
@@ -2154,7 +2150,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                           child: Card(
                                                                                             clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
@@ -2163,7 +2159,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                               borderRadius: BorderRadius.circular(12.0),
                                                                                             ),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsets.all(2.0),
+                                                                                              padding: const EdgeInsets.all(2.0),
                                                                                               child: ClipRRect(
                                                                                                 borderRadius: BorderRadius.circular(12.0),
                                                                                                 child: Image.network(
@@ -2177,7 +2173,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
                                                                                           child: Text(
                                                                                             '${listViewProdutoPedidoRecord.quantidade.toString()}x',
                                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -2222,7 +2218,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                         ),
                                                                                                   ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation6']!),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewCategoriaRecord.nome,
                                                                                                       style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -2238,7 +2234,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                                           child: Text(
                                                                                             formatNumber(
                                                                                               listViewProdutoPedidoRecord.subTotal,
@@ -2280,7 +2276,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                               child: Text(
                                                                                 'Total: ${formatNumber(
                                                                                   listViewPedidoRecord.valorTotal,
@@ -2300,19 +2296,19 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Container(
                                                                             decoration:
                                                                                 BoxDecoration(
-                                                                              color: Color(0xFFE8FFF3),
+                                                                              color: const Color(0xFFE8FFF3),
                                                                               borderRadius: BorderRadius.circular(100.0),
                                                                             ),
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                                                                                 child: Text(
                                                                                   listViewPedidoRecord.statusPedido,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                        color: Color(0xFF50CD89),
+                                                                                        color: const Color(0xFF50CD89),
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),
@@ -2337,7 +2333,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                   ),
                                                 ),
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 12.0, 0.0, 0.0),
                                                   child: StreamBuilder<
@@ -2398,7 +2394,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   listViewIndex];
                                                           return Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         12.0,
@@ -2432,7 +2428,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                     'pedido':
                                                                         listViewPedidoRecord,
                                                                     kTransitionInfoKey:
-                                                                        TransitionInfo(
+                                                                        const TransitionInfo(
                                                                       hasTransition:
                                                                           true,
                                                                       transitionType:
@@ -2452,7 +2448,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   color: FlutterFlowTheme.of(
                                                                           context)
                                                                       .secondaryBackground,
-                                                                  boxShadow: [
+                                                                  boxShadow: const [
                                                                     BoxShadow(
                                                                       blurRadius:
                                                                           4.0,
@@ -2478,7 +2474,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                   ),
                                                                 ),
                                                                 child: Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           8.0,
@@ -2507,7 +2503,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 ),
                                                                           ),
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 8.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -2582,7 +2578,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                 (context, listViewIndex) {
                                                                               final listViewProdutoPedidoRecord = listViewProdutoPedidoRecordList[listViewIndex];
                                                                               return Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                 child: StreamBuilder<ProdutoRecord>(
                                                                                   stream: ProdutoRecord.getDocument(listViewProdutoPedidoRecord.produto!),
                                                                                   builder: (context, snapshot) {
@@ -2605,7 +2601,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                           child: Card(
                                                                                             clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                             color: FlutterFlowTheme.of(context).primaryBackground,
@@ -2614,7 +2610,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                               borderRadius: BorderRadius.circular(12.0),
                                                                                             ),
                                                                                             child: Padding(
-                                                                                              padding: EdgeInsets.all(2.0),
+                                                                                              padding: const EdgeInsets.all(2.0),
                                                                                               child: ClipRRect(
                                                                                                 borderRadius: BorderRadius.circular(12.0),
                                                                                                 child: Image.network(
@@ -2628,7 +2624,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 8.0, 0.0),
                                                                                           child: Text(
                                                                                             '${listViewProdutoPedidoRecord.quantidade.toString()}x',
                                                                                             style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -2673,7 +2669,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                         ),
                                                                                                   ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation9']!),
                                                                                                   Padding(
-                                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                                     child: Text(
                                                                                                       listViewCategoriaRecord.nome,
                                                                                                       style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -2689,7 +2685,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                           ),
                                                                                         ),
                                                                                         Padding(
-                                                                                          padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                                          padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                                           child: Text(
                                                                                             formatNumber(
                                                                                               listViewProdutoPedidoRecord.subTotal,
@@ -2731,7 +2727,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Expanded(
                                                                             child:
                                                                                 Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 0.0, 0.0, 0.0),
                                                                               child: Text(
                                                                                 'Total: ${listViewPedidoRecord.valorTotal.toString()}',
                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2747,19 +2743,19 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           Container(
                                                                             decoration:
                                                                                 BoxDecoration(
-                                                                              color: Color(0xFFFFF5F8),
+                                                                              color: const Color(0xFFFFF5F8),
                                                                               borderRadius: BorderRadius.circular(100.0),
                                                                             ),
                                                                             child:
                                                                                 Align(
-                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                               child: Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                                                                                 child: Text(
                                                                                   listViewPedidoRecord.statusPedido,
                                                                                   style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                         fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
-                                                                                        color: Color(0xFFF1416C),
+                                                                                        color: const Color(0xFFF1416C),
                                                                                         letterSpacing: 0.0,
                                                                                         fontWeight: FontWeight.w600,
                                                                                         useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyMediumFamily),

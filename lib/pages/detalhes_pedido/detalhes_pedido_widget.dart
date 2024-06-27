@@ -7,13 +7,10 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'detalhes_pedido_model.dart';
 export 'detalhes_pedido_model.dart';
 
@@ -57,8 +54,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -77,8 +74,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -97,8 +94,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -117,8 +114,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -137,8 +134,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -157,8 +154,8 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 70.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 70.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -236,7 +233,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Container(
-                            decoration: BoxDecoration(),
+                            decoration: const BoxDecoration(),
                             child: Visibility(
                               visible: responsiveVisibility(
                                 context: context,
@@ -250,7 +247,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                   colorBgDashboard: Colors.transparent,
                                   colorBgProdutos: Colors.transparent,
                                   colorBgClientes: Colors.transparent,
-                                  colorBgPedidos: Color(0x2D37C6DA),
+                                  colorBgPedidos: const Color(0x2D37C6DA),
                                   colorBgMinhaLoja: Colors.transparent,
                                   colorBgPerfil: Colors.transparent,
                                   iconDashboard: Icon(
@@ -310,14 +307,14 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                           ),
                           Flexible(
                             child: Align(
-                              alignment: AlignmentDirectional(0.0, -1.0),
+                              alignment: const AlignmentDirectional(0.0, -1.0),
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     16.0, 16.0, 16.0, 0.0),
                                 child: Container(
                                   width: double.infinity,
                                   height: double.infinity,
-                                  constraints: BoxConstraints(
+                                  constraints: const BoxConstraints(
                                     maxWidth: 1080.0,
                                   ),
                                   decoration: BoxDecoration(
@@ -330,7 +327,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                     ),
                                   ),
                                   child: Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 0.0, 0.0, 24.0),
                                     child: SingleChildScrollView(
                                       primary: false,
@@ -339,7 +336,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                         children: [
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 16.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -394,7 +391,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                               color:
                                                   FlutterFlowTheme.of(context)
                                                       .secondaryBackground,
-                                              boxShadow: [
+                                              boxShadow: const [
                                                 BoxShadow(
                                                   blurRadius: 4.0,
                                                   color: Color(0x33000000),
@@ -408,7 +405,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 8.0, 12.0, 12.0),
                                               child: Column(
@@ -425,7 +422,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     4.0,
@@ -460,7 +457,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -483,7 +480,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                     child:
                                                                         Padding(
                                                                       padding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               2.0),
                                                                       child:
                                                                           ClipRRect(
@@ -516,7 +513,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                       valueOrDefault<
                                                                           String>(
                                                                         detalhesPedidoMinhaLojaRecord
-                                                                            ?.nomeLoja,
+                                                                            .nomeLoja,
                                                                         'null',
                                                                       ),
                                                                       style: FlutterFlowTheme.of(
@@ -536,14 +533,14 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                         animationsMap[
                                                                             'textOnPageLoadAnimation2']!),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           4.0,
                                                                           0.0,
                                                                           0.0),
                                                                       child:
                                                                           Text(
-                                                                        '${detalhesPedidoMinhaLojaRecord?.enderecoRua}, ${detalhesPedidoMinhaLojaRecord?.enderecoNumero}, ${detalhesPedidoMinhaLojaRecord?.enderecoBairro}, ${detalhesPedidoMinhaLojaRecord?.enderecoCidade}/${detalhesPedidoMinhaLojaRecord?.enderecoEstado}',
+                                                                        '${detalhesPedidoMinhaLojaRecord.enderecoRua}, ${detalhesPedidoMinhaLojaRecord.enderecoNumero}, ${detalhesPedidoMinhaLojaRecord.enderecoBairro}, ${detalhesPedidoMinhaLojaRecord.enderecoCidade}/${detalhesPedidoMinhaLojaRecord.enderecoEstado}',
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodySmall
                                                                             .override(
@@ -576,7 +573,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                   (context) =>
                                                                       Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -599,7 +596,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                           backgroundColor:
                                                                               Colors.transparent,
                                                                           alignment:
-                                                                              AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                              const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                           child:
                                                                               GestureDetector(
                                                                             onTap: () => _model.unfocusNode.canRequestFocus
@@ -625,14 +622,14 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                       FFButtonOptions(
                                                                     height:
                                                                         40.0,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             24.0,
                                                                             0.0,
                                                                             24.0,
                                                                             0.0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -656,7 +653,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                     elevation:
                                                                         3.0,
                                                                     borderSide:
-                                                                        BorderSide(
+                                                                        const BorderSide(
                                                                       color: Colors
                                                                           .transparent,
                                                                       width:
@@ -690,7 +687,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                         backgroundColor:
                                                                             Colors.transparent,
                                                                         alignment:
-                                                                            AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                            const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                         child:
                                                                             GestureDetector(
                                                                           onTap: () => _model.unfocusNode.canRequestFocus
@@ -716,19 +713,19 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                 options:
                                                                     FFButtonOptions(
                                                                   height: 40.0,
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           24.0,
                                                                           0.0,
                                                                           24.0,
                                                                           0.0),
-                                                                  iconPadding: EdgeInsetsDirectional
+                                                                  iconPadding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                  color: Color(
+                                                                  color: const Color(
                                                                       0xAC4AC1D2),
                                                                   textStyle: FlutterFlowTheme.of(
                                                                           context)
@@ -746,7 +743,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                   elevation:
                                                                       3.0,
                                                                   borderSide:
-                                                                      BorderSide(
+                                                                      const BorderSide(
                                                                     color: Colors
                                                                         .transparent,
                                                                     width: 1.0,
@@ -801,7 +798,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                       Expanded(
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       4.0,
                                                                       0.0,
@@ -839,7 +836,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
@@ -852,16 +849,16 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                               if (widget.pedido
                                                                       ?.statusPedido ==
                                                                   'Pendente') {
-                                                                return Color(
+                                                                return const Color(
                                                                     0xFFFEF8ED);
                                                               } else if (widget
                                                                       .pedido
                                                                       ?.statusPedido ==
                                                                   'Pago') {
-                                                                return Color(
+                                                                return const Color(
                                                                     0xFFE8FFF3);
                                                               } else {
-                                                                return Color(
+                                                                return const Color(
                                                                     0xFFFFF5F8);
                                                               }
                                                             }(),
@@ -872,11 +869,11 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                           ),
                                                           child: Align(
                                                             alignment:
-                                                                AlignmentDirectional(
+                                                                const AlignmentDirectional(
                                                                     0.0, 0.0),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           8.0,
@@ -900,14 +897,14 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                           () {
                                                                         if (widget.pedido?.statusPedido ==
                                                                             'Pendente') {
-                                                                          return Color(
+                                                                          return const Color(
                                                                               0xFFF9BE4B);
                                                                         } else if (widget.pedido?.statusPedido ==
                                                                             'Pago') {
-                                                                          return Color(
+                                                                          return const Color(
                                                                               0xFF50CD89);
                                                                         } else {
-                                                                          return Color(
+                                                                          return const Color(
                                                                               0xFFF1416C);
                                                                         }
                                                                       }(),
@@ -943,10 +940,10 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                       MediaQuery.sizeOf(context)
                                                               .width *
                                                           1.0,
-                                                  decoration: BoxDecoration(),
+                                                  decoration: const BoxDecoration(),
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 12.0,
                                                                 0.0, 0.0),
                                                     child: Wrap(
@@ -973,7 +970,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -1032,7 +1029,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                 children: [
                                                                   Padding(
                                                                     padding:
-                                                                        EdgeInsets.all(
+                                                                        const EdgeInsets.all(
                                                                             16.0),
                                                                     child: Row(
                                                                       mainAxisSize:
@@ -1043,7 +1040,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                               .start,
                                                                       children: [
                                                                         Align(
-                                                                          alignment: AlignmentDirectional(
+                                                                          alignment: const AlignmentDirectional(
                                                                               -0.91,
                                                                               0.0),
                                                                           child:
@@ -1055,7 +1052,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                             clipBehavior:
                                                                                 Clip.antiAlias,
                                                                             decoration:
-                                                                                BoxDecoration(
+                                                                                const BoxDecoration(
                                                                               shape: BoxShape.circle,
                                                                             ),
                                                                             child:
@@ -1069,7 +1066,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                           ),
                                                                         ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               16.0,
                                                                               0.0,
                                                                               0.0,
@@ -1099,7 +1096,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                             .spaceBetween,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             0.0,
                                                                             0.0,
@@ -1112,7 +1109,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 24.0, 8.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 24.0, 8.0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'zguq7m86' /* Cliente */,
@@ -1131,7 +1128,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                     ],
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1164,7 +1161,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                               MainAxisSize.min,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
                                                                               child: FaIcon(
                                                                                 FontAwesomeIcons.whatsapp,
                                                                                 color: FlutterFlowTheme.of(context).primary,
@@ -1192,7 +1189,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                               MainAxisSize.min,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
                                                                               child: Icon(
                                                                                 Icons.alternate_email_outlined,
                                                                                 color: FlutterFlowTheme.of(context).primary,
@@ -1217,15 +1214,14 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                               MainAxisSize.min,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 6.0, 0.0),
                                                                               child: Icon(
                                                                                 Icons.location_on,
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 size: 28.0,
                                                                               ),
                                                                             ),
-                                                                            if (listViewClienteRecord.enderecoRuaCliente != null &&
-                                                                                listViewClienteRecord.enderecoRuaCliente != '')
+                                                                            if (listViewClienteRecord.enderecoRuaCliente != '')
                                                                               Text(
                                                                                 '${listViewClienteRecord.enderecoRuaCliente}, ${listViewClienteRecord.enderecoNumeroCliente}, ${listViewClienteRecord.enderecoBairroCliente}, ${listViewClienteRecord.enderecoCidadeCliente}/${listViewClienteRecord.enderecoEstadoCliente}',
                                                                                 style: FlutterFlowTheme.of(context).bodySmall.override(
@@ -1237,8 +1233,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodySmallFamily),
                                                                                     ),
                                                                               ),
-                                                                            if (listViewClienteRecord.enderecoRuaCliente == null ||
-                                                                                listViewClienteRecord.enderecoRuaCliente == '')
+                                                                            if (listViewClienteRecord.enderecoRuaCliente == '')
                                                                               Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   '564b0frh' /* Não informado */,
@@ -1266,7 +1261,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                 'containerOnPageLoadAnimation2']!),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1278,7 +1273,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                               color: FlutterFlowTheme
                                                                       .of(context)
                                                                   .secondaryBackground,
-                                                              boxShadow: [
+                                                              boxShadow: const [
                                                                 BoxShadow(
                                                                   blurRadius:
                                                                       5.0,
@@ -1292,7 +1287,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                 )
                                                               ],
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -1312,7 +1307,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           12.0,
@@ -1330,7 +1325,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                         .start,
                                                                 children: [
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             4.0,
@@ -1430,7 +1425,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                           final listViewProdutoPedidoRecord =
                                                                               listViewProdutoPedidoRecordList[listViewIndex];
                                                                           return Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 16.0,
                                                                                 12.0,
                                                                                 12.0,
@@ -1459,13 +1454,13 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                                   mainAxisAlignment: MainAxisAlignment.start,
                                                                                   children: [
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                       child: Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         mainAxisAlignment: MainAxisAlignment.start,
                                                                                         children: [
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                             child: Card(
                                                                                               clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                               color: FlutterFlowTheme.of(context).primaryBackground,
@@ -1474,7 +1469,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                                                 borderRadius: BorderRadius.circular(12.0),
                                                                                               ),
                                                                                               child: Padding(
-                                                                                                padding: EdgeInsets.all(2.0),
+                                                                                                padding: const EdgeInsets.all(2.0),
                                                                                                 child: ClipRRect(
                                                                                                   borderRadius: BorderRadius.circular(12.0),
                                                                                                   child: Image.network(
@@ -1488,7 +1483,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                                             ),
                                                                                           ),
                                                                                           Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                             child: Text(
                                                                                               '${listViewProdutoPedidoRecord.quantidade.toString()}x',
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -1558,7 +1553,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                             .end,
                                                                     children: [
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             0.0,
                                                                             0.0,

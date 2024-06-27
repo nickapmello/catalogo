@@ -4,8 +4,6 @@ import '/components/web_nav/web_nav_widget.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -14,7 +12,6 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'home_minha_loja_model.dart';
 export 'home_minha_loja_model.dart';
 
@@ -61,8 +58,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -81,8 +78,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -101,8 +98,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(120.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(120.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -121,8 +118,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 220.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -141,8 +138,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 220.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -161,8 +158,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 240.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -181,8 +178,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(100.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(100.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -201,8 +198,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -221,8 +218,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 180.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -241,8 +238,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -261,8 +258,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(120.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(120.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -281,8 +278,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -301,8 +298,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 220.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -321,8 +318,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 240.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -341,8 +338,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(120.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(120.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -361,8 +358,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -381,8 +378,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 220.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -401,8 +398,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 240.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -421,8 +418,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(120.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(120.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -441,8 +438,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -461,8 +458,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 220.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -481,8 +478,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 240.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -501,8 +498,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -521,8 +518,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 200.0.ms,
             duration: 600.0.ms,
-            begin: Offset(40.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(40.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -541,8 +538,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 1600.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 70.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 70.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -561,8 +558,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 180.0.ms,
             duration: 600.0.ms,
-            begin: Offset(20.0, 0.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(20.0, 0.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -581,8 +578,8 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -657,7 +654,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                     model: _model.webNavModel2,
                     updateCallback: () => setState(() {}),
                     child: WebNavWidget(
-                      colorBgDashboard: Color(0x2B7367F0),
+                      colorBgDashboard: const Color(0x2B7367F0),
                       colorBgProdutos: Colors.transparent,
                       colorBgClientes: Colors.transparent,
                       colorBgPedidos: Colors.transparent,
@@ -729,7 +726,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation17']!),
-                        actions: [],
+                        actions: const [],
                         centerTitle: false,
                         elevation: 0.0,
                       )
@@ -752,7 +749,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                 model: _model.webNavModel1,
                                 updateCallback: () => setState(() {}),
                                 child: WebNavWidget(
-                                  colorBgDashboard: Color(0x2D37C6DA),
+                                  colorBgDashboard: const Color(0x2D37C6DA),
                                   colorBgProdutos: Colors.transparent,
                                   colorBgClientes: Colors.transparent,
                                   colorBgPedidos: Colors.transparent,
@@ -767,16 +764,16 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                     color: FlutterFlowTheme.of(context)
                                         .secondaryText,
                                   ),
-                                  iconClientes: Icon(
+                                  iconClientes: const Icon(
                                     Icons.group_outlined,
                                   ),
-                                  iconPedidos: Icon(
+                                  iconPedidos: const Icon(
                                     Icons.shopping_cart_outlined,
                                   ),
-                                  iconMinhaLoja: Icon(
+                                  iconMinhaLoja: const Icon(
                                     Icons.home_work_outlined,
                                   ),
-                                  iconPerfil: FaIcon(
+                                  iconPerfil: const FaIcon(
                                     FontAwesomeIcons.userCircle,
                                   ),
                                   txtColorDashboard:
@@ -833,7 +830,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                         containerProdutoProdutoRecordList =
                                         snapshot.data!;
                                     return Container(
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: StreamBuilder<List<PedidoRecord>>(
                                         stream: queryPedidoRecord(
                                           queryBuilder: (pedidoRecord) =>
@@ -870,7 +867,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                               containerPedidoPedidoRecordList =
                                               snapshot.data!;
                                           return Container(
-                                            decoration: BoxDecoration(),
+                                            decoration: const BoxDecoration(),
                                             child: SingleChildScrollView(
                                               primary: false,
                                               child: Column(
@@ -894,11 +891,11 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                         ),
                                                         child: Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         24.0,
                                                                         24.0,
@@ -932,7 +929,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                         ),
                                                       ),
                                                     ),
-                                                  Container(
+                                                  SizedBox(
                                                     height: 240.0,
                                                     child: Stack(
                                                       children: [
@@ -947,11 +944,11 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                 .secondaryBackground,
                                                           ),
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   -1.0, 0.0),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -968,7 +965,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                 Expanded(
                                                                   child:
                                                                       Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             16.0,
@@ -1005,7 +1002,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       75.0,
@@ -1033,7 +1030,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -1069,15 +1066,15 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                         ),
                                                         Align(
                                                           alignment:
-                                                              AlignmentDirectional(
+                                                              const AlignmentDirectional(
                                                                   0.0, 1.0),
                                                           child: Container(
                                                             height: 160.0,
                                                             decoration:
-                                                                BoxDecoration(),
+                                                                const BoxDecoration(),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           30.0,
@@ -1093,7 +1090,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                     Axis.horizontal,
                                                                 children: [
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1107,7 +1104,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
-                                                                        boxShadow: [
+                                                                        boxShadow: const [
                                                                           BoxShadow(
                                                                             blurRadius:
                                                                                 4.0,
@@ -1132,7 +1129,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12.0,
                                                                             0.0,
                                                                             12.0,
@@ -1143,14 +1140,14 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               MainAxisSize.max,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
                                                                                 crossAxisAlignment: CrossAxisAlignment.start,
                                                                                 children: [
                                                                                   Text(
-                                                                                    'Olá, ${currentUserDisplayName}👋',
+                                                                                    'Olá, $currentUserDisplayName👋',
                                                                                     style: FlutterFlowTheme.of(context).bodySmall.override(
                                                                                           fontFamily: FlutterFlowTheme.of(context).bodySmallFamily,
                                                                                           color: FlutterFlowTheme.of(context).primaryText,
@@ -1173,7 +1170,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                         ),
                                                                                   ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation4']!),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                                                                                     child: Text(
                                                                                       formatNumber(
                                                                                         functions.somaValorTotal(containerPedidoPedidoRecordList.where((e) => e.statusPedido == 'Pago').toList().map((e) => e.valorTotal).toList()),
@@ -1194,7 +1191,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 0.0, 20.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(10.0, 20.0, 0.0, 20.0),
                                                                               child: ClipRRect(
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                                 child: Image.asset(
@@ -1210,7 +1207,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                             animationsMap['containerOnPageLoadAnimation1']!),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1256,7 +1253,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           height:
                                                                               120.0,
                                                                           constraints:
-                                                                              BoxConstraints(
+                                                                              const BoxConstraints(
                                                                             minWidth:
                                                                                 200.0,
                                                                           ),
@@ -1264,7 +1261,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               BoxDecoration(
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            boxShadow: [
+                                                                            boxShadow: const [
                                                                               BoxShadow(
                                                                                 blurRadius: 4.0,
                                                                                 color: Color(0x1F000000),
@@ -1284,7 +1281,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           ),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 4.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -1301,7 +1298,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                     shape: BoxShape.circle,
                                                                                   ),
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Card(
                                                                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                     color: FlutterFlowTheme.of(context).primary,
@@ -1309,7 +1306,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                       borderRadius: BorderRadius.circular(40.0),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(12.0),
+                                                                                      padding: const EdgeInsets.all(12.0),
                                                                                       child: Icon(
                                                                                         Icons.group_outlined,
                                                                                         color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -1319,7 +1316,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                   ),
                                                                                 ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation3']!),
                                                                                 Padding(
-                                                                                  padding: EdgeInsets.all(12.0),
+                                                                                  padding: const EdgeInsets.all(12.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -1336,7 +1333,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                             ),
                                                                                       ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation6']!),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           containerCount.toString(),
                                                                                           style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -1358,7 +1355,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1369,7 +1366,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                       height:
                                                                           120.0,
                                                                       constraints:
-                                                                          BoxConstraints(
+                                                                          const BoxConstraints(
                                                                         minWidth:
                                                                             200.0,
                                                                       ),
@@ -1377,7 +1374,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           BoxDecoration(
                                                                         color: FlutterFlowTheme.of(context)
                                                                             .secondaryBackground,
-                                                                        boxShadow: [
+                                                                        boxShadow: const [
                                                                           BoxShadow(
                                                                             blurRadius:
                                                                                 4.0,
@@ -1402,7 +1399,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             12.0,
                                                                             0.0,
                                                                             12.0,
@@ -1419,7 +1416,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                 color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                 shape: BoxShape.circle,
                                                                               ),
-                                                                              alignment: AlignmentDirectional(0.0, 0.0),
+                                                                              alignment: const AlignmentDirectional(0.0, 0.0),
                                                                               child: Card(
                                                                                 clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                 color: FlutterFlowTheme.of(context).primary,
@@ -1427,7 +1424,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                   borderRadius: BorderRadius.circular(40.0),
                                                                                 ),
                                                                                 child: Padding(
-                                                                                  padding: EdgeInsets.all(12.0),
+                                                                                  padding: const EdgeInsets.all(12.0),
                                                                                   child: Icon(
                                                                                     Icons.point_of_sale_sharp,
                                                                                     color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -1437,7 +1434,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               ),
                                                                             ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation5']!),
                                                                             Padding(
-                                                                              padding: EdgeInsets.all(12.0),
+                                                                              padding: const EdgeInsets.all(12.0),
                                                                               child: Column(
                                                                                 mainAxisSize: MainAxisSize.max,
                                                                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -1454,7 +1451,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                         ),
                                                                                   ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation8']!),
                                                                                   Padding(
-                                                                                    padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                                                                    padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                                                                                     child: Text(
                                                                                       containerPedidoPedidoRecordList.where((e) => e.statusPedido == 'Pago').toList().length.toString(),
                                                                                       style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -1474,7 +1471,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                             animationsMap['containerOnPageLoadAnimation4']!),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1521,7 +1518,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           height:
                                                                               120.0,
                                                                           constraints:
-                                                                              BoxConstraints(
+                                                                              const BoxConstraints(
                                                                             minWidth:
                                                                                 200.0,
                                                                           ),
@@ -1529,7 +1526,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               BoxDecoration(
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            boxShadow: [
+                                                                            boxShadow: const [
                                                                               BoxShadow(
                                                                                 blurRadius: 4.0,
                                                                                 color: Color(0x1F000000),
@@ -1549,7 +1546,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           ),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 12.0,
                                                                                 0.0,
                                                                                 12.0,
@@ -1565,7 +1562,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                     shape: BoxShape.circle,
                                                                                   ),
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Card(
                                                                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                     color: FlutterFlowTheme.of(context).primary,
@@ -1573,7 +1570,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                       borderRadius: BorderRadius.circular(40.0),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(12.0),
+                                                                                      padding: const EdgeInsets.all(12.0),
                                                                                       child: Icon(
                                                                                         Icons.shopping_bag_sharp,
                                                                                         color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -1583,7 +1580,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                   ),
                                                                                 ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation7']!),
                                                                                 Padding(
-                                                                                  padding: EdgeInsets.all(12.0),
+                                                                                  padding: const EdgeInsets.all(12.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -1600,7 +1597,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                             ),
                                                                                       ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation10']!),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           containerProdutoRecordList.length.toString(),
                                                                                           style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -1622,7 +1619,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             0.0,
@@ -1670,7 +1667,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           height:
                                                                               120.0,
                                                                           constraints:
-                                                                              BoxConstraints(
+                                                                              const BoxConstraints(
                                                                             minWidth:
                                                                                 200.0,
                                                                           ),
@@ -1678,7 +1675,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                               BoxDecoration(
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).secondaryBackground,
-                                                                            boxShadow: [
+                                                                            boxShadow: const [
                                                                               BoxShadow(
                                                                                 blurRadius: 4.0,
                                                                                 color: Color(0x1F000000),
@@ -1698,7 +1695,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           ),
                                                                           child:
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 12.0,
                                                                                 0.0,
                                                                                 12.0,
@@ -1714,7 +1711,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     color: FlutterFlowTheme.of(context).primaryBackground,
                                                                                     shape: BoxShape.circle,
                                                                                   ),
-                                                                                  alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                   child: Card(
                                                                                     clipBehavior: Clip.antiAliasWithSaveLayer,
                                                                                     color: FlutterFlowTheme.of(context).primary,
@@ -1722,7 +1719,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                       borderRadius: BorderRadius.circular(40.0),
                                                                                     ),
                                                                                     child: Padding(
-                                                                                      padding: EdgeInsets.all(12.0),
+                                                                                      padding: const EdgeInsets.all(12.0),
                                                                                       child: Icon(
                                                                                         Icons.gavel,
                                                                                         color: FlutterFlowTheme.of(context).primaryBtnText,
@@ -1732,7 +1729,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                   ),
                                                                                 ).animateOnPageLoad(animationsMap['containerOnPageLoadAnimation9']!),
                                                                                 Padding(
-                                                                                  padding: EdgeInsets.all(12.0),
+                                                                                  padding: const EdgeInsets.all(12.0),
                                                                                   child: Column(
                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -1749,7 +1746,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                             ),
                                                                                       ).animateOnPageLoad(animationsMap['textOnPageLoadAnimation12']!),
                                                                                       Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(0.0, 8.0, 0.0, 0.0),
                                                                                         child: Text(
                                                                                           '${(containerMetaPedidoRecordList.length * 1.75).toString()} vendas',
                                                                                           style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -1787,7 +1784,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -1795,7 +1792,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                     0.0),
                                                         child: Container(
                                                           constraints:
-                                                              BoxConstraints(
+                                                              const BoxConstraints(
                                                             maxWidth: 1440.0,
                                                           ),
                                                           decoration:
@@ -1803,7 +1800,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 4.0,
                                                                 color: Color(
@@ -1827,7 +1824,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -1842,7 +1839,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           0.0,
@@ -1870,7 +1867,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           'textOnPageLoadAnimation14']!),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           12.0,
                                                                           12.0,
@@ -1962,7 +1959,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           16.0,
@@ -1993,7 +1990,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           final produtosMaisVendidosItem =
                                                                               produtosMaisVendidos[produtosMaisVendidosIndex];
                                                                           return Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 0.0,
@@ -2007,7 +2004,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                   BoxShadow(
                                                                                     blurRadius: 0.0,
                                                                                     color: FlutterFlowTheme.of(context).lineColor,
-                                                                                    offset: Offset(
+                                                                                    offset: const Offset(
                                                                                       0.0,
                                                                                       1.0,
                                                                                     ),
@@ -2015,7 +2012,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                 ],
                                                                               ),
                                                                               child: Padding(
-                                                                                padding: EdgeInsets.all(12.0),
+                                                                                padding: const EdgeInsets.all(12.0),
                                                                                 child: StreamBuilder<CategoriaRecord>(
                                                                                   stream: CategoriaRecord.getDocument(produtosMaisVendidosItem.categoria!),
                                                                                   builder: (context, snapshot) {
@@ -2043,12 +2040,12 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                             mainAxisSize: MainAxisSize.max,
                                                                                             children: [
                                                                                               Padding(
-                                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                                                                                                 child: ClipRRect(
                                                                                                   borderRadius: BorderRadius.circular(12.0),
                                                                                                   child: CachedNetworkImage(
-                                                                                                    fadeInDuration: Duration(milliseconds: 500),
-                                                                                                    fadeOutDuration: Duration(milliseconds: 500),
+                                                                                                    fadeInDuration: const Duration(milliseconds: 500),
+                                                                                                    fadeOutDuration: const Duration(milliseconds: 500),
                                                                                                     imageUrl: valueOrDefault<String>(
                                                                                                       produtosMaisVendidosItem.imgProduto.first,
                                                                                                       'https://isjade.simplify.cool/images/no-image-2.jpg',
@@ -2150,7 +2147,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     16.0,
@@ -2165,7 +2162,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                           children: [
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -2222,7 +2219,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         listaPedidosRecentes[
                                                                             listaPedidosRecentesIndex];
                                                                     return Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -2232,7 +2229,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         width: double
                                                                             .infinity,
                                                                         constraints:
-                                                                            BoxConstraints(
+                                                                            const BoxConstraints(
                                                                           maxWidth:
                                                                               1440.0,
                                                                         ),
@@ -2240,7 +2237,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                             BoxDecoration(
                                                                           color:
                                                                               FlutterFlowTheme.of(context).secondaryBackground,
-                                                                          boxShadow: [
+                                                                          boxShadow: const [
                                                                             BoxShadow(
                                                                               blurRadius: 4.0,
                                                                               color: Color(0x1F000000),
@@ -2262,7 +2259,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         ),
                                                                         child:
                                                                             Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
@@ -2275,7 +2272,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                 CrossAxisAlignment.center,
                                                                             children: [
                                                                               Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 16.0, 4.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 16.0, 4.0),
                                                                                 child: Row(
                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -2283,14 +2280,14 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     Expanded(
                                                                                       flex: 1,
                                                                                       child: Padding(
-                                                                                        padding: EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 12.0, 12.0),
+                                                                                        padding: const EdgeInsetsDirectional.fromSTEB(4.0, 12.0, 12.0, 12.0),
                                                                                         child: Column(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           mainAxisAlignment: MainAxisAlignment.center,
                                                                                           crossAxisAlignment: CrossAxisAlignment.start,
                                                                                           children: [
                                                                                             Padding(
-                                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
+                                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 4.0, 0.0, 0.0),
                                                                                               child: Text(
                                                                                                 '#${listaPedidosRecentesItem.codigoPedido}',
                                                                                                 style: FlutterFlowTheme.of(context).bodyMedium.override(
@@ -2313,7 +2310,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     ))
                                                                                       Expanded(
                                                                                         child: Align(
-                                                                                          alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                           child: Text(
                                                                                             formatNumber(
                                                                                               listaPedidosRecentesItem.valorTotal,
@@ -2337,7 +2334,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                     ))
                                                                                       Expanded(
                                                                                         child: Align(
-                                                                                          alignment: AlignmentDirectional(-1.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(-1.0, 0.0),
                                                                                           child: Text(
                                                                                             dateTimeFormat(
                                                                                               'd/M H:mm',
@@ -2355,35 +2352,35 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                         ),
                                                                                       ),
                                                                                     Padding(
-                                                                                      padding: EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
+                                                                                      padding: const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 0.0),
                                                                                       child: Container(
                                                                                         decoration: BoxDecoration(
                                                                                           color: () {
                                                                                             if (listaPedidosRecentesItem.statusPedido == 'Pendente') {
-                                                                                              return Color(0xFFFEF8ED);
+                                                                                              return const Color(0xFFFEF8ED);
                                                                                             } else if (listaPedidosRecentesItem.statusPedido == 'Pago') {
-                                                                                              return Color(0xFFE8FFF3);
+                                                                                              return const Color(0xFFE8FFF3);
                                                                                             } else {
-                                                                                              return Color(0xFFFFF5F8);
+                                                                                              return const Color(0xFFFFF5F8);
                                                                                             }
                                                                                           }(),
                                                                                           borderRadius: BorderRadius.circular(100.0),
                                                                                         ),
                                                                                         child: Align(
-                                                                                          alignment: AlignmentDirectional(0.0, 0.0),
+                                                                                          alignment: const AlignmentDirectional(0.0, 0.0),
                                                                                           child: Padding(
-                                                                                            padding: EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
+                                                                                            padding: const EdgeInsetsDirectional.fromSTEB(12.0, 8.0, 12.0, 8.0),
                                                                                             child: Text(
                                                                                               listaPedidosRecentesItem.statusPedido,
                                                                                               style: FlutterFlowTheme.of(context).bodyMedium.override(
                                                                                                     fontFamily: FlutterFlowTheme.of(context).bodyMediumFamily,
                                                                                                     color: () {
                                                                                                       if (listaPedidosRecentesItem.statusPedido == 'Pago') {
-                                                                                                        return Color(0xFF50CD89);
+                                                                                                        return const Color(0xFF50CD89);
                                                                                                       } else if (listaPedidosRecentesItem.statusPedido == 'Cancelado') {
-                                                                                                        return Color(0xFFF1416C);
+                                                                                                        return const Color(0xFFF1416C);
                                                                                                       } else {
-                                                                                                        return Color(0xFFF9BE4B);
+                                                                                                        return const Color(0xFFF9BE4B);
                                                                                                       }
                                                                                                     }(),
                                                                                                     fontSize: 17.0,

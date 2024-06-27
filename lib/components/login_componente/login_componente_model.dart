@@ -1,17 +1,6 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/components/cadastro_usuarios/cadastro_usuarios_widget.dart';
-import '/components/esqueci_minha_senha/esqueci_minha_senha_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
-import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'login_componente_widget.dart' show LoginComponenteWidget;
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 
 class LoginComponenteModel extends FlutterFlowModel<LoginComponenteWidget> {
   ///  State fields for stateful widgets in this component.

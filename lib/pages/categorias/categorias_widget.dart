@@ -8,15 +8,11 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'categorias_model.dart';
 export 'categorias_model.dart';
 
@@ -56,8 +52,8 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -76,8 +72,8 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -153,7 +149,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                     updateCallback: () => setState(() {}),
                     child: WebNavWidget(
                       colorBgDashboard: Colors.transparent,
-                      colorBgProdutos: Color(0x2B7367F0),
+                      colorBgProdutos: const Color(0x2B7367F0),
                       colorBgClientes: Colors.transparent,
                       colorBgPedidos: Colors.transparent,
                       colorBgMinhaLoja: Colors.transparent,
@@ -224,7 +220,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation2']!),
-                        actions: [],
+                        actions: const [],
                         centerTitle: false,
                         elevation: 0.0,
                       )
@@ -244,9 +240,9 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 24.0, 24.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -280,7 +276,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                               model: _model.webNavModel1,
                               updateCallback: () => setState(() {}),
                               child: WebNavWidget(
-                                colorBgPerfil: Color(0x00000001),
+                                colorBgPerfil: const Color(0x00000001),
                                 iconDashboard: Icon(
                                   Icons.dashboard_outlined,
                                   color: FlutterFlowTheme.of(context)
@@ -323,7 +319,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                     FlutterFlowTheme.of(context).secondaryText,
                                 txtColorPerfil:
                                     FlutterFlowTheme.of(context).secondaryText,
-                                bgCategoria: Color(0x3237C6DA),
+                                bgCategoria: const Color(0x3237C6DA),
                                 iconCategoria: Icon(
                                   Icons.shop_2,
                                   color: FlutterFlowTheme.of(context).primary,
@@ -341,7 +337,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 1.0, 0.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
@@ -350,14 +346,14 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                             .primaryBackground,
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Expanded(
                                             flex: 7,
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 16.0, 0.0, 16.0),
                                               child: Text(
@@ -392,7 +388,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                             desktop: false,
                                           ))
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 24.0, 0.0),
                                               child: FlutterFlowIconButton(
@@ -418,10 +414,10 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1.0, 0.0),
+                                    alignment: const AlignmentDirectional(1.0, 0.0),
                                     child: Builder(
                                       builder: (context) => Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
@@ -434,7 +430,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                   backgroundColor:
                                                       Colors.transparent,
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 0.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -448,7 +444,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                 .unfocusNode)
                                                         : FocusScope.of(context)
                                                             .unfocus(),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       height: MediaQuery.sizeOf(
                                                                   context)
                                                               .height *
@@ -468,17 +464,17 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                               .getText(
                                             'keotih9g' /* Categoria */,
                                           ),
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.add,
                                             size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 24.0, 0.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
@@ -500,7 +496,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                   .titleSmallFamily),
                                                     ),
                                             elevation: 3.0,
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.transparent,
                                               width: 1.0,
                                             ),
@@ -515,7 +511,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 0.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -523,7 +519,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x1F000000),
@@ -542,7 +538,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -550,7 +546,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                               CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 12.0, 16.0, 0.0),
                                               child: Row(
@@ -584,7 +580,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 30.0, 0.0),
                                                     child: Text(
@@ -645,7 +641,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 16.0, 0.0, 0.0),
                                               child: StreamBuilder<
@@ -697,7 +693,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                               listViewIndex];
                                                       return Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -715,7 +711,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .lineColor,
-                                                                offset: Offset(
+                                                                offset: const Offset(
                                                                   0.0,
                                                                   1.0,
                                                                 ),
@@ -724,7 +720,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     16.0),
                                                             child: Row(
                                                               mainAxisSize:
@@ -747,7 +743,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                               CrossAxisAlignment.start,
                                                                           children: [
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                               child: AutoSizeText(
                                                                                 listViewCategoriaRecord.nome.maybeHandleOverflow(
                                                                                   maxChars: 32,
@@ -789,7 +785,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                           data:
                                                                               ThemeData(
                                                                             checkboxTheme:
-                                                                                CheckboxThemeData(
+                                                                                const CheckboxThemeData(
                                                                               visualDensity: VisualDensity.standard,
                                                                               materialTapTargetSize: MaterialTapTargetSize.padded,
                                                                               shape: CircleBorder(),
@@ -828,7 +824,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                         Builder(
                                                                           builder: (context) =>
                                                                               Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 16.0,
@@ -847,7 +843,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                                       elevation: 0,
                                                                                       insetPadding: EdgeInsets.zero,
                                                                                       backgroundColor: Colors.transparent,
-                                                                                      alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                      alignment: const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                                       child: GestureDetector(
                                                                                         onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                                         child: PopupEditarCategoriaWidget(
@@ -867,7 +863,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                                             ),
                                                                           ),
                                                                         ),
-                                                                      ].divide(SizedBox(
+                                                                      ].divide(const SizedBox(
                                                                               width: 24.0)),
                                                                     ),
                                                                   ),

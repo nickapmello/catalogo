@@ -1,11 +1,8 @@
 import '/components/login_componente/login_componente_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import 'dart:ui';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'login_page_model.dart';
 export 'login_page_model.dart';
 
@@ -48,14 +45,14 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
           child: Scaffold(
             key: scaffoldKey,
             backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
-            body: Container(
+            body: SizedBox(
               width: double.infinity,
               height: double.infinity,
               child: Stack(
-                alignment: AlignmentDirectional(0.0, 1.0),
+                alignment: const AlignmentDirectional(0.0, 1.0),
                 children: [
                   Align(
-                    alignment: AlignmentDirectional(1.0, -1.4),
+                    alignment: const AlignmentDirectional(1.0, -1.4),
                     child: Container(
                       width: 500.0,
                       height: 500.0,
@@ -71,7 +68,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     desktop: false,
                   ))
                     Align(
-                      alignment: AlignmentDirectional(-2.0, -1.5),
+                      alignment: const AlignmentDirectional(-2.0, -1.5),
                       child: Container(
                         width: 350.0,
                         height: 350.0,
@@ -87,7 +84,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     tablet: false,
                   ))
                     Align(
-                      alignment: AlignmentDirectional(-1.25, -1.5),
+                      alignment: const AlignmentDirectional(-1.25, -1.5),
                       child: Container(
                         width: 600.0,
                         height: 600.0,
@@ -103,7 +100,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     desktop: false,
                   ))
                     Align(
-                      alignment: AlignmentDirectional(2.5, -1.2),
+                      alignment: const AlignmentDirectional(2.5, -1.2),
                       child: Container(
                         width: 300.0,
                         height: 300.0,
@@ -119,7 +116,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                     tablet: false,
                   ))
                     Align(
-                      alignment: AlignmentDirectional(1.0, -0.95),
+                      alignment: const AlignmentDirectional(1.0, -0.95),
                       child: Container(
                         width: 700.0,
                         height: 700.0,
@@ -130,7 +127,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                       ),
                     ),
                   Align(
-                    alignment: AlignmentDirectional(0.0, 1.0),
+                    alignment: const AlignmentDirectional(0.0, 1.0),
                     child: ClipRRect(
                       child: BackdropFilter(
                         filter: ImageFilter.blur(
@@ -138,11 +135,11 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                           sigmaY: 40.0,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(0.0, 0.0),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: wrapWithModel(
                             model: _model.loginComponenteModel,
                             updateCallback: () => setState(() {}),
-                            child: LoginComponenteWidget(),
+                            child: const LoginComponenteWidget(),
                           ),
                         ),
                       ),

@@ -1,20 +1,14 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:page_transition/page_transition.dart';
 import 'package:provider/provider.dart';
 import '/backend/backend.dart';
 
 import '/auth/base_auth_user_provider.dart';
 
 import '/index.dart';
-import '/main.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
-import '/flutter_flow/lat_lng.dart';
-import '/flutter_flow/place.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'serialization_util.dart';
 
 export 'package:go_router/go_router.dart';
 export 'serialization_util.dart';
@@ -79,26 +73,26 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
       debugLogDiagnostics: true,
       refreshListenable: appStateNotifier,
       errorBuilder: (context, state) =>
-          appStateNotifier.loggedIn ? HomeMinhaLojaWidget() : LoginPageWidget(),
+          appStateNotifier.loggedIn ? const HomeMinhaLojaWidget() : const LoginPageWidget(),
       routes: [
         FFRoute(
           name: '_initialize',
           path: '/',
           builder: (context, _) => appStateNotifier.loggedIn
-              ? HomeMinhaLojaWidget()
-              : LoginPageWidget(),
+              ? const HomeMinhaLojaWidget()
+              : const LoginPageWidget(),
           routes: [
             FFRoute(
               name: 'HomeMinhaLoja',
               path: 'homeMinhaLoja',
               requireAuth: true,
-              builder: (context, params) => HomeMinhaLojaWidget(),
+              builder: (context, params) => const HomeMinhaLojaWidget(),
             ),
             FFRoute(
               name: 'Clientes',
               path: 'clientes',
               requireAuth: true,
-              builder: (context, params) => ClientesWidget(),
+              builder: (context, params) => const ClientesWidget(),
             ),
             FFRoute(
               name: 'Pedidos',
@@ -115,7 +109,7 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Perfil',
               path: 'perfil',
               requireAuth: true,
-              builder: (context, params) => PerfilWidget(),
+              builder: (context, params) => const PerfilWidget(),
             ),
             FFRoute(
               name: 'detalhesPedido',
@@ -135,13 +129,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'Produtos',
               path: 'produtos',
               requireAuth: true,
-              builder: (context, params) => ProdutosWidget(),
+              builder: (context, params) => const ProdutosWidget(),
             ),
             FFRoute(
               name: 'MinhaLoja',
               path: 'minhaloja',
               requireAuth: true,
-              builder: (context, params) => MinhaLojaWidget(),
+              builder: (context, params) => const MinhaLojaWidget(),
             ),
             FFRoute(
               name: 'detalhesCliente',
@@ -199,12 +193,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'loginPage',
               path: 'loginPage',
-              builder: (context, params) => LoginPageWidget(),
+              builder: (context, params) => const LoginPageWidget(),
             ),
             FFRoute(
               name: 'cadastroUsuario',
               path: 'cadastroUsuario',
-              builder: (context, params) => CadastroUsuarioWidget(),
+              builder: (context, params) => const CadastroUsuarioWidget(),
             ),
             FFRoute(
               name: 'MeusPedidos',
@@ -223,13 +217,13 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
             FFRoute(
               name: 'pagina_nao_encontrada',
               path: 'paginaNaoEncontrada',
-              builder: (context, params) => PaginaNaoEncontradaWidget(),
+              builder: (context, params) => const PaginaNaoEncontradaWidget(),
             ),
             FFRoute(
               name: 'Categorias',
               path: 'categorias',
               requireAuth: true,
-              builder: (context, params) => CategoriasWidget(),
+              builder: (context, params) => const CategoriasWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
@@ -469,7 +463,7 @@ class TransitionInfo {
   final Duration duration;
   final Alignment? alignment;
 
-  static TransitionInfo appDefault() => TransitionInfo(hasTransition: false);
+  static TransitionInfo appDefault() => const TransitionInfo(hasTransition: false);
 }
 
 class RootPageContext {

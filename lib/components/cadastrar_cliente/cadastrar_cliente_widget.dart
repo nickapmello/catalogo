@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
@@ -6,13 +5,10 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:math';
 import '/flutter_flow/random_data_util.dart' as random_data;
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -94,8 +90,8 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -114,8 +110,8 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -134,8 +130,8 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -154,8 +150,8 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -182,7 +178,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
     context.watch<FFAppState>();
 
     return Align(
-      alignment: AlignmentDirectional(0.0, 1.0),
+      alignment: const AlignmentDirectional(0.0, 1.0),
       child: Form(
         key: _model.formKey,
         autovalidateMode: AutovalidateMode.disabled,
@@ -201,7 +197,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
               child: Material(
                 color: Colors.transparent,
                 elevation: 5.0,
-                shape: RoundedRectangleBorder(
+                shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.only(
                     bottomLeft: Radius.circular(0.0),
                     bottomRight: Radius.circular(0.0),
@@ -211,7 +207,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                 ),
                 child: Container(
                   height: 20.0,
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(0.0),
@@ -250,7 +246,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                     mainAxisSize: MainAxisSize.max,
                     children: [
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -273,7 +269,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                             ),
                             Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 16.0, 0.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -295,9 +291,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                         ),
                       ),
                       Align(
-                        alignment: AlignmentDirectional(-1.0, 0.0),
+                        alignment: const AlignmentDirectional(-1.0, 0.0),
                         child: Padding(
-                          padding: EdgeInsetsDirectional.fromSTEB(
+                          padding: const EdgeInsetsDirectional.fromSTEB(
                               16.0, 4.0, 0.0, 0.0),
                           child: Text(
                             FFLocalizations.of(context).getText(
@@ -317,14 +313,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                         ),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 24.0, 16.0, 12.0),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x34111417),
@@ -337,7 +333,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -345,7 +341,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -369,10 +365,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         ),
                                   ),
                                 ),
-                                if (FFAppState().imgCliente != null &&
-                                    FFAppState().imgCliente != '')
+                                if (FFAppState().imgCliente != '')
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 12.0, 0.0, 0.0),
                                     child: Row(
                                       mainAxisSize: MainAxisSize.min,
@@ -381,7 +376,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                       children: [
                                         Stack(
                                           alignment:
-                                              AlignmentDirectional(1.0, -1.0),
+                                              const AlignmentDirectional(1.0, -1.0),
                                           children: [
                                             Card(
                                               clipBehavior:
@@ -398,9 +393,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                                 borderRadius:
                                                     BorderRadius.circular(8.0),
                                                 child: CachedNetworkImage(
-                                                  fadeInDuration: Duration(
+                                                  fadeInDuration: const Duration(
                                                       milliseconds: 500),
-                                                  fadeOutDuration: Duration(
+                                                  fadeOutDuration: const Duration(
                                                       milliseconds: 500),
                                                   imageUrl:
                                                       FFAppState().imgCliente,
@@ -411,7 +406,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsets.all(6.0),
+                                              padding: const EdgeInsets.all(6.0),
                                               child: InkWell(
                                                 splashColor: Colors.transparent,
                                                 focusColor: Colors.transparent,
@@ -440,15 +435,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                       ],
                                     ),
                                   ),
-                                if (FFAppState().imgCliente == null ||
-                                    FFAppState().imgCliente == '')
+                                if (FFAppState().imgCliente == '')
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 12.0, 0.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
-                                        color: Color(0x127367F0),
+                                        color: const Color(0x127367F0),
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                         border: Border.all(
@@ -458,7 +452,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 16.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -471,7 +465,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                               size: 44.0,
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(0.0, 0.0, 0.0, 8.0),
                                               child: Text(
                                                 FFLocalizations.of(context)
@@ -503,7 +497,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 12.0),
                                               child: Text(
@@ -624,11 +618,11 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                               ),
                                               options: FFButtonOptions(
                                                 height: 40.0,
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         24.0, 0.0, 24.0, 0.0),
                                                 iconPadding:
-                                                    EdgeInsetsDirectional
+                                                    const EdgeInsetsDirectional
                                                         .fromSTEB(
                                                             0.0, 0.0, 0.0, 0.0),
                                                 color:
@@ -652,7 +646,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                                                       .titleSmallFamily),
                                                         ),
                                                 elevation: 3.0,
-                                                borderSide: BorderSide(
+                                                borderSide: const BorderSide(
                                                   color: Colors.transparent,
                                                   width: 1.0,
                                                 ),
@@ -672,14 +666,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             animationsMap['containerOnPageLoadAnimation1']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 12.0),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x34111417),
@@ -692,7 +686,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -700,7 +694,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -725,7 +719,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -788,7 +782,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -810,7 +804,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -873,7 +867,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -895,7 +889,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -959,7 +953,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -988,14 +982,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             animationsMap['containerOnPageLoadAnimation2']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 12.0),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x34111417),
@@ -1008,7 +1002,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -1016,7 +1010,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -1041,7 +1035,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -1104,7 +1098,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1126,7 +1120,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -1189,7 +1183,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1217,14 +1211,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             animationsMap['containerOnPageLoadAnimation3']!),
                       ),
                       Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 12.0, 16.0, 12.0),
                         child: Container(
                           width: double.infinity,
                           decoration: BoxDecoration(
                             color: FlutterFlowTheme.of(context)
                                 .secondaryBackground,
-                            boxShadow: [
+                            boxShadow: const [
                               BoxShadow(
                                 blurRadius: 5.0,
                                 color: Color(0x34111417),
@@ -1237,7 +1231,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                             borderRadius: BorderRadius.circular(8.0),
                           ),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 16.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -1245,7 +1239,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
@@ -1274,7 +1268,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   children: [
                                     Expanded(
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 12.0, 16.0, 0.0),
                                         child: TextFormField(
                                           controller: _model
@@ -1351,7 +1345,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             contentPadding:
-                                                EdgeInsets.all(12.0),
+                                                const EdgeInsets.all(12.0),
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -1376,9 +1370,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 12.0, 16.0, 0.0),
-                                      child: Container(
+                                      child: SizedBox(
                                         width:
                                             MediaQuery.sizeOf(context).width *
                                                 0.25,
@@ -1457,7 +1451,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                                   BorderRadius.circular(8.0),
                                             ),
                                             contentPadding:
-                                                EdgeInsets.all(12.0),
+                                                const EdgeInsets.all(12.0),
                                           ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
@@ -1484,7 +1478,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ],
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -1547,7 +1541,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1569,7 +1563,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -1632,7 +1626,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1654,7 +1648,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   ),
                                 ),
                                 Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 12.0, 16.0, 0.0),
                                   child: TextFormField(
                                     controller:
@@ -1717,7 +1711,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                         borderRadius:
                                             BorderRadius.circular(8.0),
                                       ),
-                                      contentPadding: EdgeInsets.all(12.0),
+                                      contentPadding: const EdgeInsets.all(12.0),
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -1750,7 +1744,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                         crossAxisAlignment: CrossAxisAlignment.end,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 24.0, 0.0, 44.0),
                             child: FFButtonWidget(
                               onPressed: () async {
@@ -1805,14 +1799,14 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                   context: context,
                                   builder: (alertDialogContext) {
                                     return AlertDialog(
-                                      title: Text('Cliente Criado'),
-                                      content: Text(
+                                      title: const Text('Cliente Criado'),
+                                      content: const Text(
                                           'O cliente foi criado com sucesso!'),
                                       actions: [
                                         TextButton(
                                           onPressed: () =>
                                               Navigator.pop(alertDialogContext),
-                                          child: Text('Ok'),
+                                          child: const Text('Ok'),
                                         ),
                                       ],
                                     );
@@ -1825,9 +1819,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                               options: FFButtonOptions(
                                 width: 270.0,
                                 height: 50.0,
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
-                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 0.0, 0.0),
                                 color: FlutterFlowTheme.of(context).primary,
                                 textStyle: FlutterFlowTheme.of(context)
@@ -1843,7 +1837,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                                   .titleMediumFamily),
                                     ),
                                 elevation: 3.0,
-                                borderSide: BorderSide(
+                                borderSide: const BorderSide(
                                   color: Colors.transparent,
                                   width: 1.0,
                                 ),

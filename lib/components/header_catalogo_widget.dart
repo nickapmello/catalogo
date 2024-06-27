@@ -1,4 +1,3 @@
-import '/auth/base_auth_user_provider.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/cadastro_usuarios/cadastro_usuarios_widget.dart';
@@ -7,7 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'header_catalogo_model.dart';
 export 'header_catalogo_model.dart';
 
@@ -64,7 +62,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
           color: FlutterFlowTheme.of(context).secondaryBackground,
         ),
         child: Padding(
-          padding: EdgeInsets.all(16.0),
+          padding: const EdgeInsets.all(16.0),
           child: Wrap(
             spacing: 0.0,
             runSpacing: 0.0,
@@ -101,7 +99,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(8.0),
                       child: Image.network(
@@ -137,7 +135,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 12.0, 0.0),
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -148,7 +146,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                 false))
                           Builder(
                             builder: (context) => Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 8.0, 8.0, 0.0),
                               child: AuthUserStreamWidget(
                                 builder: (context) => InkWell(
@@ -164,7 +162,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                           elevation: 0,
                                           insetPadding: EdgeInsets.zero,
                                           backgroundColor: Colors.transparent,
-                                          alignment: AlignmentDirectional(
+                                          alignment: const AlignmentDirectional(
                                                   0.0, 0.0)
                                               .resolve(
                                                   Directionality.of(context)),
@@ -185,7 +183,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                         size: 28.0,
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 4.0, 0.0),
                                         child: Text(
                                           currentUserEmail,
@@ -215,7 +213,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                         if (!loggedIn)
                           Builder(
                             builder: (context) => Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   8.0, 0.0, 8.0, 8.0),
                               child: InkWell(
                                 splashColor: Colors.transparent,
@@ -231,10 +229,10 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                         insetPadding: EdgeInsets.zero,
                                         backgroundColor: Colors.transparent,
                                         alignment:
-                                            AlignmentDirectional(0.0, 0.0)
+                                            const AlignmentDirectional(0.0, 0.0)
                                                 .resolve(
                                                     Directionality.of(context)),
-                                        child: CadastroUsuariosWidget(
+                                        child: const CadastroUsuariosWidget(
                                           tipoUsuario: 'cliente',
                                         ),
                                       );
@@ -245,7 +243,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 4.0, 0.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -376,9 +374,9 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                                     elevation: 0,
                                     insetPadding: EdgeInsets.zero,
                                     backgroundColor: Colors.transparent,
-                                    alignment: AlignmentDirectional(0.0, 0.0)
+                                    alignment: const AlignmentDirectional(0.0, 0.0)
                                         .resolve(Directionality.of(context)),
-                                    child: CadastroUsuariosWidget(
+                                    child: const CadastroUsuariosWidget(
                                       tipoUsuario: 'cliente',
                                     ),
                                   );
@@ -394,7 +392,7 @@ class _HeaderCatalogoWidgetState extends State<HeaderCatalogoWidget> {
                         ),
                     ],
                   ),
-                ].divide(SizedBox(width: 25.0)),
+                ].divide(const SizedBox(width: 25.0)),
               ),
             ],
           ),

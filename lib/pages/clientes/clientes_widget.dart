@@ -6,15 +6,11 @@ import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'clientes_model.dart';
 export 'clientes_model.dart';
 
@@ -54,8 +50,8 @@ class _ClientesWidgetState extends State<ClientesWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -74,8 +70,8 @@ class _ClientesWidgetState extends State<ClientesWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -151,7 +147,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                     child: WebNavWidget(
                       colorBgDashboard: Colors.transparent,
                       colorBgProdutos: Colors.transparent,
-                      colorBgClientes: Color(0x2C7367F0),
+                      colorBgClientes: const Color(0x2C7367F0),
                       colorBgPedidos: Colors.transparent,
                       colorBgMinhaLoja: Colors.transparent,
                       colorBgPerfil: Colors.transparent,
@@ -219,7 +215,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                         .displaySmallFamily),
                               ),
                         ),
-                        actions: [],
+                        actions: const [],
                         centerTitle: false,
                         elevation: 0.0,
                       )
@@ -239,7 +235,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                         child: WebNavWidget(
                           colorBgDashboard: Colors.transparent,
                           colorBgProdutos: Colors.transparent,
-                          colorBgClientes: Color(0x2D37C6DA),
+                          colorBgClientes: const Color(0x2D37C6DA),
                           colorBgPedidos: Colors.transparent,
                           colorBgMinhaLoja: Colors.transparent,
                           colorBgPerfil: Colors.transparent,
@@ -300,11 +296,11 @@ class _ClientesWidgetState extends State<ClientesWidget>
                           ))
                             Container(
                               width: double.infinity,
-                              decoration: BoxDecoration(),
+                              decoration: const BoxDecoration(),
                               child: Align(
-                                alignment: AlignmentDirectional(-1.0, 0.0),
+                                alignment: const AlignmentDirectional(-1.0, 0.0),
                                 child: Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       24.0, 24.0, 24.0, 0.0),
                                   child: InkWell(
                                     splashColor: Colors.transparent,
@@ -325,7 +321,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                               ),
                             ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 1.0, 0.0, 0.0),
                             child: Container(
                               width: double.infinity,
@@ -333,14 +329,14 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                 color: FlutterFlowTheme.of(context)
                                     .primaryBackground,
                               ),
-                              alignment: AlignmentDirectional(-1.0, 0.0),
+                              alignment: const AlignmentDirectional(-1.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Expanded(
                                     flex: 7,
                                     child: Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 16.0, 0.0, 16.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
@@ -371,7 +367,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                     desktop: false,
                                   ))
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 0.0, 24.0, 0.0),
                                       child: FlutterFlowIconButton(
                                         borderColor: Colors.transparent,
@@ -394,7 +390,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: Row(
                               mainAxisSize: MainAxisSize.max,
@@ -441,10 +437,10 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                   fillColor: FlutterFlowTheme.of(context)
                                       .secondaryBackground,
                                   elevation: 2.0,
-                                  borderColor: Color(0xFFDBE2E7),
+                                  borderColor: const Color(0xFFDBE2E7),
                                   borderWidth: 2.0,
                                   borderRadius: 8.0,
-                                  margin: EdgeInsetsDirectional.fromSTEB(
+                                  margin: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 4.0, 16.0, 4.0),
                                   hidesUnderline: true,
                                   isOverButton: true,
@@ -455,7 +451,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                             ),
                           ),
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 12.0, 0.0, 0.0),
                             child: StreamBuilder<List<ClienteRecord>>(
                               stream: queryClienteRecord(
@@ -501,7 +497,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                         listViewClienteRecordList[
                                             listViewIndex];
                                     return Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           16.0, 8.0, 16.0, 0.0),
                                       child: InkWell(
                                         splashColor: Colors.transparent,
@@ -520,7 +516,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                             extra: <String, dynamic>{
                                               'cliente': listViewClienteRecord,
                                               kTransitionInfoKey:
-                                                  TransitionInfo(
+                                                  const TransitionInfo(
                                                 hasTransition: true,
                                                 transitionType:
                                                     PageTransitionType.fade,
@@ -535,7 +531,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                           decoration: BoxDecoration(
                                             color: FlutterFlowTheme.of(context)
                                                 .secondaryBackground,
-                                            boxShadow: [
+                                            boxShadow: const [
                                               BoxShadow(
                                                 blurRadius: 3.0,
                                                 color: Color(0x20000000),
@@ -550,7 +546,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                           ),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 8.0, 12.0, 8.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -582,7 +578,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,
@@ -611,7 +607,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     2.0,
@@ -639,7 +635,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     0.0,

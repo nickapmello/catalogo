@@ -8,10 +8,8 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -104,8 +102,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, -30.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, -30.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -124,8 +122,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -144,8 +142,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.bounceOut,
             delay: 400.0.ms,
             duration: 300.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -164,8 +162,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -184,8 +182,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -204,8 +202,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -224,8 +222,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -244,8 +242,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -264,8 +262,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -345,7 +343,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                       colorBgProdutos: Colors.transparent,
                       colorBgClientes: Colors.transparent,
                       colorBgPedidos: Colors.transparent,
-                      colorBgMinhaLoja: Color(0x2B7367F0),
+                      colorBgMinhaLoja: const Color(0x2B7367F0),
                       colorBgPerfil: Colors.transparent,
                       iconDashboard: Icon(
                         Icons.dashboard_outlined,
@@ -413,7 +411,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                 colorBgProdutos: Colors.transparent,
                                 colorBgClientes: Colors.transparent,
                                 colorBgPedidos: Colors.transparent,
-                                colorBgMinhaLoja: Color(0x2E37C6DA),
+                                colorBgMinhaLoja: const Color(0x2E37C6DA),
                                 colorBgPerfil: Colors.transparent,
                                 iconDashboard: Icon(
                                   Icons.dashboard_outlined,
@@ -479,13 +477,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                   ))
                                     Container(
                                       width: double.infinity,
-                                      decoration: BoxDecoration(),
+                                      decoration: const BoxDecoration(),
                                       child: Align(
                                         alignment:
-                                            AlignmentDirectional(-1.0, 0.0),
+                                            const AlignmentDirectional(-1.0, 0.0),
                                         child: Padding(
                                           padding:
-                                              EdgeInsetsDirectional.fromSTEB(
+                                              const EdgeInsetsDirectional.fromSTEB(
                                                   24.0, 24.0, 24.0, 0.0),
                                           child: InkWell(
                                             splashColor: Colors.transparent,
@@ -508,14 +506,14 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                       ),
                                     ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 12.0),
                                     child: Container(
                                       width: double.infinity,
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x2C000000),
@@ -555,21 +553,21 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                   ),
                                                   gradient: LinearGradient(
                                                     colors: [
-                                                      Color(0x580493AB),
+                                                      const Color(0x580493AB),
                                                       valueOrDefault<Color>(
                                                         minhaLojaMinhaLojaRecord
                                                             ?.cor,
-                                                        Color(0xFFF9E675),
+                                                        const Color(0xFFF9E675),
                                                       )
                                                     ],
-                                                    stops: [0.0, 1.0],
-                                                    begin: AlignmentDirectional(
+                                                    stops: const [0.0, 1.0],
+                                                    begin: const AlignmentDirectional(
                                                         0.0, -1.0),
-                                                    end: AlignmentDirectional(
+                                                    end: const AlignmentDirectional(
                                                         0, 1.0),
                                                   ),
                                                   borderRadius:
-                                                      BorderRadius.only(
+                                                      const BorderRadius.only(
                                                     bottomLeft:
                                                         Radius.circular(0.0),
                                                     bottomRight:
@@ -590,7 +588,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsets.all(8.0),
+                                                          const EdgeInsets.all(8.0),
                                                       child: Card(
                                                         clipBehavior: Clip
                                                             .antiAliasWithSaveLayer,
@@ -607,7 +605,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                         ),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   4.0),
                                                           child: Icon(
                                                             Icons.edit_outlined,
@@ -629,7 +627,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                             children: [
                                               Expanded(
                                                 child: Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           12.0, 8.0, 12.0, 0.0),
                                                   child: Wrap(
@@ -653,7 +651,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                         children: [
                                                           Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         0.0,
@@ -675,7 +673,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             2.0),
                                                                 child:
@@ -752,7 +750,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                         minhaLojaMinhaLojaRecord?.enderecoEstado !=
                                                                             ''))
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             4.0,
@@ -813,14 +811,14 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             FFButtonOptions(
                                                           height: 40.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       0.0,
                                                                       24.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -848,7 +846,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Colors
                                                                 .transparent,
                                                             width: 1.0,
@@ -884,7 +882,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                           ),
                                           Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     12.0, 0.0, 12.0, 12.0),
                                             child: Row(
                                               mainAxisSize: MainAxisSize.max,
@@ -916,7 +914,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                 Expanded(
                                                   child: Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(4.0, 0.0,
                                                                 0.0, 0.0),
                                                     child: Text(
@@ -972,7 +970,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                     child: Column(
                                       children: [
                                         Align(
-                                          alignment: Alignment(0.0, 0),
+                                          alignment: const Alignment(0.0, 0),
                                           child: FlutterFlowButtonTabBar(
                                             useToggleButtonStyle: false,
                                             labelStyle:
@@ -992,7 +990,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       context)
                                                                   .titleSmallFamily),
                                                     ),
-                                            unselectedLabelStyle: TextStyle(),
+                                            unselectedLabelStyle: const TextStyle(),
                                             labelColor: Colors.white,
                                             unselectedLabelColor:
                                                 FlutterFlowTheme.of(context)
@@ -1007,18 +1005,18 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                             borderRadius: 8.0,
                                             elevation: 0.0,
                                             labelPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     4.0, 0.0, 4.0, 0.0),
                                             buttonMargin:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     8.0, 0.0, 8.0, 0.0),
-                                            padding: EdgeInsets.all(4.0),
+                                            padding: const EdgeInsets.all(4.0),
                                             tabs: [
                                               Row(
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Icon(
+                                                  const Icon(
                                                     Icons
                                                         .store_mall_directory_rounded,
                                                     size: 24.0,
@@ -1036,7 +1034,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Icon(
+                                                  const Icon(
                                                     Icons.phone_sharp,
                                                     size: 24.0,
                                                   ),
@@ -1053,7 +1051,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                 mainAxisAlignment:
                                                     MainAxisAlignment.center,
                                                 children: [
-                                                  Icon(
+                                                  const Icon(
                                                     Icons.person,
                                                     size: 24.0,
                                                   ),
@@ -1093,7 +1091,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -1107,7 +1105,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -1125,7 +1123,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -1143,7 +1141,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -1175,7 +1173,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -1270,7 +1268,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -1294,7 +1292,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           16.0,
@@ -1327,7 +1325,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                 ),
                                                                 Padding(
                                                                   padding:
-                                                                      EdgeInsets
+                                                                      const EdgeInsets
                                                                           .all(
                                                                               16.0),
                                                                   child:
@@ -1372,7 +1370,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFFFDCA40);
+                                                                                const Color(0xFFFDCA40);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1390,12 +1388,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFFFDCA40),
+                                                                                color: const Color(0xFFFDCA40),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFFFDCA40),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFFFDCA40),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1416,7 +1414,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFFFF8552);
+                                                                                const Color(0xFFFF8552);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1434,12 +1432,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFFFF8552),
+                                                                                color: const Color(0xFFFF8552),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFFFF8552),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFFFF8552),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1460,7 +1458,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFFFF4E4E);
+                                                                                const Color(0xFFFF4E4E);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1478,12 +1476,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFFFF4E4E),
+                                                                                color: const Color(0xFFFF4E4E),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFFFF4E4E),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFFFF4E4E),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1504,7 +1502,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFFCE7DA5);
+                                                                                const Color(0xFFCE7DA5);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1522,12 +1520,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFFCE7DA5),
+                                                                                color: const Color(0xFFCE7DA5),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFFCE7DA5),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFFCE7DA5),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1548,7 +1546,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFF89BBFE);
+                                                                                const Color(0xFF89BBFE);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1566,12 +1564,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFF89BBFE),
+                                                                                color: const Color(0xFF89BBFE),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFF89BBFE),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFF89BBFE),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1592,7 +1590,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFF0D3B66);
+                                                                                const Color(0xFF0D3B66);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1610,12 +1608,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFF0D3B66),
+                                                                                color: const Color(0xFF0D3B66),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFF0D3B66),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFF0D3B66),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1636,7 +1634,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFF444E5E);
+                                                                                const Color(0xFF444E5E);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1654,12 +1652,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFF444E5E),
+                                                                                color: const Color(0xFF444E5E),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFF444E5E),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFF444E5E),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1680,7 +1678,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFF2D2D2A);
+                                                                                const Color(0xFF2D2D2A);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1698,12 +1696,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFF2D2D2A),
+                                                                                color: const Color(0xFF2D2D2A),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFF2D2D2A),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFF2D2D2A),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1724,7 +1722,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           onTap:
                                                                               () async {
                                                                             FFAppState().corSelecionada =
-                                                                                Color(0xFF82D173);
+                                                                                const Color(0xFF82D173);
                                                                             setState(() {});
                                                                           },
                                                                           child:
@@ -1742,12 +1740,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               width: 60.0,
                                                                               height: 60.0,
                                                                               decoration: BoxDecoration(
-                                                                                color: Color(0xFF82D173),
+                                                                                color: const Color(0xFF82D173),
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                               ),
                                                                               child: Visibility(
-                                                                                visible: FFAppState().corSelecionada == Color(0xFF82D173),
-                                                                                child: Icon(
+                                                                                visible: FFAppState().corSelecionada == const Color(0xFF82D173),
+                                                                                child: const Icon(
                                                                                   Icons.check_rounded,
                                                                                   color: Colors.white,
                                                                                   size: 32.0,
@@ -1761,7 +1759,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -1771,7 +1769,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       FFButtonWidget(
                                                                     onPressed:
                                                                         () async {
-                                                                      var _shouldSetState =
+                                                                      var shouldSetState =
                                                                           false;
 
                                                                       await minhaLojaMinhaLojaRecord!
@@ -1790,13 +1788,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             )
                                                                             .where(
                                                                               'urlLoja',
-                                                                              isNotEqualTo: minhaLojaMinhaLojaRecord?.urlLoja,
+                                                                              isNotEqualTo: minhaLojaMinhaLojaRecord.urlLoja,
                                                                             ),
                                                                         singleRecord:
                                                                             true,
                                                                       ).then((s) =>
                                                                               s.firstOrNull);
-                                                                      _shouldSetState =
+                                                                      shouldSetState =
                                                                           true;
                                                                       if (_model
                                                                               .pesquisaUrl !=
@@ -1807,11 +1805,11 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              title: Text('URL já existe.'),
+                                                                              title: const Text('URL já existe.'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                  child: Text('Ok'),
+                                                                                  child: const Text('Ok'),
                                                                                 ),
                                                                               ],
                                                                             );
@@ -1821,14 +1819,15 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             () {
                                                                           _model
                                                                               .urlLojaTextController
-                                                                              ?.text = minhaLojaMinhaLojaRecord!.urlLoja;
+                                                                              ?.text = minhaLojaMinhaLojaRecord.urlLoja;
                                                                         });
-                                                                        if (_shouldSetState)
+                                                                        if (shouldSetState) {
                                                                           setState(
                                                                               () {});
+                                                                        }
                                                                         return;
                                                                       } else {
-                                                                        await minhaLojaMinhaLojaRecord!
+                                                                        await minhaLojaMinhaLojaRecord
                                                                             .reference
                                                                             .update(createMinhaLojaRecordData(
                                                                           urlLoja: _model
@@ -1841,12 +1840,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           builder:
                                                                               (alertDialogContext) {
                                                                             return AlertDialog(
-                                                                              title: Text('Salvo corretamente'),
-                                                                              content: Text('Seu catálogo foi customizado com sucesso!'),
+                                                                              title: const Text('Salvo corretamente'),
+                                                                              content: const Text('Seu catálogo foi customizado com sucesso!'),
                                                                               actions: [
                                                                                 TextButton(
                                                                                   onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                  child: Text('Ok'),
+                                                                                  child: const Text('Ok'),
                                                                                 ),
                                                                               ],
                                                                             );
@@ -1854,9 +1853,10 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                         );
                                                                       }
 
-                                                                      if (_shouldSetState)
+                                                                      if (shouldSetState) {
                                                                         setState(
                                                                             () {});
+                                                                      }
                                                                     },
                                                                     text: FFLocalizations.of(
                                                                             context)
@@ -1869,12 +1869,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           170.0,
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -1898,7 +1898,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       elevation:
                                                                           2.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -1919,7 +1919,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -1933,7 +1933,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -1951,7 +1951,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -1969,7 +1969,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -2001,7 +2001,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2016,7 +2016,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             .start,
                                                                     children: [
                                                                       Stack(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             1.0,
                                                                             -1.0),
                                                                         children: [
@@ -2034,14 +2034,14 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             child:
                                                                                 Visibility(
                                                                               visible: valueOrDefault<bool>(
-                                                                                _model.uploadedFileUrl != null && _model.uploadedFileUrl != '',
+                                                                                _model.uploadedFileUrl != '',
                                                                                 false,
                                                                               ),
                                                                               child: ClipRRect(
                                                                                 borderRadius: BorderRadius.circular(8.0),
                                                                                 child: CachedNetworkImage(
-                                                                                  fadeInDuration: Duration(milliseconds: 500),
-                                                                                  fadeOutDuration: Duration(milliseconds: 500),
+                                                                                  fadeInDuration: const Duration(milliseconds: 500),
+                                                                                  fadeOutDuration: const Duration(milliseconds: 500),
                                                                                   imageUrl: _model.uploadedFileUrl,
                                                                                   width: 150.0,
                                                                                   height: 150.0,
@@ -2052,7 +2052,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           ),
                                                                           Padding(
                                                                             padding:
-                                                                                EdgeInsets.all(6.0),
+                                                                                const EdgeInsets.all(6.0),
                                                                             child:
                                                                                 InkWell(
                                                                               splashColor: Colors.transparent,
@@ -2079,11 +2079,9 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 if (_model.uploadedFileUrl ==
-                                                                        null ||
-                                                                    _model.uploadedFileUrl ==
                                                                         '')
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             16.0,
                                                                             12.0,
@@ -2095,7 +2093,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           .infinity,
                                                                       decoration:
                                                                           BoxDecoration(
-                                                                        color: Color(
+                                                                        color: const Color(
                                                                             0x127367F0),
                                                                         borderRadius:
                                                                             BorderRadius.circular(8.0),
@@ -2109,7 +2107,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       ),
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             12.0,
                                                                             16.0,
@@ -2125,7 +2123,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               size: 44.0,
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 8.0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   'img6qj93' /* Carregue sua logo */,
@@ -2141,7 +2139,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               ),
                                                                             ),
                                                                             Padding(
-                                                                              padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 12.0),
                                                                               child: Text(
                                                                                 FFLocalizations.of(context).getText(
                                                                                   '95pi8sn8' /* Suporta PNG, JPG e JPEG */,
@@ -2207,8 +2205,8 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               ),
                                                                               options: FFButtonOptions(
                                                                                 height: 40.0,
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
-                                                                                iconPadding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                                                                                iconPadding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
                                                                                 color: FlutterFlowTheme.of(context).primary,
                                                                                 textStyle: FlutterFlowTheme.of(context).titleSmall.override(
                                                                                       fontFamily: FlutterFlowTheme.of(context).titleSmallFamily,
@@ -2217,7 +2215,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                                       useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).titleSmallFamily),
                                                                                     ),
                                                                                 elevation: 3.0,
-                                                                                borderSide: BorderSide(
+                                                                                borderSide: const BorderSide(
                                                                                   color: Colors.transparent,
                                                                                   width: 1.0,
                                                                                 ),
@@ -2230,7 +2228,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                     ),
                                                                   ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2254,13 +2252,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             (alertDialogContext) {
                                                                           return AlertDialog(
                                                                             title:
-                                                                                Text('ATUALIZADO'),
+                                                                                const Text('ATUALIZADO'),
                                                                             content:
-                                                                                Text('O logo da sua loja foi alterado com sucesso!'),
+                                                                                const Text('O logo da sua loja foi alterado com sucesso!'),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           );
@@ -2278,12 +2276,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           170.0,
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -2307,7 +2305,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       elevation:
                                                                           2.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -2328,7 +2326,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -2342,7 +2340,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -2360,7 +2358,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -2378,7 +2376,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -2410,7 +2408,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2505,7 +2503,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -2529,7 +2527,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2624,7 +2622,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -2648,7 +2646,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2743,7 +2741,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -2770,7 +2768,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -2810,13 +2808,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             (alertDialogContext) {
                                                                           return AlertDialog(
                                                                             title:
-                                                                                Text('ATUALIZADO!'),
+                                                                                const Text('ATUALIZADO!'),
                                                                             content:
-                                                                                Text('Os dados sobre a loja foram atualizados com sucesso!'),
+                                                                                const Text('Os dados sobre a loja foram atualizados com sucesso!'),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           );
@@ -2834,12 +2832,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           170.0,
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -2863,7 +2861,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       elevation:
                                                                           2.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -2884,7 +2882,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -2898,7 +2896,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -2916,7 +2914,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -2934,7 +2932,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -2973,7 +2971,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             16.0,
                                                                             12.0,
                                                                             16.0,
@@ -3040,7 +3038,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               borderRadius: BorderRadius.circular(8.0),
                                                                             ),
                                                                             contentPadding:
-                                                                                EdgeInsets.all(12.0),
+                                                                                const EdgeInsets.all(12.0),
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3060,13 +3058,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           12.0,
                                                                           16.0,
                                                                           0.0),
                                                                       child:
-                                                                          Container(
+                                                                          SizedBox(
                                                                         width: MediaQuery.sizeOf(context).width *
                                                                             0.25,
                                                                         child:
@@ -3131,7 +3129,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               borderRadius: BorderRadius.circular(8.0),
                                                                             ),
                                                                             contentPadding:
-                                                                                EdgeInsets.all(12.0),
+                                                                                const EdgeInsets.all(12.0),
                                                                           ),
                                                                           style: FlutterFlowTheme.of(context)
                                                                               .bodyMedium
@@ -3153,7 +3151,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ],
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3248,7 +3246,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -3272,7 +3270,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3367,7 +3365,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -3391,7 +3389,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3486,7 +3484,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -3510,7 +3508,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3556,13 +3554,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             (alertDialogContext) {
                                                                           return AlertDialog(
                                                                             title:
-                                                                                Text('ATUALIZADO!'),
+                                                                                const Text('ATUALIZADO!'),
                                                                             content:
-                                                                                Text('Os dados referentes a localização da loja foram atualizados com sucesso!'),
+                                                                                const Text('Os dados referentes a localização da loja foram atualizados com sucesso!'),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           );
@@ -3580,12 +3578,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           170.0,
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -3609,7 +3607,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       elevation:
                                                                           2.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -3644,7 +3642,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -3658,7 +3656,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                             color: FlutterFlowTheme
                                                                     .of(context)
                                                                 .secondaryBackground,
-                                                            boxShadow: [
+                                                            boxShadow: const [
                                                               BoxShadow(
                                                                 blurRadius: 5.0,
                                                                 color: Color(
@@ -3676,7 +3674,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -3694,7 +3692,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       .start,
                                                               children: [
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           0.0,
@@ -3726,7 +3724,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3821,7 +3819,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -3845,7 +3843,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -3940,7 +3938,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -3964,7 +3962,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -4059,7 +4057,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             BorderRadius.circular(8.0),
                                                                       ),
                                                                       contentPadding:
-                                                                          EdgeInsets.all(
+                                                                          const EdgeInsets.all(
                                                                               12.0),
                                                                     ),
                                                                     style: FlutterFlowTheme.of(
@@ -4083,7 +4081,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                   ),
                                                                 ),
                                                                 Padding(
-                                                                  padding: EdgeInsetsDirectional
+                                                                  padding: const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           12.0,
@@ -4123,13 +4121,13 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             (alertDialogContext) {
                                                                           return AlertDialog(
                                                                             title:
-                                                                                Text('ATUALIZADO!'),
+                                                                                const Text('ATUALIZADO!'),
                                                                             content:
-                                                                                Text('Os dados de contato da loja foram atualizados com sucesso!'),
+                                                                                const Text('Os dados de contato da loja foram atualizados com sucesso!'),
                                                                             actions: [
                                                                               TextButton(
                                                                                 onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                child: Text('Ok'),
+                                                                                child: const Text('Ok'),
                                                                               ),
                                                                             ],
                                                                           );
@@ -4147,12 +4145,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           170.0,
                                                                       height:
                                                                           40.0,
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
-                                                                      iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                      iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
@@ -4176,7 +4174,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       elevation:
                                                                           2.0,
                                                                       borderSide:
-                                                                          BorderSide(
+                                                                          const BorderSide(
                                                                         color: Colors
                                                                             .transparent,
                                                                         width:
@@ -4211,7 +4209,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                     children: [
                                                       Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     16.0,
                                                                     12.0,
@@ -4255,7 +4253,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .secondaryBackground,
-                                                                boxShadow: [
+                                                                boxShadow: const [
                                                                   BoxShadow(
                                                                     blurRadius:
                                                                         5.0,
@@ -4274,7 +4272,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             8.0),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         0.0,
                                                                         12.0,
@@ -4292,7 +4290,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           .start,
                                                                   children: [
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           0.0,
                                                                           0.0,
@@ -4316,7 +4314,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           12.0,
                                                                           16.0,
@@ -4394,7 +4392,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                                 BorderRadius.circular(8.0),
                                                                           ),
                                                                           contentPadding:
-                                                                              EdgeInsets.all(12.0),
+                                                                              const EdgeInsets.all(12.0),
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -4413,7 +4411,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           12.0,
                                                                           16.0,
@@ -4491,7 +4489,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                                 BorderRadius.circular(8.0),
                                                                           ),
                                                                           contentPadding:
-                                                                              EdgeInsets.all(12.0),
+                                                                              const EdgeInsets.all(12.0),
                                                                         ),
                                                                         style: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
@@ -4510,7 +4508,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           16.0,
                                                                           12.0,
                                                                           16.0,
@@ -4537,12 +4535,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                             builder:
                                                                                 (alertDialogContext) {
                                                                               return AlertDialog(
-                                                                                title: Text('ATUALIZADO!'),
-                                                                                content: Text('Os dados do responsável da loja foram atualizados com sucesso!'),
+                                                                                title: const Text('ATUALIZADO!'),
+                                                                                content: const Text('Os dados do responsável da loja foram atualizados com sucesso!'),
                                                                                 actions: [
                                                                                   TextButton(
                                                                                     onPressed: () => Navigator.pop(alertDialogContext),
-                                                                                    child: Text('Ok'),
+                                                                                    child: const Text('Ok'),
                                                                                   ),
                                                                                 ],
                                                                               );
@@ -4559,12 +4557,12 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                               170.0,
                                                                           height:
                                                                               40.0,
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
                                                                               0.0),
-                                                                          iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                                                          iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               0.0,
                                                                               0.0,
@@ -4582,7 +4580,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                           elevation:
                                                                               2.0,
                                                                           borderSide:
-                                                                              BorderSide(
+                                                                              const BorderSide(
                                                                             color:
                                                                                 Colors.transparent,
                                                                             width:

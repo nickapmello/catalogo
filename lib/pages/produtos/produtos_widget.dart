@@ -10,15 +10,12 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'produtos_model.dart';
 export 'produtos_model.dart';
 
@@ -58,8 +55,8 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -78,8 +75,8 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 10.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 10.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -154,7 +151,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                     updateCallback: () => setState(() {}),
                     child: WebNavWidget(
                       colorBgDashboard: Colors.transparent,
-                      colorBgProdutos: Color(0x2B7367F0),
+                      colorBgProdutos: const Color(0x2B7367F0),
                       colorBgClientes: Colors.transparent,
                       colorBgPedidos: Colors.transparent,
                       colorBgMinhaLoja: Colors.transparent,
@@ -225,7 +222,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                               ),
                         ).animateOnPageLoad(
                             animationsMap['textOnPageLoadAnimation2']!),
-                        actions: [],
+                        actions: const [],
                         centerTitle: false,
                         elevation: 0.0,
                       )
@@ -245,9 +242,9 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                           color: FlutterFlowTheme.of(context).primaryBackground,
                         ),
                         child: Align(
-                          alignment: AlignmentDirectional(-1.0, 0.0),
+                          alignment: const AlignmentDirectional(-1.0, 0.0),
                           child: Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 24.0, 24.0, 24.0, 0.0),
                             child: InkWell(
                               splashColor: Colors.transparent,
@@ -282,7 +279,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                               updateCallback: () => setState(() {}),
                               child: WebNavWidget(
                                 colorBgDashboard: Colors.transparent,
-                                colorBgProdutos: Color(0x2F37C6DA),
+                                colorBgProdutos: const Color(0x2F37C6DA),
                                 colorBgClientes: Colors.transparent,
                                 colorBgPedidos: Colors.transparent,
                                 colorBgMinhaLoja: Colors.transparent,
@@ -347,7 +344,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         12.0, 1.0, 0.0, 0.0),
                                     child: Container(
                                       width: double.infinity,
@@ -356,14 +353,14 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                             .primaryBackground,
                                       ),
                                       alignment:
-                                          AlignmentDirectional(-1.0, 0.0),
+                                          const AlignmentDirectional(-1.0, 0.0),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         children: [
                                           Expanded(
                                             flex: 7,
                                             child: Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 16.0, 0.0, 16.0),
                                               child: Text(
@@ -398,7 +395,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                             desktop: false,
                                           ))
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 24.0, 0.0),
                                               child: FlutterFlowIconButton(
@@ -424,10 +421,10 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                     ),
                                   ),
                                   Align(
-                                    alignment: AlignmentDirectional(1.0, 0.0),
+                                    alignment: const AlignmentDirectional(1.0, 0.0),
                                     child: Builder(
                                       builder: (context) => Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 0.0, 16.0, 0.0),
                                         child: FFButtonWidget(
                                           onPressed: () async {
@@ -440,7 +437,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                   backgroundColor:
                                                       Colors.transparent,
                                                   alignment:
-                                                      AlignmentDirectional(
+                                                      const AlignmentDirectional(
                                                               0.0, 1.0)
                                                           .resolve(
                                                               Directionality.of(
@@ -454,7 +451,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                 .unfocusNode)
                                                         : FocusScope.of(context)
                                                             .unfocus(),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       height: MediaQuery.sizeOf(
                                                                   context)
                                                               .height *
@@ -474,17 +471,17 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                               .getText(
                                             '1n2tx6c6' /* Produto */,
                                           ),
-                                          icon: Icon(
+                                          icon: const Icon(
                                             Icons.add,
                                             size: 15.0,
                                           ),
                                           options: FFButtonOptions(
                                             height: 40.0,
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 0.0, 24.0, 0.0),
                                             iconPadding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     0.0, 0.0, 0.0, 0.0),
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
@@ -506,7 +503,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                   .titleSmallFamily),
                                                     ),
                                             elevation: 3.0,
-                                            borderSide: BorderSide(
+                                            borderSide: const BorderSide(
                                               color: Colors.transparent,
                                               width: 1.0,
                                             ),
@@ -521,7 +518,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                     ),
                                   ),
                                   Padding(
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 16.0, 16.0, 0.0),
                                     child: Container(
                                       width: MediaQuery.sizeOf(context).width *
@@ -529,7 +526,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                       decoration: BoxDecoration(
                                         color: FlutterFlowTheme.of(context)
                                             .secondaryBackground,
-                                        boxShadow: [
+                                        boxShadow: const [
                                           BoxShadow(
                                             blurRadius: 4.0,
                                             color: Color(0x1F000000),
@@ -548,7 +545,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             0.0, 12.0, 0.0, 12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
@@ -556,7 +553,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                               CrossAxisAlignment.center,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       12.0, 12.0, 16.0, 0.0),
                                               child: Row(
@@ -715,7 +712,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 16.0, 0.0, 0.0),
                                               child: StreamBuilder<
@@ -769,7 +766,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                               listViewIndex];
                                                       return Padding(
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -787,7 +784,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                 color: FlutterFlowTheme.of(
                                                                         context)
                                                                     .lineColor,
-                                                                offset: Offset(
+                                                                offset: const Offset(
                                                                   0.0,
                                                                   1.0,
                                                                 ),
@@ -796,7 +793,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                           ),
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsets.all(
+                                                                const EdgeInsets.all(
                                                                     16.0),
                                                             child: StreamBuilder<
                                                                 CategoriaRecord>(
@@ -843,7 +840,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                             MainAxisSize.max,
                                                                         children: [
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 0.0,
                                                                                 12.0,
@@ -852,7 +849,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                                 Container(
                                                                               width: 40.0,
                                                                               height: 40.0,
-                                                                              decoration: BoxDecoration(),
+                                                                              decoration: const BoxDecoration(),
                                                                               child: Builder(
                                                                                 builder: (context) {
                                                                                   final imgProduto = listViewProdutoRecord.imgProduto.map((e) => e).toList().take(1).toList();
@@ -863,8 +860,8 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                                       return ClipRRect(
                                                                                         borderRadius: BorderRadius.circular(12.0),
                                                                                         child: CachedNetworkImage(
-                                                                                          fadeInDuration: Duration(milliseconds: 500),
-                                                                                          fadeOutDuration: Duration(milliseconds: 500),
+                                                                                          fadeInDuration: const Duration(milliseconds: 500),
+                                                                                          fadeOutDuration: const Duration(milliseconds: 500),
                                                                                           imageUrl: imgProdutoItem,
                                                                                           width: 40.0,
                                                                                           height: 40.0,
@@ -884,7 +881,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                               crossAxisAlignment: CrossAxisAlignment.start,
                                                                               children: [
                                                                                 Padding(
-                                                                                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
+                                                                                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 20.0, 0.0),
                                                                                   child: AutoSizeText(
                                                                                     listViewProdutoRecord.nomeProduto.maybeHandleOverflow(
                                                                                       maxChars: 32,
@@ -930,7 +927,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                     Expanded(
                                                                       child:
                                                                           Align(
-                                                                        alignment: AlignmentDirectional(
+                                                                        alignment: const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                         child:
@@ -984,7 +981,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                               size: 25.0,
                                                                             ),
                                                                             offIcon:
-                                                                                Icon(
+                                                                                const Icon(
                                                                               Icons.check_box_outline_blank,
                                                                               color: Color(0xFF37C6DA),
                                                                               size: 25.0,
@@ -1013,7 +1010,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                           children: [
                                                                             Builder(
                                                                               builder: (context) => Padding(
-                                                                                padding: EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 16.0, 0.0),
                                                                                 child: InkWell(
                                                                                   splashColor: Colors.transparent,
                                                                                   focusColor: Colors.transparent,
@@ -1030,7 +1027,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                                           elevation: 0,
                                                                                           insetPadding: EdgeInsets.zero,
                                                                                           backgroundColor: Colors.transparent,
-                                                                                          alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                          alignment: const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                                           child: GestureDetector(
                                                                                             onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                                             child: EditarProdutoWidget(
@@ -1064,7 +1061,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                                         elevation: 0,
                                                                                         insetPadding: EdgeInsets.zero,
                                                                                         backgroundColor: Colors.transparent,
-                                                                                        alignment: AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
+                                                                                        alignment: const AlignmentDirectional(0.0, 0.0).resolve(Directionality.of(context)),
                                                                                         child: GestureDetector(
                                                                                           onTap: () => _model.unfocusNode.canRequestFocus ? FocusScope.of(context).requestFocus(_model.unfocusNode) : FocusScope.of(context).unfocus(),
                                                                                           child: PopupExcluirProdutoWidget(

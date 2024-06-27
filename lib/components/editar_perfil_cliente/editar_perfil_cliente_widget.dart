@@ -7,17 +7,11 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/upload_data.dart';
-import 'dart:math';
 import 'dart:ui';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:flutter_blurhash/flutter_blurhash.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:octo_image/octo_image.dart';
-import 'package:provider/provider.dart';
 import 'editar_perfil_cliente_model.dart';
 export 'editar_perfil_cliente_model.dart';
 
@@ -89,8 +83,8 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
             curve: Curves.easeInOut,
             delay: 250.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 70.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 70.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -109,8 +103,8 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 600.0.ms,
-            begin: Offset(0.0, 50.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 50.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -142,7 +136,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
       child: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0x1A000000),
         ),
         child: StreamBuilder<List<MinhaLojaRecord>>(
@@ -183,15 +177,15 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Container(
                       width: double.infinity,
-                      constraints: BoxConstraints(
+                      constraints: const BoxConstraints(
                         maxWidth: 670.0,
                       ),
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).secondaryBackground,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 3.0,
                             color: Color(0x33000000),
@@ -234,7 +228,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                   key: _model.formKey,
                                   autovalidateMode: AutovalidateMode.always,
                                   child: Padding(
-                                    padding: EdgeInsets.all(24.0),
+                                    padding: const EdgeInsets.all(24.0),
                                     child: StreamBuilder<List<ClienteRecord>>(
                                       stream: queryClienteRecord(
                                         parent:
@@ -281,7 +275,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                               CrossAxisAlignment.start,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 0.0, 0.0, 12.0),
                                               child: Row(
@@ -300,7 +294,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -331,7 +325,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -390,7 +384,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                   CrossAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 0.0, 16.0),
                                                   child: Container(
@@ -405,7 +399,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                     ),
                                                     child: Stack(
                                                       alignment:
-                                                          AlignmentDirectional(
+                                                          const AlignmentDirectional(
                                                               0.0, 0.0),
                                                       children: [
                                                         Column(
@@ -425,7 +419,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           12.0,
@@ -457,7 +451,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             ),
                                                             Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           4.0,
@@ -585,7 +579,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             },
                                                             child: ClipRRect(
                                                               borderRadius:
-                                                                  BorderRadius
+                                                                  const BorderRadius
                                                                       .only(
                                                                 bottomLeft: Radius
                                                                     .circular(
@@ -603,11 +597,11 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                               child:
                                                                   CachedNetworkImage(
                                                                 fadeInDuration:
-                                                                    Duration(
+                                                                    const Duration(
                                                                         milliseconds:
                                                                             500),
                                                                 fadeOutDuration:
-                                                                    Duration(
+                                                                    const Duration(
                                                                         milliseconds:
                                                                             500),
                                                                 imageUrl:
@@ -633,7 +627,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                               ],
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 12.0, 16.0, 0.0),
                                               child: TextFormField(
@@ -726,7 +720,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             8.0),
                                                   ),
                                                   contentPadding:
-                                                      EdgeInsets.all(12.0),
+                                                      const EdgeInsets.all(12.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -752,7 +746,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 12.0, 16.0, 0.0),
                                               child: TextFormField(
@@ -844,7 +838,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             8.0),
                                                   ),
                                                   contentPadding:
-                                                      EdgeInsets.all(12.0),
+                                                      const EdgeInsets.all(12.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -870,7 +864,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       16.0, 12.0, 16.0, 0.0),
                                               child: TextFormField(
@@ -963,7 +957,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             8.0),
                                                   ),
                                                   contentPadding:
-                                                      EdgeInsets.all(12.0),
+                                                      const EdgeInsets.all(12.0),
                                                 ),
                                                 style:
                                                     FlutterFlowTheme.of(context)
@@ -998,7 +992,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                     BorderRadius.circular(8.0),
                                               ),
                                               child: Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 12.0, 0.0, 16.0),
                                                 child: Column(
@@ -1011,7 +1005,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                   children: [
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -1056,7 +1050,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                         Expanded(
                                                           child: Padding(
                                                             padding:
-                                                                EdgeInsetsDirectional
+                                                                const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         12.0,
@@ -1157,7 +1151,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                               8.0),
                                                                 ),
                                                                 contentPadding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             12.0),
                                                               ),
@@ -1186,13 +1180,13 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       12.0,
                                                                       16.0,
                                                                       0.0),
-                                                          child: Container(
+                                                          child: SizedBox(
                                                             width: MediaQuery
                                                                         .sizeOf(
                                                                             context)
@@ -1293,7 +1287,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                               8.0),
                                                                 ),
                                                                 contentPadding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             12.0),
                                                               ),
@@ -1324,7 +1318,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   12.0,
@@ -1424,7 +1418,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                         8.0),
                                                           ),
                                                           contentPadding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                         ),
                                                         style:
@@ -1453,7 +1447,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   12.0,
@@ -1553,7 +1547,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                         8.0),
                                                           ),
                                                           contentPadding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                         ),
                                                         style:
@@ -1582,7 +1576,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                     ),
                                                     Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   12.0,
@@ -1682,7 +1676,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                         8.0),
                                                           ),
                                                           contentPadding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   12.0),
                                                         ),
                                                         style:
@@ -1715,7 +1709,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                             ).animateOnPageLoad(animationsMap[
                                                 'containerOnPageLoadAnimation3']!),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       0.0, 16.0, 0.0, 0.0),
                                               child: Row(
@@ -1725,14 +1719,12 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                 children: [
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 4.0, 0.0),
                                                     child: FFButtonWidget(
                                                       onPressed: () async {
                                                         if (_model.uploadedFileUrl !=
-                                                                null &&
-                                                            _model.uploadedFileUrl !=
                                                                 '') {
                                                           await columnClienteRecord!
                                                               .reference
@@ -1772,16 +1764,16 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             builder:
                                                                 (alertDialogContext) {
                                                               return AlertDialog(
-                                                                title: Text(
+                                                                title: const Text(
                                                                     'Atualizado'),
-                                                                content: Text(
+                                                                content: const Text(
                                                                     'Suas informações de perfil foram atualizadas corretamente!'),
                                                                 actions: [
                                                                   TextButton(
                                                                     onPressed: () =>
                                                                         Navigator.pop(
                                                                             alertDialogContext),
-                                                                    child: Text(
+                                                                    child: const Text(
                                                                         'Ok'),
                                                                   ),
                                                                 ],
@@ -1825,16 +1817,16 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                             builder:
                                                                 (alertDialogContext) {
                                                               return AlertDialog(
-                                                                title: Text(
+                                                                title: const Text(
                                                                     'Atualizado'),
-                                                                content: Text(
+                                                                content: const Text(
                                                                     'Suas informações de perfil foram atualizadas corretamente!'),
                                                                 actions: [
                                                                   TextButton(
                                                                     onPressed: () =>
                                                                         Navigator.pop(
                                                                             alertDialogContext),
-                                                                    child: Text(
+                                                                    child: const Text(
                                                                         'Ok'),
                                                                   ),
                                                                 ],
@@ -1853,14 +1845,14 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                       options: FFButtonOptions(
                                                         height: 50.0,
                                                         padding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     32.0,
                                                                     0.0,
                                                                     32.0,
                                                                     0.0),
                                                         iconPadding:
-                                                            EdgeInsetsDirectional
+                                                            const EdgeInsetsDirectional
                                                                 .fromSTEB(
                                                                     0.0,
                                                                     0.0,
@@ -1889,7 +1881,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                                               .titleSmallFamily),
                                                                 ),
                                                         elevation: 2.0,
-                                                        borderSide: BorderSide(
+                                                        borderSide: const BorderSide(
                                                           color: Colors
                                                               .transparent,
                                                           width: 1.0,

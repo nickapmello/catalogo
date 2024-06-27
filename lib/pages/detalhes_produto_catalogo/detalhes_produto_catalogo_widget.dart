@@ -1,19 +1,14 @@
-import '/auth/base_auth_user_provider.dart';
 import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/header_catalogo_widget.dart';
 import '/components/login_componente/login_componente_widget.dart';
-import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -116,7 +111,7 @@ class _DetalhesProdutoCatalogoWidgetState
                         mainAxisSize: MainAxisSize.max,
                         children: [
                           Padding(
-                            padding: EdgeInsetsDirectional.fromSTEB(
+                            padding: const EdgeInsetsDirectional.fromSTEB(
                                 0.0, 24.0, 0.0, 24.0),
                             child: Wrap(
                               spacing: 0.0,
@@ -139,7 +134,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                               0.5)
                                           : MediaQuery.sizeOf(context).width,
                                       height: 400.0,
-                                      constraints: BoxConstraints(
+                                      constraints: const BoxConstraints(
                                         maxWidth: 750.0,
                                       ),
                                       decoration: BoxDecoration(
@@ -154,7 +149,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                 MainAxisAlignment.center,
                                             children: [
                                               Align(
-                                                alignment: AlignmentDirectional(
+                                                alignment: const AlignmentDirectional(
                                                     0.0, 0.0),
                                                 child: Hero(
                                                   tag: FFAppState()
@@ -176,14 +171,14 @@ class _DetalhesProdutoCatalogoWidgetState
                                             ],
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.all(16.0),
+                                            padding: const EdgeInsets.all(16.0),
                                             child: Column(
                                               mainAxisSize: MainAxisSize.max,
                                               mainAxisAlignment:
                                                   MainAxisAlignment.start,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 32.0, 0.0, 0.0),
                                                   child: Row(
@@ -197,7 +192,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                         clipBehavior: Clip
                                                             .antiAliasWithSaveLayer,
                                                         color:
-                                                            Color(0x3A000000),
+                                                            const Color(0x3A000000),
                                                         shape:
                                                             RoundedRectangleBorder(
                                                           borderRadius:
@@ -211,7 +206,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                               .transparent,
                                                           borderRadius: 30.0,
                                                           buttonSize: 46.0,
-                                                          icon: Icon(
+                                                          icon: const Icon(
                                                             Icons
                                                                 .arrow_back_rounded,
                                                             color: Colors.white,
@@ -232,13 +227,13 @@ class _DetalhesProdutoCatalogoWidgetState
                                       ),
                                     ),
                                     Padding(
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           0.0, 8.0, 0.0, 0.0),
                                       child: Builder(
                                         builder: (context) {
                                           final listaImgClicaveis = widget
                                                   .detalhesProduto?.imgProduto
-                                                  ?.toList() ??
+                                                  .toList() ??
                                               [];
                                           return Row(
                                             mainAxisSize: MainAxisSize.min,
@@ -249,7 +244,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                   listaImgClicaveis[
                                                       listaImgClicaveisIndex];
                                               return Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         0.0, 0.0, 16.0, 0.0),
                                                 child: InkWell(
@@ -315,7 +310,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                           ? (MediaQuery.sizeOf(context).width *
                                               0.5)
                                           : MediaQuery.sizeOf(context).width,
-                                      constraints: BoxConstraints(
+                                      constraints: const BoxConstraints(
                                         maxWidth: 750.0,
                                       ),
                                       decoration: BoxDecoration(
@@ -323,13 +318,13 @@ class _DetalhesProdutoCatalogoWidgetState
                                             .secondaryBackground,
                                       ),
                                       child: Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 32.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           children: [
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 20.0, 24.0, 0.0),
                                               child: Row(
@@ -485,13 +480,13 @@ class _DetalhesProdutoCatalogoWidgetState
                                                               ),
                                                         ),
                                                     ].divide(
-                                                        SizedBox(width: 20.0)),
+                                                        const SizedBox(width: 20.0)),
                                                   ),
                                                 ],
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 4.0, 24.0, 0.0),
                                               child: Row(
@@ -522,7 +517,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 16.0, 24.0, 0.0),
                                               child: Row(
@@ -557,7 +552,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsetsDirectional
+                                              padding: const EdgeInsetsDirectional
                                                   .fromSTEB(
                                                       24.0, 4.0, 24.0, 0.0),
                                               child: Row(
@@ -598,7 +593,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                               tablet: false,
                                             ))
                                               Padding(
-                                                padding: EdgeInsetsDirectional
+                                                padding: const EdgeInsetsDirectional
                                                     .fromSTEB(
                                                         16.0, 42.0, 16.0, 42.0),
                                                 child: Row(
@@ -612,7 +607,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                         builder: (context) =>
                                                             Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -755,16 +750,16 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                     builder:
                                                                         (alertDialogContext) {
                                                                       return AlertDialog(
-                                                                        title: Text(
+                                                                        title: const Text(
                                                                             'Produto adicionado!'),
                                                                         content:
-                                                                            Text('Este produto foi adicionado no seu carrinho!'),
+                                                                            const Text('Este produto foi adicionado no seu carrinho!'),
                                                                         actions: [
                                                                           TextButton(
                                                                             onPressed: () =>
                                                                                 Navigator.pop(alertDialogContext),
                                                                             child:
-                                                                                Text('Ok'),
+                                                                                const Text('Ok'),
                                                                           ),
                                                                         ],
                                                                       );
@@ -851,16 +846,16 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                     builder:
                                                                         (alertDialogContext) {
                                                                       return AlertDialog(
-                                                                        title: Text(
+                                                                        title: const Text(
                                                                             'Produto adicionado!'),
                                                                         content:
-                                                                            Text('Este produto foi adicionado no seu carrinho!'),
+                                                                            const Text('Este produto foi adicionado no seu carrinho!'),
                                                                         actions: [
                                                                           TextButton(
                                                                             onPressed: () =>
                                                                                 Navigator.pop(alertDialogContext),
                                                                             child:
-                                                                                Text('Ok'),
+                                                                                const Text('Ok'),
                                                                           ),
                                                                         ],
                                                                       );
@@ -874,14 +869,14 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                   builder:
                                                                       (alertDialogContext) {
                                                                     return AlertDialog(
-                                                                      title: Text(
+                                                                      title: const Text(
                                                                           'Você precisa estar logado!'),
                                                                       actions: [
                                                                         TextButton(
                                                                           onPressed: () =>
                                                                               Navigator.pop(alertDialogContext),
                                                                           child:
-                                                                              Text('Ok'),
+                                                                              const Text('Ok'),
                                                                         ),
                                                                       ],
                                                                     );
@@ -901,13 +896,13 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                       backgroundColor:
                                                                           Colors
                                                                               .transparent,
-                                                                      alignment: AlignmentDirectional(
+                                                                      alignment: const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0)
                                                                           .resolve(
                                                                               Directionality.of(context)),
                                                                       child:
-                                                                          LoginComponenteWidget(
+                                                                          const LoginComponenteWidget(
                                                                         tipoUsuarioLogin:
                                                                             'cliente',
                                                                       ),
@@ -937,14 +932,14 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                 FFButtonOptions(
                                                               height: 50.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8.0,
                                                                           0.0,
                                                                           12.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           8.0,
                                                                           0.0,
@@ -973,7 +968,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                       ),
                                                               elevation: 3.0,
                                                               borderSide:
-                                                                  BorderSide(
+                                                                  const BorderSide(
                                                                 color: Colors
                                                                     .transparent,
                                                                 width: 1.0,
@@ -1008,7 +1003,7 @@ class _DetalhesProdutoCatalogoWidgetState
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: FlutterFlowTheme.of(context).primaryText,
-                        boxShadow: [
+                        boxShadow: const [
                           BoxShadow(
                             blurRadius: 4.0,
                             color: Color(0x55000000),
@@ -1018,7 +1013,7 @@ class _DetalhesProdutoCatalogoWidgetState
                             ),
                           )
                         ],
-                        borderRadius: BorderRadius.only(
+                        borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(0.0),
                           bottomRight: Radius.circular(0.0),
                           topLeft: Radius.circular(16.0),
@@ -1026,7 +1021,7 @@ class _DetalhesProdutoCatalogoWidgetState
                         ),
                       ),
                       child: Padding(
-                        padding: EdgeInsetsDirectional.fromSTEB(
+                        padding: const EdgeInsetsDirectional.fromSTEB(
                             16.0, 24.0, 16.0, 24.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
@@ -1034,7 +1029,7 @@ class _DetalhesProdutoCatalogoWidgetState
                           children: [
                             Flexible(
                               child: Padding(
-                                padding: EdgeInsetsDirectional.fromSTEB(
+                                padding: const EdgeInsetsDirectional.fromSTEB(
                                     0.0, 0.0, 16.0, 0.0),
                                 child: FFButtonWidget(
                                   onPressed: () {
@@ -1051,11 +1046,11 @@ class _DetalhesProdutoCatalogoWidgetState
                                   ),
                                   options: FFButtonOptions(
                                     height: 50.0,
-                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                    padding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 0.0, 12.0, 0.0),
-                                    iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    iconPadding: const EdgeInsetsDirectional.fromSTEB(
                                         8.0, 0.0, 0.0, 0.0),
-                                    color: Color(0xFF42C452),
+                                    color: const Color(0xFF42C452),
                                     textStyle: FlutterFlowTheme.of(context)
                                         .titleSmall
                                         .override(
@@ -1068,7 +1063,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                               .containsKey('Outfit'),
                                         ),
                                     elevation: 0.0,
-                                    borderSide: BorderSide(
+                                    borderSide: const BorderSide(
                                       color: Color(0xFF42C452),
                                       width: 2.0,
                                     ),
@@ -1079,7 +1074,7 @@ class _DetalhesProdutoCatalogoWidgetState
                             Flexible(
                               child: Builder(
                                 builder: (context) => Padding(
-                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
                                       16.0, 0.0, 0.0, 0.0),
                                   child: FFButtonWidget(
                                     onPressed: () async {
@@ -1223,15 +1218,15 @@ class _DetalhesProdutoCatalogoWidgetState
                                             builder: (alertDialogContext) {
                                               return AlertDialog(
                                                 title:
-                                                    Text('Produto adicionado!'),
-                                                content: Text(
+                                                    const Text('Produto adicionado!'),
+                                                content: const Text(
                                                     'Este produto foi adicionado no seu carrinho!'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               );
@@ -1316,15 +1311,15 @@ class _DetalhesProdutoCatalogoWidgetState
                                             builder: (alertDialogContext) {
                                               return AlertDialog(
                                                 title:
-                                                    Text('Produto adicionado!'),
-                                                content: Text(
+                                                    const Text('Produto adicionado!'),
+                                                content: const Text(
                                                     'Este produto foi adicionado no seu carrinho!'),
                                                 actions: [
                                                   TextButton(
                                                     onPressed: () =>
                                                         Navigator.pop(
                                                             alertDialogContext),
-                                                    child: Text('Ok'),
+                                                    child: const Text('Ok'),
                                                   ),
                                                 ],
                                               );
@@ -1336,14 +1331,14 @@ class _DetalhesProdutoCatalogoWidgetState
                                           context: context,
                                           builder: (alertDialogContext) {
                                             return AlertDialog(
-                                              title: Text(
+                                              title: const Text(
                                                   'Você precisa estar logado!'),
                                               actions: [
                                                 TextButton(
                                                   onPressed: () =>
                                                       Navigator.pop(
                                                           alertDialogContext),
-                                                  child: Text('Ok'),
+                                                  child: const Text('Ok'),
                                                 ),
                                               ],
                                             );
@@ -1358,11 +1353,11 @@ class _DetalhesProdutoCatalogoWidgetState
                                               backgroundColor:
                                                   Colors.transparent,
                                               alignment:
-                                                  AlignmentDirectional(0.0, 0.0)
+                                                  const AlignmentDirectional(0.0, 0.0)
                                                       .resolve(
                                                           Directionality.of(
                                                               context)),
-                                              child: LoginComponenteWidget(
+                                              child: const LoginComponenteWidget(
                                                 tipoUsuarioLogin: 'cliente',
                                               ),
                                             );
@@ -1383,10 +1378,10 @@ class _DetalhesProdutoCatalogoWidgetState
                                     ),
                                     options: FFButtonOptions(
                                       height: 50.0,
-                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                           8.0, 0.0, 12.0, 0.0),
                                       iconPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               8.0, 0.0, 0.0, 0.0),
                                       color:
                                           FlutterFlowTheme.of(context).primary,
@@ -1402,7 +1397,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                 .containsKey('Outfit'),
                                           ),
                                       elevation: 3.0,
-                                      borderSide: BorderSide(
+                                      borderSide: const BorderSide(
                                         color: Colors.transparent,
                                         width: 1.0,
                                       ),

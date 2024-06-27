@@ -1,11 +1,8 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/components/header_catalogo_widget.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_toggle_icon.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/flutter_flow_widgets.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
@@ -115,7 +112,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                   onPressed: () async {
                     await _model.scrollTop?.animateTo(
                       0,
-                      duration: Duration(milliseconds: 50),
+                      duration: const Duration(milliseconds: 50),
                       curve: Curves.ease,
                     );
                   },
@@ -133,14 +130,14 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                               catalogoVirtualMinhaLojaRecord?.cor,
                               FlutterFlowTheme.of(context).primary,
                             ),
-                            borderRadius: BorderRadius.only(
+                            borderRadius: const BorderRadius.only(
                               bottomLeft: Radius.circular(100.0),
                               bottomRight: Radius.circular(100.0),
                               topLeft: Radius.circular(100.0),
                               topRight: Radius.circular(100.0),
                             ),
                           ),
-                          child: Icon(
+                          child: const Icon(
                             Icons.arrow_upward_rounded,
                             size: 32.0,
                           ),
@@ -198,7 +195,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                               parameter2:
                                   catalogoVirtualMinhaLojaRecord?.nomeLoja,
                               parameter4: catalogoVirtualMinhaLojaRecord!.cor!,
-                              parameter3: catalogoVirtualMinhaLojaRecord!,
+                              parameter3: catalogoVirtualMinhaLojaRecord,
                             ),
                           ),
                           Row(
@@ -206,19 +203,19 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                             children: [
                               Container(
                                 width: 300.0,
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                               ),
                             ],
                           ),
                           Expanded(
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 24.0),
                               child: Container(
-                                constraints: BoxConstraints(
+                                constraints: const BoxConstraints(
                                   maxWidth: 1080.0,
                                 ),
-                                decoration: BoxDecoration(),
+                                decoration: const BoxDecoration(),
                                 child: SingleChildScrollView(
                                   primary: false,
                                   controller: _model.scrollTop,
@@ -226,7 +223,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                     mainAxisSize: MainAxisSize.max,
                                     children: [
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 24.0, 0.0, 24.0),
                                         child: Text(
                                           FFLocalizations.of(context).getText(
@@ -248,17 +245,18 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsets.all(16.0),
+                                        padding: const EdgeInsets.all(16.0),
                                         child: ListView(
                                           padding: EdgeInsets.zero,
                                           shrinkWrap: true,
                                           scrollDirection: Axis.vertical,
+                                          controller: _model.listViewController,
                                           children: [
                                             Row(
                                               mainAxisSize: MainAxisSize.max,
                                               children: [
                                                 Padding(
-                                                  padding: EdgeInsetsDirectional
+                                                  padding: const EdgeInsetsDirectional
                                                       .fromSTEB(
                                                           0.0, 0.0, 12.0, 0.0),
                                                   child: InkWell(
@@ -282,7 +280,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                     .categoriaSelecionada ==
                                                                 null
                                                             ? catalogoVirtualMinhaLojaRecord
-                                                                ?.cor
+                                                                .cor
                                                             : FlutterFlowTheme
                                                                     .of(context)
                                                                 .accent1,
@@ -291,7 +289,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 .circular(8.0),
                                                       ),
                                                       child: Padding(
-                                                        padding: EdgeInsets.all(
+                                                        padding: const EdgeInsets.all(
                                                             12.0),
                                                         child: Text(
                                                           FFLocalizations.of(
@@ -327,7 +325,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                   stream: queryCategoriaRecord(
                                                     parent:
                                                         catalogoVirtualMinhaLojaRecord
-                                                            ?.reference,
+                                                            .reference,
                                                     queryBuilder:
                                                         (categoriaRecord) =>
                                                             categoriaRecord
@@ -371,7 +369,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 rowIndex];
                                                         return Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -402,7 +400,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                         rowCategoriaRecord
                                                                             .reference
                                                                     ? catalogoVirtualMinhaLojaRecord
-                                                                        ?.cor
+                                                                        .cor
                                                                     : FlutterFlowTheme.of(
                                                                             context)
                                                                         .accent1,
@@ -413,7 +411,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                               ),
                                                               child: Padding(
                                                                 padding:
-                                                                    EdgeInsets
+                                                                    const EdgeInsets
                                                                         .all(
                                                                             12.0),
                                                                 child: Text(
@@ -444,11 +442,10 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                               ],
                                             ),
                                           ],
-                                          controller: _model.listViewController,
                                         ),
                                       ),
                                       Padding(
-                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 16.0, 16.0),
                                         child: Row(
                                           mainAxisSize: MainAxisSize.max,
@@ -468,14 +465,14 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                 Icons.sort_by_alpha_outlined,
                                                 color:
                                                     catalogoVirtualMinhaLojaRecord
-                                                        ?.cor,
+                                                        .cor,
                                                 size: 25.0,
                                               ),
                                               offIcon: Icon(
                                                 Icons.sort_by_alpha_outlined,
                                                 color:
                                                     catalogoVirtualMinhaLojaRecord
-                                                        ?.cor,
+                                                        .cor,
                                                 size: 25.0,
                                               ),
                                             ),
@@ -496,7 +493,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                 stream: queryProdutoRecord(
                                                   parent:
                                                       catalogoVirtualMinhaLojaRecord
-                                                          ?.reference,
+                                                          .reference,
                                                   queryBuilder:
                                                       (produtoRecord) =>
                                                           produtoRecord
@@ -553,7 +550,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                               wrapCrescIndex];
                                                       return Container(
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                         child: Visibility(
                                                           visible:
                                                               containerCategoriaRecord
@@ -586,7 +583,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                   'detalhesProduto':
                                                                       wrapCrescProdutoRecord,
                                                                   kTransitionInfoKey:
-                                                                      TransitionInfo(
+                                                                      const TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -601,7 +598,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                             },
                                                             child: Container(
                                                               constraints:
-                                                                  BoxConstraints(
+                                                                  const BoxConstraints(
                                                                 minHeight:
                                                                     300.0,
                                                                 maxWidth: 300.0,
@@ -619,7 +616,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                             12.0),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         8.0,
@@ -635,7 +632,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                   children: [
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                       child:
@@ -659,7 +656,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           16.0,
                                                                           0.0,
@@ -697,7 +694,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                         if (wrapCrescProdutoRecord.valorPromo >
                                                                             0.0)
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 4.0,
                                                                                 0.0,
@@ -721,7 +718,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                             ),
                                                                           ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               8.0,
                                                                               4.0,
                                                                               0.0,
@@ -763,7 +760,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                 stream: queryProdutoRecord(
                                                   parent:
                                                       catalogoVirtualMinhaLojaRecord
-                                                          ?.reference,
+                                                          .reference,
                                                   queryBuilder:
                                                       (produtoRecord) =>
                                                           produtoRecord
@@ -850,7 +847,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 'detalhesProduto':
                                                                     wrapDecrescProdutoRecord,
                                                                 kTransitionInfoKey:
-                                                                    TransitionInfo(
+                                                                    const TransitionInfo(
                                                                   hasTransition:
                                                                       true,
                                                                   transitionType:
@@ -865,7 +862,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                           },
                                                           child: Container(
                                                             constraints:
-                                                                BoxConstraints(
+                                                                const BoxConstraints(
                                                               maxWidth: 300.0,
                                                             ),
                                                             decoration:
@@ -880,7 +877,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           8.0,
@@ -896,7 +893,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
@@ -923,7 +920,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             16.0,
@@ -964,7 +961,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                               .valorPromo >
                                                                           0.0)
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               4.0,
                                                                               0.0,
@@ -988,7 +985,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                           ),
                                                                         ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             8.0,
                                                                             4.0,
                                                                             0.0,
@@ -1045,7 +1042,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                 stream: queryProdutoRecord(
                                                   parent:
                                                       catalogoVirtualMinhaLojaRecord
-                                                          ?.reference,
+                                                          .reference,
                                                   queryBuilder:
                                                       (produtoRecord) =>
                                                           produtoRecord
@@ -1108,7 +1105,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                               wrapCresc2Index];
                                                       return Container(
                                                         decoration:
-                                                            BoxDecoration(),
+                                                            const BoxDecoration(),
                                                         child: Visibility(
                                                           visible:
                                                               containerCategoriaRecord
@@ -1141,7 +1138,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                   'detalhesProduto':
                                                                       wrapCresc2ProdutoRecord,
                                                                   kTransitionInfoKey:
-                                                                      TransitionInfo(
+                                                                      const TransitionInfo(
                                                                     hasTransition:
                                                                         true,
                                                                     transitionType:
@@ -1156,7 +1153,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                             },
                                                             child: Container(
                                                               constraints:
-                                                                  BoxConstraints(
+                                                                  const BoxConstraints(
                                                                 maxWidth: 300.0,
                                                               ),
                                                               decoration:
@@ -1170,7 +1167,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                             12.0),
                                                               ),
                                                               child: Padding(
-                                                                padding: EdgeInsetsDirectional
+                                                                padding: const EdgeInsetsDirectional
                                                                     .fromSTEB(
                                                                         16.0,
                                                                         8.0,
@@ -1186,7 +1183,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                   children: [
                                                                     Align(
                                                                       alignment:
-                                                                          AlignmentDirectional(
+                                                                          const AlignmentDirectional(
                                                                               0.0,
                                                                               0.0),
                                                                       child:
@@ -1210,7 +1207,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                       ),
                                                                     ),
                                                                     Padding(
-                                                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
                                                                           0.0,
                                                                           16.0,
                                                                           0.0,
@@ -1248,7 +1245,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                         if (wrapCresc2ProdutoRecord.valorPromo >
                                                                             0.0)
                                                                           Padding(
-                                                                            padding: EdgeInsetsDirectional.fromSTEB(
+                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
                                                                                 0.0,
                                                                                 4.0,
                                                                                 0.0,
@@ -1272,7 +1269,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                             ),
                                                                           ),
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               8.0,
                                                                               4.0,
                                                                               0.0,
@@ -1314,7 +1311,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                 stream: queryProdutoRecord(
                                                   parent:
                                                       catalogoVirtualMinhaLojaRecord
-                                                          ?.reference,
+                                                          .reference,
                                                   queryBuilder:
                                                       (produtoRecord) =>
                                                           produtoRecord
@@ -1407,7 +1404,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 'detalhesProduto':
                                                                     wrapDecresc2ProdutoRecord,
                                                                 kTransitionInfoKey:
-                                                                    TransitionInfo(
+                                                                    const TransitionInfo(
                                                                   hasTransition:
                                                                       true,
                                                                   transitionType:
@@ -1422,7 +1419,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                           },
                                                           child: Container(
                                                             constraints:
-                                                                BoxConstraints(
+                                                                const BoxConstraints(
                                                               maxWidth: 300.0,
                                                             ),
                                                             decoration:
@@ -1437,7 +1434,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                             ),
                                                             child: Padding(
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           16.0,
                                                                           8.0,
@@ -1453,7 +1450,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 children: [
                                                                   Align(
                                                                     alignment:
-                                                                        AlignmentDirectional(
+                                                                        const AlignmentDirectional(
                                                                             0.0,
                                                                             0.0),
                                                                     child:
@@ -1480,7 +1477,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                     ),
                                                                   ),
                                                                   Padding(
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             16.0,
@@ -1518,7 +1515,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                               .valorPromo >
                                                                           0.0)
                                                                         Padding(
-                                                                          padding: EdgeInsetsDirectional.fromSTEB(
+                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
                                                                               0.0,
                                                                               4.0,
                                                                               0.0,
@@ -1542,7 +1539,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                           ),
                                                                         ),
                                                                       Padding(
-                                                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
                                                                             8.0,
                                                                             4.0,
                                                                             0.0,
