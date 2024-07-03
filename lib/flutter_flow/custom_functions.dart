@@ -22,3 +22,9 @@ double? somaValorTotal(List<double>? lista) {
   }
   return total;
 }
+
+String saldo(double valor) {
+  // formate o valor para a moeda do brasil exemplo "1.000,00
+  final formatador = NumberFormat.currency(locale: 'pt_BR', symbol: 'R\$');
+  return formatador.format(valor);
+}

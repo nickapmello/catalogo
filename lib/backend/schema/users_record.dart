@@ -55,6 +55,16 @@ class UsersRecord extends FirestoreRecord {
   bool get lojista => _lojista ?? false;
   bool hasLojista() => _lojista != null;
 
+  // "userID" field.
+  int? _userID;
+  int get userID => _userID ?? 0;
+  bool hasUserID() => _userID != null;
+
+  // "updated_time" field.
+  DateTime? _updatedTime;
+  DateTime? get updatedTime => _updatedTime;
+  bool hasUpdatedTime() => _updatedTime != null;
+
   void _initializeFields() {
     _email = snapshotData['email'] as String?;
     _displayName = snapshotData['display_name'] as String?;
@@ -64,6 +74,8 @@ class UsersRecord extends FirestoreRecord {
     _phoneNumber = snapshotData['phone_number'] as String?;
     _cpf = snapshotData['cpf'] as String?;
     _lojista = snapshotData['lojista'] as bool?;
+    _userID = castToType<int>(snapshotData['userID']);
+    _updatedTime = snapshotData['updated_time'] as DateTime?;
   }
 
   static CollectionReference get collection =>
@@ -108,6 +120,8 @@ Map<String, dynamic> createUsersRecordData({
   String? phoneNumber,
   String? cpf,
   bool? lojista,
+  int? userID,
+  DateTime? updatedTime,
 }) {
   final firestoreData = mapToFirestore(
     <String, dynamic>{
@@ -119,6 +133,8 @@ Map<String, dynamic> createUsersRecordData({
       'phone_number': phoneNumber,
       'cpf': cpf,
       'lojista': lojista,
+      'userID': userID,
+      'updated_time': updatedTime,
     }.withoutNulls,
   );
 
@@ -137,7 +153,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e1?.createdTime == e2?.createdTime &&
         e1?.phoneNumber == e2?.phoneNumber &&
         e1?.cpf == e2?.cpf &&
-        e1?.lojista == e2?.lojista;
+        e1?.lojista == e2?.lojista &&
+        e1?.userID == e2?.userID &&
+        e1?.updatedTime == e2?.updatedTime;
   }
 
   @override
@@ -149,7 +167,9 @@ class UsersRecordDocumentEquality implements Equality<UsersRecord> {
         e?.createdTime,
         e?.phoneNumber,
         e?.cpf,
-        e?.lojista
+        e?.lojista,
+        e?.userID,
+        e?.updatedTime
       ]);
 
   @override

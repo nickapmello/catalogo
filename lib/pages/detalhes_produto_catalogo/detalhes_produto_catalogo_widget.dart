@@ -370,10 +370,10 @@ class _DetalhesProdutoCatalogoWidgetState
                                                               .valorPromo >
                                                           0.0)
                                                         Text(
-                                                          formatNumber(
+                                                          '${formatNumber(
                                                             widget
-                                                                .detalhesProduto!
-                                                                .valorPromo,
+                                                                .detalhesProduto
+                                                                ?.valorPromo,
                                                             formatType:
                                                                 FormatType
                                                                     .decimal,
@@ -381,7 +381,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                 DecimalType
                                                                     .commaDecimal,
                                                             currency: 'R\$',
-                                                          ),
+                                                          )}na promoção',
                                                           style: FlutterFlowTheme
                                                                   .of(context)
                                                               .headlineMedium
@@ -799,8 +799,14 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                         .detalhesProduto
                                                                         ?.reference,
                                                                     valorUnitario: widget
-                                                                        .detalhesProduto
-                                                                        ?.valorVenda,
+                                                                                .detalhesProduto!.valorPromo >
+                                                                            0.0
+                                                                        ? widget
+                                                                            .detalhesProduto
+                                                                            ?.valorPromo
+                                                                        : widget
+                                                                            .detalhesProduto
+                                                                            ?.valorVenda,
                                                                     quantidade:
                                                                         1,
                                                                     subtotal: widget
@@ -818,8 +824,9 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                           createProdutoCarrinhoRecordData(
                                                                             produto:
                                                                                 widget.detalhesProduto?.reference,
-                                                                            valorUnitario:
-                                                                                widget.detalhesProduto?.valorVenda,
+                                                                            valorUnitario: widget.detalhesProduto!.valorPromo > 0.0
+                                                                                ? widget.detalhesProduto?.valorPromo
+                                                                                : widget.detalhesProduto?.valorVenda,
                                                                             quantidade:
                                                                                 1,
                                                                             subtotal: widget.detalhesProduto!.valorPromo > 0.0

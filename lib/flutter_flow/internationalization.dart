@@ -191,6 +191,21 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': 'Kelompok ku',
       'ms': 'Pasukan saya',
     },
+    'g6xv2y7w': {
+      'en': 'Criar',
+      'id': '',
+      'ms': '',
+    },
+    '6bal8rpy': {
+      'en': 'Usuarios',
+      'id': '',
+      'ms': '',
+    },
+    '8z4p9k6y': {
+      'en': 'Procure por nome',
+      'id': '',
+      'ms': '',
+    },
     'j24z5knj': {
       'en': 'Ativo',
       'id': '',
@@ -345,6 +360,11 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '1n2tx6c6': {
       'en': 'Produto',
+      'id': '',
+      'ms': '',
+    },
+    'fh1np6vx': {
+      'en': 'Procurar produto...',
       'id': '',
       'ms': '',
     },
@@ -1114,6 +1134,168 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // Usuarios
+  {
+    '7ryml6kh': {
+      'en': 'Usuarios',
+      'id': '',
+      'ms': '',
+    },
+    'ppmyw3dg': {
+      'en': 'Criar',
+      'id': '',
+      'ms': '',
+    },
+    '6wols4em': {
+      'en': 'Procure por nome',
+      'id': '',
+      'ms': '',
+    },
+    't2gv7jtg': {
+      'en': 'Customers',
+      'id': '',
+      'ms': '',
+    },
+    'bsb6fzcn': {
+      'en': '__',
+      'id': '',
+      'ms': '',
+    },
+  },
+  // detalhesUser
+  {
+    'fao8r19h': {
+      'en': 'Dados básicos',
+      'id': '',
+      'ms': '',
+    },
+    'nltskc21': {
+      'en': 'Contato',
+      'id': '',
+      'ms': '',
+    },
+    '29qnag1i': {
+      'en': 'Salvar informações',
+      'id': '',
+      'ms': '',
+    },
+    'o5i49qej': {
+      'en': 'Home',
+      'id': '',
+      'ms': '',
+    },
+  },
+  // resetSenha
+  {
+    'rlg5hzsr': {
+      'en':
+          'Muito bem, agora insira nos campos abaixos, qual será sua nova senha para o nosso sistema.',
+      'id': '',
+      'ms': '',
+    },
+    'rngxbiz0': {
+      'en': 'Senha',
+      'id': '',
+      'ms': '',
+    },
+    'bld3e4d1': {
+      'en': 'Digite aqui sua nova senha',
+      'id': '',
+      'ms': '',
+    },
+    '6eds1ko7': {
+      'en': 'Confirmar Senha',
+      'id': '',
+      'ms': '',
+    },
+    'iub1rrv2': {
+      'en': 'Confirme aqui sua nova senha',
+      'id': '',
+      'ms': '',
+    },
+    '4uznazc3': {
+      'en': 'Enviar',
+      'id': '',
+      'ms': '',
+    },
+    'x59bkxrt': {
+      'en': 'Home',
+      'id': '',
+      'ms': '',
+    },
+  },
+  // resetEmail
+  {
+    'srnx7g2u': {
+      'en': 'Esqueceu sua senha?',
+      'id': '',
+      'ms': '',
+    },
+    'bn5mnkgt': {
+      'en':
+          'Insira seu email utilizado para criar sua conta aqui embaixo que enviaremos um link para você resetar sua senha.',
+      'id': '',
+      'ms': '',
+    },
+    '3xdqb2ii': {
+      'en': 'Email:',
+      'id': '',
+      'ms': '',
+    },
+    'sguq3y49': {
+      'en': 'Insira aqui seu email',
+      'id': '',
+      'ms': '',
+    },
+    'stkfw9rt': {
+      'en': 'Resetar senha',
+      'id': '',
+      'ms': '',
+    },
+    'jgql1ken': {
+      'en': 'Voltar',
+      'id': '',
+      'ms': '',
+    },
+    'kx2nuv20': {
+      'en': 'Home',
+      'id': '',
+      'ms': '',
+    },
+  },
+  // PerfilCopy
+  {
+    '7a1fuwux': {
+      'en': 'Meu Perfil',
+      'id': '',
+      'ms': '',
+    },
+    'gbfalw42': {
+      'en': 'Configurações da conta',
+      'id': '',
+      'ms': '',
+    },
+    '3nz63c7h': {
+      'en': 'Trocar Senha',
+      'id': '',
+      'ms': '',
+    },
+    'cglhlywf': {
+      'en': 'Editar Perfil',
+      'id': '',
+      'ms': '',
+    },
+    'lvd1ucfx': {
+      'en': 'Sair',
+      'id': '',
+      'ms': '',
+    },
+    'anhq6yoy': {
+      'en': '__',
+      'id': '',
+      'ms': '',
+    },
+  },
   // popupEnviarPedido
   {
     'kred63vb': {
@@ -1217,20 +1399,25 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    'kx5q8aj9': {
+    'vytzeszb': {
       'en': 'Nome do produto',
+      'id': '',
+      'ms': '',
+    },
+    'kx5q8aj9': {
+      'en': '',
       'id': 'Masukkan catatan Anda di sini...',
       'ms': 'Masukkan nota anda di sini...',
     },
-    'fduz2mki': {
-      'en': 'Preço de Venda',
-      'id': 'Masukkan catatan Anda di sini...',
-      'ms': 'Masukkan nota anda di sini...',
+    'ld0ghrz7': {
+      'en': 'Valor de Venda',
+      'id': '',
+      'ms': '',
     },
-    '9gf6o5ss': {
-      'en': 'Preço promocional',
-      'id': 'Masukkan catatan Anda di sini...',
-      'ms': 'Masukkan nota anda di sini...',
+    '3d3jormu': {
+      'en': 'Valor Promocional',
+      'id': '',
+      'ms': '',
     },
     'x63cptq3': {
       'en': 'Option 1',
@@ -1252,18 +1439,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    'maumf221': {
-      'en': 'Custo',
-      'id': 'Masukkan catatan Anda di sini...',
-      'ms': 'Masukkan nota anda di sini...',
-    },
     'mgc7k0mh': {
       'en': 'Código do produto',
       'id': '',
       'ms': '',
     },
-    'rkywqv5u': {
+    'dl84nhg9': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'ypr546u2': {
       'en': 'Descrição',
+      'id': '',
+      'ms': '',
+    },
+    'rkywqv5u': {
+      'en': '',
       'id': 'Masukkan catatan Anda di sini...',
       'ms': 'Masukkan nota anda di sini...',
     },
@@ -1976,37 +2168,6 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
-  // TrocarSenha
-  {
-    'kqn42zzy': {
-      'en':
-          'Digite o e-mail associado à sua conta abaixo e enviaremos um novo link para trocar sua senha.',
-      'id':
-          'Tidak ingat kata sandi Anda? Masukkan email yang terkait dengan akun Anda di bawah ini dan kami akan mengirimkan tautan baru kepada Anda.',
-      'ms':
-          'Tidak ingat kata laluan anda? Masukkan e-mel yang dikaitkan dengan akaun anda di bawah dan kami akan menghantar pautan baharu kepada anda.',
-    },
-    '6rovi4yd': {
-      'en': 'E-mail',
-      'id': 'Alamat email',
-      'ms': 'Alamat emel',
-    },
-    '65bg0lqm': {
-      'en': 'Insira o seu e-mail',
-      'id': 'Tolong masukkan email yang benar...',
-      'ms': 'Sila masukkan e-mel yang sah...',
-    },
-    'h6559vc8': {
-      'en': 'Enviar link',
-      'id': 'Kirim Setel Ulang Tautan',
-      'ms': 'Hantar Pautan Tetapan Semula',
-    },
-    '8ztiquhv': {
-      'en': 'Voltar',
-      'id': 'Kirim Setel Ulang Tautan',
-      'ms': 'Hantar Pautan Tetapan Semula',
-    },
-  },
   // editarProduto
   {
     'tamjoae8': {
@@ -2024,23 +2185,28 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    '2h4zle29': {
-      'en': 'Nome do produto',
+    'ipxtht8a': {
+      'en': 'Nome do Produto',
       'id': '',
       'ms': '',
     },
-    'b01gr7jv': {
-      'en': 'Preço de Venda',
+    '2h4zle29': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    '4fz7c8er': {
+      'en': 'Valor de Venda',
+      'id': '',
+      'ms': '',
+    },
+    'ov4hf2ts': {
+      'en': 'Valor Promocional',
       'id': '',
       'ms': '',
     },
     'k2z06rtf': {
       'en': 'Opcionais',
-      'id': '',
-      'ms': '',
-    },
-    'py9ja8ef': {
-      'en': 'Preço promocional',
       'id': '',
       'ms': '',
     },
@@ -2059,18 +2225,23 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
+    '80jpr1nt': {
+      'en': 'Código do Produto',
+      'id': '',
+      'ms': '',
+    },
     'lu3ml4a8': {
       'en': 'Código do produto',
       'id': '',
       'ms': '',
     },
-    'xzt35kbo': {
-      'en': 'Custo',
+    'mg812mnb': {
+      'en': 'Descrição do Produto',
       'id': '',
       'ms': '',
     },
     'sry6tpuz': {
-      'en': 'Descrição',
+      'en': '',
       'id': '',
       'ms': '',
     },
@@ -2184,7 +2355,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    'dl84nhg9': {
+    'rtel09xj': {
       'en': '',
       'id': '',
       'ms': '',
@@ -2194,7 +2365,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    'rtel09xj': {
+    '7o6soc6i': {
       'en': '',
       'id': '',
       'ms': '',
@@ -2261,6 +2432,189 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // cadastrarUser
+  {
+    'new5b6jx': {
+      'en': 'Cadastrar novo user',
+      'id': '',
+      'ms': '',
+    },
+    'ytyvmt4z': {
+      'en': 'Insira as informações do seu cliente nos campos abaixo.',
+      'id': '',
+      'ms': '',
+    },
+    'ci1p593b': {
+      'en': 'Dados básicos',
+      'id': '',
+      'ms': '',
+    },
+    'ivvus4vy': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'omo9z1k4': {
+      'en': 'Nome',
+      'id': '',
+      'ms': '',
+    },
+    'aufdyl7r': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'xcki7ea5': {
+      'en': 'CPF/CNPJ',
+      'id': '',
+      'ms': '',
+    },
+    'l0gfa2y3': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'c3hvh5iw': {
+      'en': 'Senha',
+      'id': '',
+      'ms': '',
+    },
+    'a51fiv8y': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    '28ulb3ej': {
+      'en': 'Confirmar senha',
+      'id': '',
+      'ms': '',
+    },
+    '9e6rl1wr': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'hahydzh9': {
+      'en': 'Telefone',
+      'id': '',
+      'ms': '',
+    },
+    'cut8ifqe': {
+      'en': '',
+      'id': '',
+      'ms': '',
+    },
+    'dh5280p7': {
+      'en': 'E-mail',
+      'id': '',
+      'ms': '',
+    },
+    'szq4ug93': {
+      'en': 'Cadastrar ',
+      'id': '',
+      'ms': '',
+    },
+    'htb45pml': {
+      'en': 'Campo obrigatório',
+      'id': '',
+      'ms': '',
+    },
+    'demq8o8m': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'qsp0wrke': {
+      'en': 'Campo obrigatório',
+      'id': '',
+      'ms': '',
+    },
+    'pr8utxsv': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    '4fe77ih0': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    '38rpcgmm': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'woar6iqt': {
+      'en': 'Campo obrigatório',
+      'id': '',
+      'ms': '',
+    },
+    'x6blihxi': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'leclzk8a': {
+      'en': 'Campo obrigatório',
+      'id': '',
+      'ms': '',
+    },
+    'v5robsnv': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'f8m0gdze': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    '4mzmue8j': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    '04z5699v': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    'kf4rt82b': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'h3hbm8rh': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    '4zz3qgve': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    'gadveh2a': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    'n6ua17zn': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+    '87yn3lrz': {
+      'en': 'Field is required',
+      'id': '',
+      'ms': '',
+    },
+    'am4niomy': {
+      'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+  },
   // Miscellaneous
   {
     'u8hqlhbv': {
@@ -2318,7 +2672,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'id': '',
       'ms': '',
     },
-    'ivvus4vy': {
+    'g64862i1': {
       'en': '',
       'id': '',
       'ms': '',

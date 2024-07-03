@@ -7,6 +7,8 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
+import '/custom_code/widgets/index.dart' as custom_widgets;
+import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:collection/collection.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -47,21 +49,9 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
         TextEditingController(text: widget.produto?.nomeProduto);
     _model.nomeProdutoFocusNode ??= FocusNode();
 
-    _model.precoVendaTextController ??=
-        TextEditingController(text: widget.produto?.valorVenda.toString());
-    _model.precoVendaFocusNode ??= FocusNode();
-
-    _model.precoPromocionalTextController ??=
-        TextEditingController(text: widget.produto?.valorPromo.toString());
-    _model.precoPromocionalFocusNode ??= FocusNode();
-
     _model.codProdutoTextController ??=
         TextEditingController(text: widget.produto?.codigProduto);
     _model.codProdutoFocusNode ??= FocusNode();
-
-    _model.precoCustoTextController ??=
-        TextEditingController(text: widget.produto?.valorCusto.toString());
-    _model.precoCustoFocusNode ??= FocusNode();
 
     _model.descricaoProdutoTextController ??=
         TextEditingController(text: widget.produto?.descricaoProduto);
@@ -369,8 +359,8 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                       focusNode: _model.nomeProdutoFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: FFLocalizations.of(context).getText(
-                          '2h4zle29' /* Nome do produto */,
+                        labelText: FFLocalizations.of(context).getText(
+                          'ipxtht8a' /* Nome do Produto */,
                         ),
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodySmall
@@ -427,55 +417,10 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                   ),
                   Padding(
                     padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                    child: TextFormField(
-                      controller: _model.precoVendaTextController,
-                      focusNode: _model.precoVendaFocusNode,
-                      obscureText: false,
-                      decoration: InputDecoration(
-                        hintText: FFLocalizations.of(context).getText(
-                          'b01gr7jv' /* Preço de Venda */,
-                        ),
-                        hintStyle: FlutterFlowTheme.of(context)
-                            .bodySmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodySmallFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodySmallFamily),
-                            ),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        errorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedErrorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                            20.0, 32.0, 20.0, 12.0),
+                        const EdgeInsetsDirectional.fromSTEB(18.0, 16.0, 0.0, 0.0),
+                    child: Text(
+                      FFLocalizations.of(context).getText(
+                        '4fz7c8er' /* Valor de Venda */,
                       ),
                       style: FlutterFlowTheme.of(context).bodyMedium.override(
                             fontFamily:
@@ -484,11 +429,54 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                             useGoogleFonts: GoogleFonts.asMap().containsKey(
                                 FlutterFlowTheme.of(context).bodyMediumFamily),
                           ),
-                      textAlign: TextAlign.start,
-                      keyboardType: const TextInputType.numberWithOptions(
-                          signed: true, decimal: true),
-                      validator: _model.precoVendaTextControllerValidator
-                          .asValidator(context),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: 50.0,
+                      child: custom_widgets.MoedaBRValorVenda(
+                        width: double.infinity,
+                        height: 50.0,
+                        bordercolor: Colors.transparent,
+                        borderRadius: 2.0,
+                        initialValue:
+                            functions.saldo(widget.produto!.valorVenda),
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(18.0, 16.0, 0.0, 0.0),
+                    child: Text(
+                      FFLocalizations.of(context).getText(
+                        'ov4hf2ts' /* Valor Promocional */,
+                      ),
+                      style: FlutterFlowTheme.of(context).bodyMedium.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodyMediumFamily,
+                            letterSpacing: 0.0,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).bodyMediumFamily),
+                          ),
+                    ),
+                  ),
+                  Padding(
+                    padding:
+                        const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
+                    child: SizedBox(
+                      width: double.infinity,
+                      height: 50.0,
+                      child: custom_widgets.MoedaBRValorPromo(
+                        width: double.infinity,
+                        height: 50.0,
+                        bordercolor: Colors.transparent,
+                        borderRadius: 2.0,
+                        initialValue:
+                            functions.saldo(widget.produto!.valorPromo),
+                      ),
                     ),
                   ),
                   Padding(
@@ -507,72 +495,6 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                                     FlutterFlowTheme.of(context)
                                         .headlineSmallFamily),
                               ),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                    child: TextFormField(
-                      controller: _model.precoPromocionalTextController,
-                      focusNode: _model.precoPromocionalFocusNode,
-                      obscureText: false,
-                      decoration: InputDecoration(
-                        hintText: FFLocalizations.of(context).getText(
-                          'py9ja8ef' /* Preço promocional */,
-                        ),
-                        hintStyle: FlutterFlowTheme.of(context)
-                            .bodySmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodySmallFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodySmallFamily),
-                            ),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        errorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedErrorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                            20.0, 32.0, 20.0, 12.0),
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
-                          ),
-                      textAlign: TextAlign.start,
-                      keyboardType: const TextInputType.numberWithOptions(
-                          signed: true, decimal: true),
-                      validator: _model.precoPromocionalTextControllerValidator
-                          .asValidator(context),
                     ),
                   ),
                   Padding(
@@ -723,6 +645,9 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                       focusNode: _model.codProdutoFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
+                        labelText: FFLocalizations.of(context).getText(
+                          '80jpr1nt' /* Código do Produto */,
+                        ),
                         hintText: FFLocalizations.of(context).getText(
                           'lu3ml4a8' /* Código do produto */,
                         ),
@@ -783,78 +708,12 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
                     child: TextFormField(
-                      controller: _model.precoCustoTextController,
-                      focusNode: _model.precoCustoFocusNode,
-                      obscureText: false,
-                      decoration: InputDecoration(
-                        hintText: FFLocalizations.of(context).getText(
-                          'xzt35kbo' /* Custo */,
-                        ),
-                        hintStyle: FlutterFlowTheme.of(context)
-                            .bodySmall
-                            .override(
-                              fontFamily:
-                                  FlutterFlowTheme.of(context).bodySmallFamily,
-                              letterSpacing: 0.0,
-                              useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                  FlutterFlowTheme.of(context).bodySmallFamily),
-                            ),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide: BorderSide(
-                            color:
-                                FlutterFlowTheme.of(context).primaryBackground,
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        errorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        focusedErrorBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(
-                            color: Color(0x00000000),
-                            width: 2.0,
-                          ),
-                          borderRadius: BorderRadius.circular(8.0),
-                        ),
-                        contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                            20.0, 32.0, 20.0, 12.0),
-                      ),
-                      style: FlutterFlowTheme.of(context).bodyMedium.override(
-                            fontFamily:
-                                FlutterFlowTheme.of(context).bodyMediumFamily,
-                            letterSpacing: 0.0,
-                            useGoogleFonts: GoogleFonts.asMap().containsKey(
-                                FlutterFlowTheme.of(context).bodyMediumFamily),
-                          ),
-                      textAlign: TextAlign.start,
-                      keyboardType: const TextInputType.numberWithOptions(
-                          signed: true, decimal: true),
-                      validator: _model.precoCustoTextControllerValidator
-                          .asValidator(context),
-                    ),
-                  ),
-                  Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 0.0),
-                    child: TextFormField(
                       controller: _model.descricaoProdutoTextController,
                       focusNode: _model.descricaoProdutoFocusNode,
                       obscureText: false,
                       decoration: InputDecoration(
-                        hintText: FFLocalizations.of(context).getText(
-                          'sry6tpuz' /* Descrição */,
+                        labelText: FFLocalizations.of(context).getText(
+                          'mg812mnb' /* Descrição do Produto */,
                         ),
                         hintStyle: FlutterFlowTheme.of(context)
                             .bodySmall
@@ -938,12 +797,8 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                                     _model.nomeProdutoTextController.text,
                                 descricaoProduto:
                                     _model.descricaoProdutoTextController.text,
-                                valorVenda: double.tryParse(
-                                    _model.precoVendaTextController.text),
-                                valorPromo: double.tryParse(
-                                    _model.precoPromocionalTextController.text),
-                                valorCusto: double.tryParse(
-                                    _model.precoCustoTextController.text),
+                                valorVenda: FFAppState().propPriceVenda,
+                                valorPromo: FFAppState().propPricePromo,
                                 codigProduto:
                                     _model.codProdutoTextController.text,
                                 categoria: _model
@@ -957,6 +812,11 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                                 },
                               ),
                             });
+                            FFAppState().imgProduto = [];
+                            FFAppState().codRefCategoria = '';
+                            FFAppState().propPriceVenda = 0.0;
+                            FFAppState().propPricePromo = 0.0;
+                            setState(() {});
                             await showDialog(
                               context: context,
                               builder: (alertDialogContext) {
@@ -974,9 +834,6 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                                 );
                               },
                             );
-                            FFAppState().imgProduto = [];
-                            FFAppState().codRefCategoria = '';
-                            setState(() {});
                             Navigator.pop(context);
 
                             setState(() {});

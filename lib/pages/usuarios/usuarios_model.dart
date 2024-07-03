@@ -1,13 +1,13 @@
 import '/backend/backend.dart';
 import '/components/web_nav/web_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import 'produtos_widget.dart' show ProdutosWidget;
+import 'usuarios_widget.dart' show UsuariosWidget;
 import 'package:flutter/material.dart';
 
-class ProdutosModel extends FlutterFlowModel<ProdutosWidget> {
+class UsuariosModel extends FlutterFlowModel<UsuariosWidget> {
   ///  Local state fields for this page.
 
-  bool listaProduto = false;
+  bool listaCliente = true;
 
   ///  State fields for stateful widgets in this page.
 
@@ -18,8 +18,8 @@ class ProdutosModel extends FlutterFlowModel<ProdutosWidget> {
   FocusNode? textFieldFocusNode;
   TextEditingController? textController;
   String? Function(BuildContext, String?)? textControllerValidator;
-  // Stores action output result for [Custom Action - procurarProduto] action in Icon widget.
-  List<ProdutoRecord>? searchProduto;
+  // Stores action output result for [Custom Action - procurarUser] action in Icon widget.
+  List<UsersRecord>? searchUser;
   // Model for webNav component.
   late WebNavModel webNavModel2;
 

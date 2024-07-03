@@ -11,19 +11,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'perfil_model.dart';
-export 'perfil_model.dart';
+import 'perfil_copy_model.dart';
+export 'perfil_copy_model.dart';
 
-class PerfilWidget extends StatefulWidget {
-  const PerfilWidget({super.key});
+class PerfilCopyWidget extends StatefulWidget {
+  const PerfilCopyWidget({super.key});
 
   @override
-  State<PerfilWidget> createState() => _PerfilWidgetState();
+  State<PerfilCopyWidget> createState() => _PerfilCopyWidgetState();
 }
 
-class _PerfilWidgetState extends State<PerfilWidget>
+class _PerfilCopyWidgetState extends State<PerfilCopyWidget>
     with TickerProviderStateMixin {
-  late PerfilModel _model;
+  late PerfilCopyModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -32,7 +32,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => PerfilModel());
+    _model = createModel(context, () => PerfilCopyModel());
 
     animationsMap.addAll({
       'textOnPageLoadAnimation': AnimationInfo(
@@ -76,7 +76,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
   @override
   Widget build(BuildContext context) {
     return Title(
-        title: 'Perfil',
+        title: 'PerfilCopy',
         color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
         child: Scaffold(
           key: scaffoldKey,
@@ -261,7 +261,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
                                           16.0, 16.0, 0.0, 16.0),
                                       child: Text(
                                         FFLocalizations.of(context).getText(
-                                          'qrxn5crt' /* Meu Perfil */,
+                                          '7a1fuwux' /* Meu Perfil */,
                                         ),
                                         textAlign: TextAlign.start,
                                         style: FlutterFlowTheme.of(context)
@@ -417,7 +417,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
                                       24.0, 12.0, 0.0, 12.0),
                                   child: Text(
                                     FFLocalizations.of(context).getText(
-                                      'fyxsf6vn' /* Configurações da conta */,
+                                      'gbfalw42' /* Configurações da conta */,
                                     ),
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium
@@ -493,7 +493,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
                                                 child: Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'h43llaan' /* Trocar Senha */,
+                                                    '3nz63c7h' /* Trocar Senha */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -536,105 +536,99 @@ class _PerfilWidgetState extends State<PerfilWidget>
                                     ),
                                   ),
                                 ),
-                                Builder(
-                                  builder: (context) => Padding(
-                                    padding: const EdgeInsetsDirectional.fromSTEB(
-                                        20.0, 12.0, 20.0, 0.0),
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        await showDialog(
-                                          context: context,
-                                          builder: (dialogContext) {
-                                            return Dialog(
-                                              elevation: 0,
-                                              insetPadding: EdgeInsets.zero,
-                                              backgroundColor:
-                                                  Colors.transparent,
-                                              alignment:
-                                                  const AlignmentDirectional(0.0, 0.0)
-                                                      .resolve(
-                                                          Directionality.of(
-                                                              context)),
-                                              child: EditarPerfilLojistaWidget(
-                                                infoLojista:
-                                                    currentUserReference!,
+                                Padding(
+                                  padding: const EdgeInsetsDirectional.fromSTEB(
+                                      20.0, 12.0, 20.0, 0.0),
+                                  child: InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      await showModalBottomSheet(
+                                        isScrollControlled: true,
+                                        backgroundColor: Colors.transparent,
+                                        barrierColor: Colors.transparent,
+                                        enableDrag: false,
+                                        context: context,
+                                        builder: (context) {
+                                          return Padding(
+                                            padding: MediaQuery.viewInsetsOf(
+                                                context),
+                                            child: EditarPerfilLojistaWidget(
+                                              infoLojista:
+                                                  currentUserReference!,
+                                            ),
+                                          );
+                                        },
+                                      ).then((value) => safeSetState(() {}));
+                                    },
+                                    child: Container(
+                                      width: double.infinity,
+                                      height: 60.0,
+                                      decoration: BoxDecoration(
+                                        color: FlutterFlowTheme.of(context)
+                                            .secondaryBackground,
+                                        boxShadow: const [
+                                          BoxShadow(
+                                            blurRadius: 3.0,
+                                            color: Color(0x3416202A),
+                                            offset: Offset(
+                                              0.0,
+                                              1.0,
+                                            ),
+                                          )
+                                        ],
+                                        borderRadius:
+                                            BorderRadius.circular(12.0),
+                                        shape: BoxShape.rectangle,
+                                      ),
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Row(
+                                          mainAxisSize: MainAxisSize.max,
+                                          children: [
+                                            Padding(
+                                              padding: const EdgeInsetsDirectional
+                                                  .fromSTEB(
+                                                      12.0, 0.0, 0.0, 0.0),
+                                              child: Text(
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                                  'cglhlywf' /* Editar Perfil */,
+                                                ),
+                                                style:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .override(
+                                                          fontFamily:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .bodySmallFamily,
+                                                          letterSpacing: 0.0,
+                                                          useGoogleFonts: GoogleFonts
+                                                                  .asMap()
+                                                              .containsKey(
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodySmallFamily),
+                                                        ),
                                               ),
-                                            );
-                                          },
-                                        ).then((value) => setState(() {}));
-                                      },
-                                      child: Container(
-                                        width: double.infinity,
-                                        height: 60.0,
-                                        decoration: BoxDecoration(
-                                          color: FlutterFlowTheme.of(context)
-                                              .secondaryBackground,
-                                          boxShadow: const [
-                                            BoxShadow(
-                                              blurRadius: 3.0,
-                                              color: Color(0x3416202A),
-                                              offset: Offset(
-                                                0.0,
-                                                1.0,
-                                              ),
-                                            )
-                                          ],
-                                          borderRadius:
-                                              BorderRadius.circular(12.0),
-                                          shape: BoxShape.rectangle,
-                                        ),
-                                        child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
-                                          child: Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsetsDirectional
-                                                    .fromSTEB(
-                                                        12.0, 0.0, 0.0, 0.0),
-                                                child: Text(
-                                                  FFLocalizations.of(context)
-                                                      .getText(
-                                                    'b1lw0hfu' /* Editar Perfil */,
-                                                  ),
-                                                  style: FlutterFlowTheme.of(
+                                            ),
+                                            Expanded(
+                                              child: Align(
+                                                alignment: const AlignmentDirectional(
+                                                    0.9, 0.0),
+                                                child: Icon(
+                                                  Icons.arrow_forward_ios,
+                                                  color: FlutterFlowTheme.of(
                                                           context)
-                                                      .bodySmall
-                                                      .override(
-                                                        fontFamily:
-                                                            FlutterFlowTheme.of(
-                                                                    context)
-                                                                .bodySmallFamily,
-                                                        letterSpacing: 0.0,
-                                                        useGoogleFonts: GoogleFonts
-                                                                .asMap()
-                                                            .containsKey(
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodySmallFamily),
-                                                      ),
+                                                      .secondaryText,
+                                                  size: 18.0,
                                                 ),
                                               ),
-                                              Expanded(
-                                                child: Align(
-                                                  alignment:
-                                                      const AlignmentDirectional(
-                                                          0.9, 0.0),
-                                                  child: Icon(
-                                                    Icons.arrow_forward_ios,
-                                                    color: FlutterFlowTheme.of(
-                                                            context)
-                                                        .secondaryText,
-                                                    size: 18.0,
-                                                  ),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
@@ -666,7 +660,7 @@ class _PerfilWidgetState extends State<PerfilWidget>
                                         },
                                         text:
                                             FFLocalizations.of(context).getText(
-                                          'abqf147c' /* Sair */,
+                                          'lvd1ucfx' /* Sair */,
                                         ),
                                         options: FFButtonOptions(
                                           width: 90.0,

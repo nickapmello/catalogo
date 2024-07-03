@@ -41,11 +41,6 @@ class ProdutoRecord extends FirestoreRecord {
   double get valorPromo => _valorPromo ?? 0.0;
   bool hasValorPromo() => _valorPromo != null;
 
-  // "valorCusto" field.
-  double? _valorCusto;
-  double get valorCusto => _valorCusto ?? 0.0;
-  bool hasValorCusto() => _valorCusto != null;
-
   // "codigProduto" field.
   String? _codigProduto;
   String get codigProduto => _codigProduto ?? '';
@@ -89,7 +84,6 @@ class ProdutoRecord extends FirestoreRecord {
     _dataProdutCriado = snapshotData['dataProdutCriado'] as DateTime?;
     _valorVenda = castToType<double>(snapshotData['valorVenda']);
     _valorPromo = castToType<double>(snapshotData['valorPromo']);
-    _valorCusto = castToType<double>(snapshotData['valorCusto']);
     _codigProduto = snapshotData['codigProduto'] as String?;
     _imgProduto = getDataList(snapshotData['imgProduto']);
     _categoria = snapshotData['categoria'] as DocumentReference?;
@@ -144,7 +138,6 @@ Map<String, dynamic> createProdutoRecordData({
   DateTime? dataProdutCriado,
   double? valorVenda,
   double? valorPromo,
-  double? valorCusto,
   String? codigProduto,
   DocumentReference? categoria,
   bool? ativo,
@@ -159,7 +152,6 @@ Map<String, dynamic> createProdutoRecordData({
       'dataProdutCriado': dataProdutCriado,
       'valorVenda': valorVenda,
       'valorPromo': valorPromo,
-      'valorCusto': valorCusto,
       'codigProduto': codigProduto,
       'categoria': categoria,
       'ativo': ativo,
@@ -183,7 +175,6 @@ class ProdutoRecordDocumentEquality implements Equality<ProdutoRecord> {
         e1?.dataProdutCriado == e2?.dataProdutCriado &&
         e1?.valorVenda == e2?.valorVenda &&
         e1?.valorPromo == e2?.valorPromo &&
-        e1?.valorCusto == e2?.valorCusto &&
         e1?.codigProduto == e2?.codigProduto &&
         listEquality.equals(e1?.imgProduto, e2?.imgProduto) &&
         e1?.categoria == e2?.categoria &&
@@ -200,7 +191,6 @@ class ProdutoRecordDocumentEquality implements Equality<ProdutoRecord> {
         e?.dataProdutCriado,
         e?.valorVenda,
         e?.valorPromo,
-        e?.valorCusto,
         e?.codigProduto,
         e?.imgProduto,
         e?.categoria,

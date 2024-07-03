@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/flutter_flow/upload_data.dart';
+import '/custom_code/widgets/index.dart' as custom_widgets;
 import 'package:collection/collection.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
@@ -43,15 +44,6 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
 
     _model.nomeProdutoTextController ??= TextEditingController();
     _model.nomeProdutoFocusNode ??= FocusNode();
-
-    _model.precoVendaTextController ??= TextEditingController();
-    _model.precoVendaFocusNode ??= FocusNode();
-
-    _model.precoPromocionalTextController ??= TextEditingController();
-    _model.precoPromocionalFocusNode ??= FocusNode();
-
-    _model.precoCustoTextController ??= TextEditingController();
-    _model.precoCustoFocusNode ??= FocusNode();
 
     _model.codProdutoTextController ??= TextEditingController();
     _model.codProdutoFocusNode ??= FocusNode();
@@ -394,8 +386,8 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                               focusNode: _model.nomeProdutoFocusNode,
                               obscureText: false,
                               decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
-                                  'kx5q8aj9' /* Nome do produto */,
+                                labelText: FFLocalizations.of(context).getText(
+                                  'vytzeszb' /* Nome do produto */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
@@ -457,152 +449,80 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                                   .asValidator(context),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 16.0, 16.0, 0.0),
-                            child: TextFormField(
-                              controller: _model.precoVendaTextController,
-                              focusNode: _model.precoVendaFocusNode,
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
-                                  'fduz2mki' /* Preço de Venda */,
+                          Align(
+                            alignment: const AlignmentDirectional(-1.0, 1.0),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  18.0, 16.0, 0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  'ld0ghrz7' /* Valor de Venda */,
                                 ),
-                                hintStyle: FlutterFlowTheme.of(context)
-                                    .bodySmall
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
+                                          .bodyMediumFamily,
                                       letterSpacing: 0.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
+                                                  .bodyMediumFamily),
                                     ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                errorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 32.0, 20.0, 12.0),
                               ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                              textAlign: TextAlign.start,
-                              keyboardType:
-                                  const TextInputType.numberWithOptions(
-                                      signed: true, decimal: true),
-                              validator: _model
-                                  .precoVendaTextControllerValidator
-                                  .asValidator(context),
                             ),
                           ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 16.0, 16.0, 0.0),
-                            child: TextFormField(
-                              controller: _model.precoPromocionalTextController,
-                              focusNode: _model.precoPromocionalFocusNode,
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
-                                  '9gf6o5ss' /* Preço promocional */,
+                          const Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 16.0, 0.0),
+                            child: SizedBox(
+                              width: double.infinity,
+                              height: 50.0,
+                              child: custom_widgets.MoedaBRValorVenda(
+                                width: double.infinity,
+                                height: 50.0,
+                                bordercolor: Colors.transparent,
+                                borderRadius: 2.0,
+                                initialValue: '0,00',
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: const AlignmentDirectional(-1.0, 1.0),
+                            child: Padding(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
+                                  18.0, 16.0, 0.0, 0.0),
+                              child: Text(
+                                FFLocalizations.of(context).getText(
+                                  '3d3jormu' /* Valor Promocional */,
                                 ),
-                                hintStyle: FlutterFlowTheme.of(context)
-                                    .bodySmall
+                                style: FlutterFlowTheme.of(context)
+                                    .bodyMedium
                                     .override(
                                       fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
+                                          .bodyMediumFamily,
                                       letterSpacing: 0.0,
                                       useGoogleFonts: GoogleFonts.asMap()
                                           .containsKey(
                                               FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
+                                                  .bodyMediumFamily),
                                     ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                errorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 32.0, 20.0, 12.0),
                               ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                              textAlign: TextAlign.start,
-                              keyboardType:
-                                  const TextInputType.numberWithOptions(
-                                      signed: true, decimal: true),
-                              validator: _model
-                                  .precoPromocionalTextControllerValidator
-                                  .asValidator(context),
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsetsDirectional.fromSTEB(
+                                16.0, 0.0, 16.0, 0.0),
+                            child: SizedBox(
+                              width: double.infinity,
+                              height: 50.0,
+                              child: custom_widgets.MoedaBRValorPromo(
+                                width: double.infinity,
+                                height: 50.0,
+                                bordercolor: Colors.transparent,
+                                borderRadius: 2.0,
+                                initialValue: '0,00',
+                              ),
                             ),
                           ),
                           Padding(
@@ -758,85 +678,11 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 16.0, 16.0, 16.0, 0.0),
                             child: TextFormField(
-                              controller: _model.precoCustoTextController,
-                              focusNode: _model.precoCustoFocusNode,
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
-                                  'maumf221' /* Custo */,
-                                ),
-                                hintStyle: FlutterFlowTheme.of(context)
-                                    .bodySmall
-                                    .override(
-                                      fontFamily: FlutterFlowTheme.of(context)
-                                          .bodySmallFamily,
-                                      letterSpacing: 0.0,
-                                      useGoogleFonts: GoogleFonts.asMap()
-                                          .containsKey(
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmallFamily),
-                                    ),
-                                enabledBorder: OutlineInputBorder(
-                                  borderSide: BorderSide(
-                                    color: FlutterFlowTheme.of(context)
-                                        .primaryBackground,
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                errorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                focusedErrorBorder: OutlineInputBorder(
-                                  borderSide: const BorderSide(
-                                    color: Color(0x00000000),
-                                    width: 2.0,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8.0),
-                                ),
-                                contentPadding: const EdgeInsetsDirectional.fromSTEB(
-                                    20.0, 32.0, 20.0, 12.0),
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .bodyMedium
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .bodyMediumFamily,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .bodyMediumFamily),
-                                  ),
-                              textAlign: TextAlign.start,
-                              keyboardType:
-                                  const TextInputType.numberWithOptions(
-                                      signed: true, decimal: true),
-                              validator: _model
-                                  .precoCustoTextControllerValidator
-                                  .asValidator(context),
-                            ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                16.0, 16.0, 16.0, 0.0),
-                            child: TextFormField(
                               controller: _model.codProdutoTextController,
                               focusNode: _model.codProdutoFocusNode,
                               obscureText: false,
                               decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
+                                labelText: FFLocalizations.of(context).getText(
                                   'mgc7k0mh' /* Código do produto */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
@@ -910,8 +756,8 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                               focusNode: _model.descricaoProdutoFocusNode,
                               obscureText: false,
                               decoration: InputDecoration(
-                                hintText: FFLocalizations.of(context).getText(
-                                  'rkywqv5u' /* Descrição */,
+                                labelText: FFLocalizations.of(context).getText(
+                                  'ypr546u2' /* Descrição */,
                                 ),
                                 hintStyle: FlutterFlowTheme.of(context)
                                     .bodySmall
@@ -1013,14 +859,10 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                                         _model.nomeProdutoTextController.text,
                                     descricaoProduto: _model
                                         .descricaoProdutoTextController.text,
-                                    valorVenda: double.tryParse(
-                                        _model.precoVendaTextController.text),
-                                    valorPromo: double.tryParse(_model
-                                        .precoPromocionalTextController.text),
-                                    valorCusto: double.tryParse(
-                                        _model.precoCustoTextController.text),
+                                    valorVenda: FFAppState().propPriceVenda,
+                                    valorPromo: FFAppState().propPricePromo,
                                     codigProduto:
-                                        _model.precoCustoTextController.text,
+                                        _model.codProdutoTextController.text,
                                     ativo: true,
                                     categoria:
                                         _model.categoriaRefVariavel?.reference,
@@ -1034,6 +876,13 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                                     },
                                   ),
                                 });
+                                FFAppState().imgProduto = [];
+                                FFAppState().codRefCategoria = '';
+                                FFAppState().propPriceVenda =
+                                    FFAppState().propPriceVenda;
+                                FFAppState().propPricePromo =
+                                    FFAppState().propPricePromo;
+                                setState(() {});
                                 await showDialog(
                                   context: context,
                                   builder: (alertDialogContext) {
@@ -1051,8 +900,6 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                                     );
                                   },
                                 );
-                                FFAppState().imgProduto = [];
-                                setState(() {});
                                 Navigator.pop(context);
                               } else {
                                 await showDialog(

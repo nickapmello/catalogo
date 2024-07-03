@@ -224,6 +224,47 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               path: 'categorias',
               requireAuth: true,
               builder: (context, params) => const CategoriasWidget(),
+            ),
+            FFRoute(
+              name: 'Usuarios',
+              path: 'usuarios',
+              requireAuth: true,
+              builder: (context, params) => const UsuariosWidget(),
+            ),
+            FFRoute(
+              name: 'detalhesUser',
+              path: 'detalhesUser',
+              requireAuth: true,
+              asyncParams: {
+                'user': getDoc(['users'], UsersRecord.fromSnapshot),
+              },
+              builder: (context, params) => DetalhesUserWidget(
+                user: params.getParam(
+                  'user',
+                  ParamType.Document,
+                ),
+              ),
+            ),
+            FFRoute(
+              name: 'resetSenha',
+              path: 'resetSenha',
+              builder: (context, params) => ResetSenhaWidget(
+                oobCode: params.getParam(
+                  'oobCode',
+                  ParamType.String,
+                ),
+              ),
+            ),
+            FFRoute(
+              name: 'resetEmail',
+              path: 'resetEmail',
+              builder: (context, params) => const ResetEmailWidget(),
+            ),
+            FFRoute(
+              name: 'PerfilCopy',
+              path: 'perfilCopy',
+              requireAuth: true,
+              builder: (context, params) => const PerfilCopyWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),

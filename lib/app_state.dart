@@ -177,6 +177,18 @@ class FFAppState extends ChangeNotifier {
   set quantidadeProdutosCarrinho(int value) {
     _quantidadeProdutosCarrinho = value;
   }
+
+  double _propPriceVenda = 0.0;
+  double get propPriceVenda => _propPriceVenda;
+  set propPriceVenda(double value) {
+    _propPriceVenda = value;
+  }
+
+  double _propPricePromo = 0.0;
+  double get propPricePromo => _propPricePromo;
+  set propPricePromo(double value) {
+    _propPricePromo = value;
+  }
 }
 
 void _safeInit(Function() initializeField) {

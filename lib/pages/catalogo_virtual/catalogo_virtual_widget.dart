@@ -596,154 +596,149 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                                 },
                                                               );
                                                             },
-                                                            child: Container(
-                                                              constraints:
-                                                                  const BoxConstraints(
-                                                                minHeight:
-                                                                    300.0,
-                                                                maxWidth: 300.0,
-                                                                maxHeight:
-                                                                    320.0,
-                                                              ),
-                                                              decoration:
-                                                                  BoxDecoration(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primaryBackground,
-                                                                borderRadius:
-                                                                    BorderRadius
-                                                                        .circular(
-                                                                            12.0),
-                                                              ),
-                                                              child: Padding(
-                                                                padding: const EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        16.0,
-                                                                        8.0,
-                                                                        16.0,
-                                                                        16.0),
-                                                                child: Column(
-                                                                  mainAxisSize:
-                                                                      MainAxisSize
-                                                                          .max,
-                                                                  crossAxisAlignment:
-                                                                      CrossAxisAlignment
-                                                                          .start,
-                                                                  children: [
-                                                                    Align(
-                                                                      alignment:
-                                                                          const AlignmentDirectional(
-                                                                              0.0,
-                                                                              0.0),
-                                                                      child:
-                                                                          ClipRRect(
-                                                                        borderRadius:
-                                                                            BorderRadius.circular(8.0),
-                                                                        child: Image
-                                                                            .network(
-                                                                          valueOrDefault<
-                                                                              String>(
-                                                                            wrapCrescProdutoRecord.imgProduto.first,
-                                                                            'https://cdn-icons-png.flaticon.com/512/7486/7486744.png',
-                                                                          ),
-                                                                          width:
-                                                                              150.0,
-                                                                          height:
-                                                                              150.0,
-                                                                          fit: BoxFit
-                                                                              .cover,
-                                                                        ),
-                                                                      ),
-                                                                    ),
-                                                                    Padding(
-                                                                      padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                          0.0,
+                                                            child: ClipRRect(
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          12.0),
+                                                              child: Container(
+                                                                constraints:
+                                                                    const BoxConstraints(
+                                                                  minHeight:
+                                                                      300.0,
+                                                                  maxWidth:
+                                                                      300.0,
+                                                                  maxHeight:
+                                                                      320.0,
+                                                                ),
+                                                                decoration:
+                                                                    BoxDecoration(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primaryBackground,
+                                                                  borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                              12.0),
+                                                                ),
+                                                                child: Padding(
+                                                                  padding: const EdgeInsetsDirectional
+                                                                      .fromSTEB(
                                                                           16.0,
-                                                                          0.0,
-                                                                          0.0),
-                                                                      child:
-                                                                          Text(
-                                                                        wrapCrescProdutoRecord
-                                                                            .nomeProduto,
-                                                                        style: FlutterFlowTheme.of(context)
-                                                                            .bodyLarge
-                                                                            .override(
-                                                                              fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
-                                                                              fontSize: 24.0,
-                                                                              letterSpacing: 0.0,
-                                                                              fontWeight: FontWeight.w500,
-                                                                              useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
-                                                                            ),
-                                                                      ),
-                                                                    ),
-                                                                    Divider(
-                                                                      thickness:
-                                                                          1.0,
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .accent4,
-                                                                    ),
-                                                                    Row(
-                                                                      mainAxisSize:
-                                                                          MainAxisSize
-                                                                              .max,
-                                                                      mainAxisAlignment:
-                                                                          MainAxisAlignment
-                                                                              .start,
-                                                                      children: [
-                                                                        if (wrapCrescProdutoRecord.valorPromo >
-                                                                            0.0)
-                                                                          Padding(
-                                                                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                                0.0,
-                                                                                4.0,
-                                                                                0.0,
-                                                                                0.0),
-                                                                            child:
-                                                                                Text(
-                                                                              '${formatNumber(
-                                                                                wrapCrescProdutoRecord.valorPromo,
-                                                                                formatType: FormatType.decimal,
-                                                                                decimalType: DecimalType.commaDecimal,
-                                                                                currency: 'R\$',
-                                                                              )} no Pix',
-                                                                              style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                    fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
-                                                                                    color: FlutterFlowTheme.of(context).primaryText,
-                                                                                    fontSize: 18.0,
-                                                                                    letterSpacing: 0.0,
-                                                                                    fontWeight: FontWeight.w500,
-                                                                                    useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
-                                                                                  ),
-                                                                            ),
-                                                                          ),
-                                                                        Padding(
-                                                                          padding: const EdgeInsetsDirectional.fromSTEB(
-                                                                              8.0,
-                                                                              4.0,
-                                                                              0.0,
-                                                                              0.0),
+                                                                          8.0,
+                                                                          16.0,
+                                                                          16.0),
+                                                                  child: Column(
+                                                                    mainAxisSize:
+                                                                        MainAxisSize
+                                                                            .max,
+                                                                    crossAxisAlignment:
+                                                                        CrossAxisAlignment
+                                                                            .start,
+                                                                    children: [
+                                                                      Align(
+                                                                        alignment: const AlignmentDirectional(
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            ClipRRect(
+                                                                          borderRadius:
+                                                                              BorderRadius.circular(8.0),
                                                                           child:
-                                                                              Text(
-                                                                            formatNumber(
-                                                                              wrapCrescProdutoRecord.valorVenda,
-                                                                              formatType: FormatType.decimal,
-                                                                              decimalType: DecimalType.commaDecimal,
-                                                                              currency: 'R\$',
+                                                                              Image.network(
+                                                                            valueOrDefault<String>(
+                                                                              wrapCrescProdutoRecord.imgProduto.first,
+                                                                              'https://cdn-icons-png.flaticon.com/512/7486/7486744.png',
                                                                             ),
-                                                                            style: FlutterFlowTheme.of(context).bodyLarge.override(
-                                                                                  fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
-                                                                                  color: wrapCrescProdutoRecord.valorPromo > 0.0 ? FlutterFlowTheme.of(context).secondaryText : FlutterFlowTheme.of(context).primaryText,
-                                                                                  fontSize: wrapCrescProdutoRecord.valorPromo > 0.0 ? 16.0 : 18.0,
-                                                                                  letterSpacing: 0.0,
-                                                                                  fontWeight: FontWeight.w500,
-                                                                                  useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
-                                                                                ),
+                                                                            width:
+                                                                                150.0,
+                                                                            height:
+                                                                                150.0,
+                                                                            fit:
+                                                                                BoxFit.cover,
                                                                           ),
                                                                         ),
-                                                                      ],
-                                                                    ),
-                                                                  ],
+                                                                      ),
+                                                                      Padding(
+                                                                        padding: const EdgeInsetsDirectional.fromSTEB(
+                                                                            0.0,
+                                                                            16.0,
+                                                                            0.0,
+                                                                            0.0),
+                                                                        child:
+                                                                            Text(
+                                                                          wrapCrescProdutoRecord
+                                                                              .nomeProduto,
+                                                                          style: FlutterFlowTheme.of(context)
+                                                                              .bodyLarge
+                                                                              .override(
+                                                                                fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                fontSize: 24.0,
+                                                                                letterSpacing: 0.0,
+                                                                                fontWeight: FontWeight.w500,
+                                                                                useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                              ),
+                                                                        ),
+                                                                      ),
+                                                                      Divider(
+                                                                        thickness:
+                                                                            1.0,
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .accent4,
+                                                                      ),
+                                                                      Expanded(
+                                                                        child:
+                                                                            Column(
+                                                                          mainAxisSize:
+                                                                              MainAxisSize.max,
+                                                                          crossAxisAlignment:
+                                                                              CrossAxisAlignment.start,
+                                                                          children: [
+                                                                            if (wrapCrescProdutoRecord.valorPromo >
+                                                                                0.0)
+                                                                              Padding(
+                                                                                padding: const EdgeInsetsDirectional.fromSTEB(8.0, 4.0, 0.0, 0.0),
+                                                                                child: Text(
+                                                                                  '${formatNumber(
+                                                                                    wrapCrescProdutoRecord.valorPromo,
+                                                                                    formatType: FormatType.decimal,
+                                                                                    decimalType: DecimalType.commaDecimal,
+                                                                                    currency: 'R\$',
+                                                                                  )} no Pix',
+                                                                                  style: FlutterFlowTheme.of(context).bodyLarge.override(
+                                                                                        fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                        color: FlutterFlowTheme.of(context).primaryText,
+                                                                                        fontSize: 18.0,
+                                                                                        letterSpacing: 0.0,
+                                                                                        fontWeight: FontWeight.w500,
+                                                                                        useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                                      ),
+                                                                                ),
+                                                                              ),
+                                                                            Padding(
+                                                                              padding: const EdgeInsetsDirectional.fromSTEB(8.0, 4.0, 0.0, 0.0),
+                                                                              child: Text(
+                                                                                formatNumber(
+                                                                                  wrapCrescProdutoRecord.valorVenda,
+                                                                                  formatType: FormatType.decimal,
+                                                                                  decimalType: DecimalType.commaDecimal,
+                                                                                  currency: 'R\$',
+                                                                                ),
+                                                                                style: FlutterFlowTheme.of(context).bodyLarge.override(
+                                                                                      fontFamily: FlutterFlowTheme.of(context).bodyLargeFamily,
+                                                                                      color: wrapCrescProdutoRecord.valorPromo > 0.0 ? FlutterFlowTheme.of(context).secondaryText : FlutterFlowTheme.of(context).primaryText,
+                                                                                      fontSize: wrapCrescProdutoRecord.valorPromo > 0.0 ? 16.0 : 18.0,
+                                                                                      letterSpacing: 0.0,
+                                                                                      fontWeight: FontWeight.w500,
+                                                                                      useGoogleFonts: GoogleFonts.asMap().containsKey(FlutterFlowTheme.of(context).bodyLargeFamily),
+                                                                                    ),
+                                                                              ),
+                                                                            ),
+                                                                          ],
+                                                                        ),
+                                                                      ),
+                                                                    ],
+                                                                  ),
                                                                 ),
                                                               ),
                                                             ),

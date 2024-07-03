@@ -34,33 +34,9 @@ class CadastrarProdutoModel extends FlutterFlowModel<CadastrarProdutoWidget> {
     return null;
   }
 
-  // State field(s) for precoVenda widget.
-  FocusNode? precoVendaFocusNode;
-  TextEditingController? precoVendaTextController;
-  String? Function(BuildContext, String?)? precoVendaTextControllerValidator;
-  String? _precoVendaTextControllerValidator(
-      BuildContext context, String? val) {
-    if (val == null || val.isEmpty) {
-      return FFLocalizations.of(context).getText(
-        '5zhybprq' /* Campo Obrigatório */,
-      );
-    }
-
-    return null;
-  }
-
-  // State field(s) for precoPromocional widget.
-  FocusNode? precoPromocionalFocusNode;
-  TextEditingController? precoPromocionalTextController;
-  String? Function(BuildContext, String?)?
-      precoPromocionalTextControllerValidator;
   // State field(s) for DropDownCategoria widget.
   String? dropDownCategoriaValue;
   FormFieldController<String>? dropDownCategoriaValueController;
-  // State field(s) for precoCusto widget.
-  FocusNode? precoCustoFocusNode;
-  TextEditingController? precoCustoTextController;
-  String? Function(BuildContext, String?)? precoCustoTextControllerValidator;
   // State field(s) for codProduto widget.
   FocusNode? codProdutoFocusNode;
   TextEditingController? codProdutoTextController;
@@ -76,22 +52,12 @@ class CadastrarProdutoModel extends FlutterFlowModel<CadastrarProdutoWidget> {
   @override
   void initState(BuildContext context) {
     nomeProdutoTextControllerValidator = _nomeProdutoTextControllerValidator;
-    precoVendaTextControllerValidator = _precoVendaTextControllerValidator;
   }
 
   @override
   void dispose() {
     nomeProdutoFocusNode?.dispose();
     nomeProdutoTextController?.dispose();
-
-    precoVendaFocusNode?.dispose();
-    precoVendaTextController?.dispose();
-
-    precoPromocionalFocusNode?.dispose();
-    precoPromocionalTextController?.dispose();
-
-    precoCustoFocusNode?.dispose();
-    precoCustoTextController?.dispose();
 
     codProdutoFocusNode?.dispose();
     codProdutoTextController?.dispose();

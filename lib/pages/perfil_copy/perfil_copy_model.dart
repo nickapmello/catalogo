@@ -1,22 +1,13 @@
 import '/components/web_nav/web_nav_widget.dart';
 import '/flutter_flow/flutter_flow_util.dart';
-import '/flutter_flow/form_field_controller.dart';
-import 'clientes_widget.dart' show ClientesWidget;
+import 'perfil_copy_widget.dart' show PerfilCopyWidget;
 import 'package:flutter/material.dart';
 
-class ClientesModel extends FlutterFlowModel<ClientesWidget> {
+class PerfilCopyModel extends FlutterFlowModel<PerfilCopyWidget> {
   ///  State fields for stateful widgets in this page.
 
-  final unfocusNode = FocusNode();
   // Model for webNav component.
   late WebNavModel webNavModel1;
-  // State field(s) for TextField widget.
-  FocusNode? textFieldFocusNode;
-  TextEditingController? textController;
-  String? Function(BuildContext, String?)? textControllerValidator;
-  // State field(s) for DropDown widget.
-  bool? dropDownValue;
-  FormFieldController<bool>? dropDownValueController;
   // Model for webNav component.
   late WebNavModel webNavModel2;
 
@@ -28,11 +19,7 @@ class ClientesModel extends FlutterFlowModel<ClientesWidget> {
 
   @override
   void dispose() {
-    unfocusNode.dispose();
     webNavModel1.dispose();
-    textFieldFocusNode?.dispose();
-    textController?.dispose();
-
     webNavModel2.dispose();
   }
 }
