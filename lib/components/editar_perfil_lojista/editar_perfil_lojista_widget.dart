@@ -137,6 +137,7 @@ class _EditarPerfilLojistaWidgetState extends State<EditarPerfilLojistaWidget>
                   ),
                 ),
                 child: SingleChildScrollView(
+                  primary: false,
                   child: Column(
                     mainAxisSize: MainAxisSize.max,
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -162,7 +163,9 @@ class _EditarPerfilLojistaWidgetState extends State<EditarPerfilLojistaWidget>
                                 ),
                               );
                             }
+
                             final listViewUsersRecord = snapshot.data!;
+
                             return ListView(
                               padding: EdgeInsets.zero,
                               shrinkWrap: true,
@@ -646,6 +649,7 @@ class _EditarPerfilLojistaWidgetState extends State<EditarPerfilLojistaWidget>
                                     minLines: 1,
                                     validator: _model.cpfTextControllerValidator
                                         .asValidator(context),
+                                    inputFormatters: [_model.cpfMask],
                                   ),
                                 ),
                                 Padding(

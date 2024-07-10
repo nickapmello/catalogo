@@ -316,6 +316,7 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
           );
         }
         List<MinhaLojaRecord> minhaLojaMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -4243,8 +4244,10 @@ class _MinhaLojaWidgetState extends State<MinhaLojaWidget>
                                                                 ),
                                                               );
                                                             }
+
                                                             final containerEnderecoUsersRecord =
                                                                 snapshot.data!;
+
                                                             return Container(
                                                               width: double
                                                                   .infinity,

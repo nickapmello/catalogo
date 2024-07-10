@@ -207,6 +207,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
         }
         List<MinhaLojaRecord> detalhesPedidoMinhaLojaRecordList =
             snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -989,9 +990,10 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                           child: StreamBuilder<
                                                               ClienteRecord>(
                                                             stream: ClienteRecord
-                                                                .getDocument(widget
-                                                                    .pedido!
-                                                                    .cliente!),
+                                                                .getDocument(
+                                                                    widget
+                                                                        .pedido!
+                                                                        .cliente!),
                                                             builder: (context,
                                                                 snapshot) {
                                                               // Customize what your widget looks like when it's loading.
@@ -1015,9 +1017,11 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                   ),
                                                                 );
                                                               }
+
                                                               final listViewClienteRecord =
                                                                   snapshot
                                                                       .data!;
+
                                                               return ListView(
                                                                 padding:
                                                                     EdgeInsets
@@ -1361,6 +1365,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                         }
                                                                         int textCount =
                                                                             snapshot.data!;
+
                                                                         return Text(
                                                                           '${textCount.toString()} Item(s)',
                                                                           style: FlutterFlowTheme.of(context)
@@ -1409,6 +1414,7 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                           listViewProdutoPedidoRecordList =
                                                                           snapshot
                                                                               .data!;
+
                                                                       return ListView
                                                                           .builder(
                                                                         padding:
@@ -1448,7 +1454,9 @@ class _DetalhesPedidoWidgetState extends State<DetalhesPedidoWidget>
                                                                                     ),
                                                                                   );
                                                                                 }
+
                                                                                 final rowProdutoRecord = snapshot.data!;
+
                                                                                 return Row(
                                                                                   mainAxisSize: MainAxisSize.min,
                                                                                   mainAxisAlignment: MainAxisAlignment.start,

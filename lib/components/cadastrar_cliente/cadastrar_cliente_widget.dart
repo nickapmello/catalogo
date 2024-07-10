@@ -815,7 +815,7 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        '5wzvuk72' /* CPF/CNPJ */,
+                                        '5wzvuk72' /* CPF */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium
@@ -886,6 +886,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                     validator: _model
                                         .cpfcnpjClienteTextControllerValidator
                                         .asValidator(context),
+                                    inputFormatters: [
+                                      _model.cpfcnpjClienteMask
+                                    ],
                                   ),
                                 ),
                                 Padding(
@@ -1117,6 +1120,9 @@ class _CadastrarClienteWidgetState extends State<CadastrarClienteWidget>
                                     validator: _model
                                         .telefoneClienteTextControllerValidator
                                         .asValidator(context),
+                                    inputFormatters: [
+                                      _model.telefoneClienteMask
+                                    ],
                                   ),
                                 ),
                                 Padding(

@@ -78,7 +78,7 @@ class CadastrarUserModel extends FlutterFlowModel<CadastrarUserWidget> {
     return null;
   }
 
-  // Stores action output result for [Custom Action - createUser] action in Button widget.
+  // Stores action output result for [Custom Action - createClienteUser] action in Button widget.
   String? criarUsuario;
 
   @override

@@ -124,6 +124,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
           );
         }
         List<MinhaLojaRecord> categoriasMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -541,6 +542,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                         List<CategoriaRecord>
                                             mainCardCategoriaRecordList =
                                             snapshot.data!;
+
                                         return Container(
                                           width:
                                               MediaQuery.sizeOf(context).width *
@@ -682,6 +684,7 @@ class _CategoriasWidgetState extends State<CategoriasWidget>
                                                       final categorias =
                                                           mainCardCategoriaRecordList
                                                               .toList();
+
                                                       return ListView.builder(
                                                         padding:
                                                             EdgeInsets.zero,

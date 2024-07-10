@@ -77,6 +77,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
           );
         }
         List<CarrinhoRecord> checkoutCarrinhoRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -238,6 +239,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                                                   List<ProdutoCarrinhoRecord>
                                                       listViewProdutoCarrinhoRecordList =
                                                       snapshot.data!;
+
                                                   return ListView.builder(
                                                     padding: EdgeInsets.zero,
                                                     primary: false,
@@ -317,9 +319,11 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                                                                   ),
                                                                 );
                                                               }
+
                                                               final listViewProdutoRecord =
                                                                   snapshot
                                                                       .data!;
+
                                                               return ListView(
                                                                 padding:
                                                                     EdgeInsets
@@ -387,7 +391,9 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                                                                                   ),
                                                                                 );
                                                                               }
+
                                                                               final listViewCategoriaRecord = snapshot.data!;
+
                                                                               return ListView(
                                                                                 padding: EdgeInsets.zero,
                                                                                 shrinkWrap: true,
@@ -855,6 +861,7 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                                                             List<ProdutoCarrinhoRecord>
                                                                 listViewProdutoCarrinhoRecordList =
                                                                 snapshot.data!;
+
                                                             return ListView
                                                                 .builder(
                                                               padding:
@@ -905,9 +912,11 @@ class _CheckoutWidgetState extends State<CheckoutWidget> {
                                                                           ),
                                                                         );
                                                                       }
+
                                                                       final propertyAddressProdutoRecord =
                                                                           snapshot
                                                                               .data!;
+
                                                                       return Row(
                                                                         mainAxisSize:
                                                                             MainAxisSize.max,

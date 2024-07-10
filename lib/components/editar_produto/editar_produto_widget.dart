@@ -218,6 +218,7 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                         builder: (context) {
                           final img =
                               FFAppState().imgProduto.map((e) => e).toList();
+
                           return Row(
                             mainAxisSize: MainAxisSize.max,
                             children: List.generate(img.length, (imgIndex) {
@@ -522,6 +523,7 @@ class _EditarProdutoWidgetState extends State<EditarProdutoWidget> {
                         List<CategoriaRecord>
                             dropDownCategoriaCategoriaRecordList =
                             snapshot.data!;
+
                         return FlutterFlowDropDown<String>(
                           controller:
                               _model.dropDownCategoriaValueController ??=

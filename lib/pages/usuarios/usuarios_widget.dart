@@ -267,6 +267,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget>
                       }
                       List<UsersRecord> containerUsersRecordList =
                           snapshot.data!;
+
                       return Container(
                         decoration: const BoxDecoration(),
                         child: Column(
@@ -600,6 +601,7 @@ class _UsuariosWidgetState extends State<UsuariosWidget>
                                       height: 600.0,
                                     );
                                   }
+
                                   return ListView.builder(
                                     padding: EdgeInsets.zero,
                                     shrinkWrap: true,

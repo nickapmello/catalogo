@@ -630,6 +630,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
           );
         }
         List<MinhaLojaRecord> homeMinhaLojaMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -829,6 +830,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                     List<ProdutoRecord>
                                         containerProdutoProdutoRecordList =
                                         snapshot.data!;
+
                                     return Container(
                                       decoration: const BoxDecoration(),
                                       child: StreamBuilder<List<PedidoRecord>>(
@@ -866,6 +868,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                           List<PedidoRecord>
                                               containerPedidoPedidoRecordList =
                                               snapshot.data!;
+
                                           return Container(
                                             decoration: const BoxDecoration(),
                                             child: SingleChildScrollView(
@@ -1249,6 +1252,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         }
                                                                         int containerCount =
                                                                             snapshot.data!;
+
                                                                         return Container(
                                                                           height:
                                                                               120.0,
@@ -1514,6 +1518,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         List<ProdutoRecord>
                                                                             containerProdutoRecordList =
                                                                             snapshot.data!;
+
                                                                         return Container(
                                                                           height:
                                                                               120.0,
@@ -1663,6 +1668,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         List<PedidoRecord>
                                                                             containerMetaPedidoRecordList =
                                                                             snapshot.data!;
+
                                                                         return Container(
                                                                           height:
                                                                               120.0,
@@ -1974,6 +1980,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                           .take(
                                                                               5)
                                                                           .toList();
+
                                                                       return ListView
                                                                           .builder(
                                                                         padding:
@@ -2030,7 +2037,9 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                                         ),
                                                                                       );
                                                                                     }
+
                                                                                     final rowCategoriaRecord = snapshot.data!;
+
                                                                                     return Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
@@ -2200,6 +2209,7 @@ class _HomeMinhaLojaWidgetState extends State<HomeMinhaLojaWidget>
                                                                         .toList()
                                                                         .take(5)
                                                                         .toList();
+
                                                                 return ListView
                                                                     .builder(
                                                                   padding:

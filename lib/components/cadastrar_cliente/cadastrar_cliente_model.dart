@@ -2,6 +2,7 @@ import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'cadastrar_cliente_widget.dart' show CadastrarClienteWidget;
 import 'package:flutter/material.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class CadastrarClienteModel extends FlutterFlowModel<CadastrarClienteWidget> {
   ///  Local state fields for this component.
@@ -34,6 +35,7 @@ class CadastrarClienteModel extends FlutterFlowModel<CadastrarClienteWidget> {
   // State field(s) for cpfcnpjCliente widget.
   FocusNode? cpfcnpjClienteFocusNode;
   TextEditingController? cpfcnpjClienteTextController;
+  final cpfcnpjClienteMask = MaskTextInputFormatter(mask: '###.###.###-##');
   String? Function(BuildContext, String?)?
       cpfcnpjClienteTextControllerValidator;
   String? _cpfcnpjClienteTextControllerValidator(
@@ -55,6 +57,7 @@ class CadastrarClienteModel extends FlutterFlowModel<CadastrarClienteWidget> {
   // State field(s) for telefoneCliente widget.
   FocusNode? telefoneClienteFocusNode;
   TextEditingController? telefoneClienteTextController;
+  final telefoneClienteMask = MaskTextInputFormatter(mask: '(##) #####-####');
   String? Function(BuildContext, String?)?
       telefoneClienteTextControllerValidator;
   String? _telefoneClienteTextControllerValidator(

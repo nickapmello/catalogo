@@ -1296,6 +1296,89 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
   },
+  // ClientesCopy
+  {
+    'zy9uuoe2': {
+      'en': 'Clientes',
+      'id': '',
+      'ms': '',
+    },
+    'e847njko': {
+      'en': 'Criar',
+      'id': '',
+      'ms': '',
+    },
+    's5hl5eva': {
+      'en': 'Usuarios',
+      'id': '',
+      'ms': '',
+    },
+    '2bcjtskw': {
+      'en': 'Procure por nome',
+      'id': '',
+      'ms': '',
+    },
+    '5vvx348c': {
+      'en': 'Ativo',
+      'id': '',
+      'ms': '',
+    },
+    '3t9xixyl': {
+      'en': 'Inativo',
+      'id': '',
+      'ms': '',
+    },
+    'x0y8gwu1': {
+      'en': 'Please select...',
+      'id': '',
+      'ms': '',
+    },
+    'qvc9c2o4': {
+      'en': 'Search for an item...',
+      'id': '',
+      'ms': '',
+    },
+    'x0akjoph': {
+      'en': 'Edit Header 1',
+      'id': '',
+      'ms': '',
+    },
+    'ramadqjv': {
+      'en': 'Nome ',
+      'id': '',
+      'ms': '',
+    },
+    'nnce7p5z': {
+      'en': 'Telefone',
+      'id': '',
+      'ms': '',
+    },
+    'm2f1g8ka': {
+      'en': 'Email',
+      'id': '',
+      'ms': '',
+    },
+    '02v9jszr': {
+      'en': 'Opções',
+      'id': '',
+      'ms': '',
+    },
+    'z8ss4reh': {
+      'en': 'Visualizar Cliente',
+      'id': '',
+      'ms': '',
+    },
+    'hdi91i9k': {
+      'en': 'Customers',
+      'id': '',
+      'ms': '',
+    },
+    'jzc3u5ov': {
+      'en': '__',
+      'id': '',
+      'ms': '',
+    },
+  },
   // popupEnviarPedido
   {
     'kred63vb': {
@@ -1621,7 +1704,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     '5wzvuk72': {
-      'en': 'CPF/CNPJ',
+      'en': 'CPF',
       'id': '',
       'ms': '',
     },
@@ -2465,7 +2548,7 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'ms': '',
     },
     'xcki7ea5': {
-      'en': 'CPF/CNPJ',
+      'en': 'CPF',
       'id': '',
       'ms': '',
     },
@@ -2611,6 +2694,44 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     'am4niomy': {
       'en': 'Please choose an option from the dropdown',
+      'id': '',
+      'ms': '',
+    },
+  },
+  // webNavCopy
+  {
+    '7yafjkfl': {
+      'en': 'Dashboard',
+      'id': '',
+      'ms': '',
+    },
+    'eaj12dg9': {
+      'en': 'Produtos',
+      'id': '',
+      'ms': '',
+    },
+    'x62mqx86': {
+      'en': 'Categorias',
+      'id': '',
+      'ms': '',
+    },
+    'zz7yzbhl': {
+      'en': 'Clientes',
+      'id': '',
+      'ms': '',
+    },
+    'sjdxzy5p': {
+      'en': 'Pedidos',
+      'id': '',
+      'ms': '',
+    },
+    'i6wr5e9g': {
+      'en': 'Minha Loja',
+      'id': '',
+      'ms': '',
+    },
+    '12v5tbte': {
+      'en': 'Perfil',
       'id': '',
       'ms': '',
     },

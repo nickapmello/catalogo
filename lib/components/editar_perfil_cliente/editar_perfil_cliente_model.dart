@@ -1,6 +1,7 @@
 import '/flutter_flow/flutter_flow_util.dart';
 import 'editar_perfil_cliente_widget.dart' show EditarPerfilClienteWidget;
 import 'package:flutter/material.dart';
+import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 
 class EditarPerfilClienteModel
     extends FlutterFlowModel<EditarPerfilClienteWidget> {
@@ -19,10 +20,12 @@ class EditarPerfilClienteModel
   // State field(s) for cpf widget.
   FocusNode? cpfFocusNode;
   TextEditingController? cpfTextController;
+  final cpfMask = MaskTextInputFormatter(mask: '###.###.###-##');
   String? Function(BuildContext, String?)? cpfTextControllerValidator;
   // State field(s) for Telefone widget.
   FocusNode? telefoneFocusNode;
   TextEditingController? telefoneTextController;
+  final telefoneMask = MaskTextInputFormatter(mask: '(##) #####-####');
   String? Function(BuildContext, String?)? telefoneTextControllerValidator;
   // State field(s) for ruaCliente widget.
   FocusNode? ruaClienteFocusNode;

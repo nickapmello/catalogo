@@ -89,6 +89,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
         }
         List<MinhaLojaRecord> catalogoVirtualMinhaLojaRecordList =
             snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -168,6 +169,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                     }
                     List<CategoriaRecord> containerCategoriaRecordList =
                         snapshot.data!;
+
                     // Return an empty Container when the item does not exist.
                     if (snapshot.data!.isEmpty) {
                       return Container();
@@ -357,6 +359,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                     List<CategoriaRecord>
                                                         rowCategoriaRecordList =
                                                         snapshot.data!;
+
                                                     return Row(
                                                       mainAxisSize:
                                                           MainAxisSize.max,
@@ -527,6 +530,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                   List<ProdutoRecord>
                                                       wrapCrescProdutoRecordList =
                                                       snapshot.data!;
+
                                                   return Wrap(
                                                     spacing: 16.0,
                                                     runSpacing: 16.0,
@@ -791,6 +795,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                   List<ProdutoRecord>
                                                       wrapDecrescProdutoRecordList =
                                                       snapshot.data!;
+
                                                   return Wrap(
                                                     spacing: 16.0,
                                                     runSpacing: 16.0,
@@ -1077,6 +1082,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                   List<ProdutoRecord>
                                                       wrapCresc2ProdutoRecordList =
                                                       snapshot.data!;
+
                                                   return Wrap(
                                                     spacing: 16.0,
                                                     runSpacing: 16.0,
@@ -1348,6 +1354,7 @@ class _CatalogoVirtualWidgetState extends State<CatalogoVirtualWidget> {
                                                   List<ProdutoRecord>
                                                       wrapDecresc2ProdutoRecordList =
                                                       snapshot.data!;
+
                                                   return Wrap(
                                                     spacing: 16.0,
                                                     runSpacing: 16.0,

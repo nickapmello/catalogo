@@ -7,11 +7,11 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'web_nav_model.dart';
-export 'web_nav_model.dart';
+import 'web_nav_copy_copy_model.dart';
+export 'web_nav_copy_copy_model.dart';
 
-class WebNavWidget extends StatefulWidget {
-  const WebNavWidget({
+class WebNavCopyCopyWidget extends StatefulWidget {
+  const WebNavCopyCopyWidget({
     super.key,
     this.colorBgDashboard,
     this.colorBgProdutos,
@@ -64,12 +64,12 @@ class WebNavWidget extends StatefulWidget {
   final Color? txtCategoria;
 
   @override
-  State<WebNavWidget> createState() => _WebNavWidgetState();
+  State<WebNavCopyCopyWidget> createState() => _WebNavCopyCopyWidgetState();
 }
 
-class _WebNavWidgetState extends State<WebNavWidget>
+class _WebNavCopyCopyWidgetState extends State<WebNavCopyCopyWidget>
     with TickerProviderStateMixin {
-  late WebNavModel _model;
+  late WebNavCopyCopyModel _model;
 
   var hasContainerTriggered1 = false;
   var hasContainerTriggered2 = false;
@@ -84,7 +84,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => WebNavModel());
+    _model = createModel(context, () => WebNavCopyCopyModel());
 
     animationsMap.addAll({
       'rowOnPageLoadAnimation': AnimationInfo(
@@ -163,6 +163,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
     return Padding(
       padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
       child: Container(
+        width: double.infinity,
         height: double.infinity,
         constraints: const BoxConstraints(
           maxWidth: 250.0,
@@ -305,7 +306,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName.maybeHandleOverflow(
-                                      maxChars: 30,
+                                      maxChars: 50,
                                       replacement: '…',
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -382,27 +383,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconDashboard!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'fiv8j2wn' /* Dashboard */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorDashboard,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -441,27 +421,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconProdutos!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'nmtda22q' /* Produtos */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorProdutos,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -500,27 +459,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconCategoria!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'fcu9k36e' /* Categorias */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtCategoria,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -559,27 +497,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconClientes!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'h1k4eq34' /* Clientes */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorClientes,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -618,27 +535,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconPedidos!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                'jx6y62rq' /* Pedidos */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorPedidos,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -677,27 +573,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconMinhaLoja!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                '6ji7f1hi' /* Minha Loja */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorMinhaLoja,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),
@@ -736,27 +611,6 @@ class _WebNavWidgetState extends State<WebNavWidget>
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           widget.iconPerfil!,
-                          Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                12.0, 0.0, 0.0, 0.0),
-                            child: Text(
-                              FFLocalizations.of(context).getText(
-                                's51mlt3o' /* Perfil */,
-                              ),
-                              style: FlutterFlowTheme.of(context)
-                                  .titleSmall
-                                  .override(
-                                    fontFamily: FlutterFlowTheme.of(context)
-                                        .titleSmallFamily,
-                                    color: widget.txtColorPerfil,
-                                    letterSpacing: 0.0,
-                                    useGoogleFonts: GoogleFonts.asMap()
-                                        .containsKey(
-                                            FlutterFlowTheme.of(context)
-                                                .titleSmallFamily),
-                                  ),
-                            ),
-                          ),
                         ],
                       ),
                     ),

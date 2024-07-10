@@ -410,6 +410,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
           );
         }
         List<MinhaLojaRecord> pedidosMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -722,6 +723,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                               }
                                               int projectCardCount =
                                                   snapshot.data!;
+
                                               return Container(
                                                 width: 230.0,
                                                 decoration: BoxDecoration(
@@ -939,6 +941,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                               }
                                               int projectCardCount =
                                                   snapshot.data!;
+
                                               return Container(
                                                 width: 230.0,
                                                 decoration: BoxDecoration(
@@ -1154,6 +1157,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                               }
                                               int projectCardCount =
                                                   snapshot.data!;
+
                                               return Container(
                                                 width: 230.0,
                                                 decoration: BoxDecoration(
@@ -1484,6 +1488,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       List<PedidoRecord>
                                                           listViewPedidoRecordList =
                                                           snapshot.data!;
+
                                                       return ListView.builder(
                                                         padding:
                                                             EdgeInsets.zero,
@@ -1658,6 +1663,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           List<ProdutoPedidoRecord>
                                                                               listViewProdutoPedidoRecordList =
                                                                               snapshot.data!;
+
                                                                           return ListView
                                                                               .builder(
                                                                             padding:
@@ -1692,7 +1698,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                         ),
                                                                                       );
                                                                                     }
+
                                                                                     final rowProdutoRecord = snapshot.data!;
+
                                                                                     return Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
@@ -1748,7 +1756,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                   ),
                                                                                                 );
                                                                                               }
+
                                                                                               final listViewCategoriaRecord = snapshot.data!;
+
                                                                                               return ListView(
                                                                                                 padding: EdgeInsets.zero,
                                                                                                 shrinkWrap: true,
@@ -1927,6 +1937,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       List<PedidoRecord>
                                                           listViewPedidoRecordList =
                                                           snapshot.data!;
+
                                                       return ListView.builder(
                                                         padding:
                                                             EdgeInsets.zero,
@@ -2111,6 +2122,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           List<ProdutoPedidoRecord>
                                                                               listViewProdutoPedidoRecordList =
                                                                               snapshot.data!;
+
                                                                           return ListView
                                                                               .builder(
                                                                             padding:
@@ -2145,7 +2157,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                         ),
                                                                                       );
                                                                                     }
+
                                                                                     final rowProdutoRecord = snapshot.data!;
+
                                                                                     return Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
@@ -2201,7 +2215,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                   ),
                                                                                                 );
                                                                                               }
+
                                                                                               final listViewCategoriaRecord = snapshot.data!;
+
                                                                                               return ListView(
                                                                                                 padding: EdgeInsets.zero,
                                                                                                 shrinkWrap: true,
@@ -2378,6 +2394,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                       List<PedidoRecord>
                                                           listViewPedidoRecordList =
                                                           snapshot.data!;
+
                                                       return ListView.builder(
                                                         padding:
                                                             EdgeInsets.zero,
@@ -2562,6 +2579,7 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                           List<ProdutoPedidoRecord>
                                                                               listViewProdutoPedidoRecordList =
                                                                               snapshot.data!;
+
                                                                           return ListView
                                                                               .builder(
                                                                             padding:
@@ -2596,7 +2614,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                         ),
                                                                                       );
                                                                                     }
+
                                                                                     final rowProdutoRecord = snapshot.data!;
+
                                                                                     return Row(
                                                                                       mainAxisSize: MainAxisSize.max,
                                                                                       children: [
@@ -2652,7 +2672,9 @@ class _PedidosWidgetState extends State<PedidosWidget>
                                                                                                   ),
                                                                                                 );
                                                                                               }
+
                                                                                               final listViewCategoriaRecord = snapshot.data!;
+
                                                                                               return ListView(
                                                                                                 padding: EdgeInsets.zero,
                                                                                                 shrinkWrap: true,

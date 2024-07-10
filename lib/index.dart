@@ -27,3 +27,4 @@ export '/pages/detalhes_user/detalhes_user_widget.dart' show DetalhesUserWidget;
 export '/pages/reset_senha/reset_senha_widget.dart' show ResetSenhaWidget;
 export '/pages/reset_email/reset_email_widget.dart' show ResetEmailWidget;
 export '/pages/perfil_copy/perfil_copy_widget.dart' show PerfilCopyWidget;
+export '/pages/clientes_copy/clientes_copy_widget.dart' show ClientesCopyWidget;

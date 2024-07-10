@@ -7,11 +7,11 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'web_nav_model.dart';
-export 'web_nav_model.dart';
+import 'web_nav_copy_model.dart';
+export 'web_nav_copy_model.dart';
 
-class WebNavWidget extends StatefulWidget {
-  const WebNavWidget({
+class WebNavCopyWidget extends StatefulWidget {
+  const WebNavCopyWidget({
     super.key,
     this.colorBgDashboard,
     this.colorBgProdutos,
@@ -64,12 +64,12 @@ class WebNavWidget extends StatefulWidget {
   final Color? txtCategoria;
 
   @override
-  State<WebNavWidget> createState() => _WebNavWidgetState();
+  State<WebNavCopyWidget> createState() => _WebNavCopyWidgetState();
 }
 
-class _WebNavWidgetState extends State<WebNavWidget>
+class _WebNavCopyWidgetState extends State<WebNavCopyWidget>
     with TickerProviderStateMixin {
-  late WebNavModel _model;
+  late WebNavCopyModel _model;
 
   var hasContainerTriggered1 = false;
   var hasContainerTriggered2 = false;
@@ -84,7 +84,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => WebNavModel());
+    _model = createModel(context, () => WebNavCopyModel());
 
     animationsMap.addAll({
       'rowOnPageLoadAnimation': AnimationInfo(
@@ -163,6 +163,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
     return Padding(
       padding: const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 1.0, 0.0),
       child: Container(
+        width: double.infinity,
         height: double.infinity,
         constraints: const BoxConstraints(
           maxWidth: 250.0,
@@ -305,7 +306,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 AuthUserStreamWidget(
                                   builder: (context) => Text(
                                     currentUserDisplayName.maybeHandleOverflow(
-                                      maxChars: 30,
+                                      maxChars: 50,
                                       replacement: '…',
                                     ),
                                     style: FlutterFlowTheme.of(context)
@@ -387,7 +388,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'fiv8j2wn' /* Dashboard */,
+                                '7yafjkfl' /* Dashboard */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -446,7 +447,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'nmtda22q' /* Produtos */,
+                                'eaj12dg9' /* Produtos */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -505,7 +506,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'fcu9k36e' /* Categorias */,
+                                '6o6ephbm' /* Categorias */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -564,7 +565,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'h1k4eq34' /* Clientes */,
+                                'zz7yzbhl' /* Clientes */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -623,7 +624,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                'jx6y62rq' /* Pedidos */,
+                                'sjdxzy5p' /* Pedidos */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -682,7 +683,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                '6ji7f1hi' /* Minha Loja */,
+                                'i6wr5e9g' /* Minha Loja */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall
@@ -741,7 +742,7 @@ class _WebNavWidgetState extends State<WebNavWidget>
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
                               FFLocalizations.of(context).getText(
-                                's51mlt3o' /* Perfil */,
+                                '12v5tbte' /* Perfil */,
                               ),
                               style: FlutterFlowTheme.of(context)
                                   .titleSmall

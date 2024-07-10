@@ -127,6 +127,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
           );
         }
         List<MinhaLojaRecord> clientesMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -702,6 +703,7 @@ class _ClientesWidgetState extends State<ClientesWidget>
                                 }
                                 List<ClienteRecord> listViewClienteRecordList =
                                     snapshot.data!;
+
                                 if (listViewClienteRecordList.isEmpty) {
                                   return Image.asset(
                                     'assets/images/boxempty-removebg-preview.png',

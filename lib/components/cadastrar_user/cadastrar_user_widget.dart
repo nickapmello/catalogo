@@ -362,7 +362,7 @@ class _CadastrarUserWidgetState extends State<CadastrarUserWidget>
                                     decoration: InputDecoration(
                                       hintText:
                                           FFLocalizations.of(context).getText(
-                                        'xcki7ea5' /* CPF/CNPJ */,
+                                        'xcki7ea5' /* CPF */,
                                       ),
                                       hintStyle: FlutterFlowTheme.of(context)
                                           .bodyMedium

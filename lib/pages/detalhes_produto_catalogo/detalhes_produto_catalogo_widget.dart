@@ -83,7 +83,9 @@ class _DetalhesProdutoCatalogoWidgetState
             ),
           );
         }
+
         final detalhesProdutoCatalogoMinhaLojaRecord = snapshot.data!;
+
         return Title(
             title: 'detalhesProdutoCatalogo',
             color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
@@ -235,6 +237,7 @@ class _DetalhesProdutoCatalogoWidgetState
                                                   .detalhesProduto?.imgProduto
                                                   .toList() ??
                                               [];
+
                                           return Row(
                                             mainAxisSize: MainAxisSize.min,
                                             children: List.generate(
@@ -302,8 +305,10 @@ class _DetalhesProdutoCatalogoWidgetState
                                         ),
                                       );
                                     }
+
                                     final containerCategoriaRecord =
                                         snapshot.data!;
+
                                     return Container(
                                       width: MediaQuery.sizeOf(context).width >=
                                               768.0
@@ -1295,9 +1300,11 @@ class _DetalhesProdutoCatalogoWidgetState
                                                                 .detalhesProduto!
                                                                 .valorPromo >
                                                             0.0
-                                                        ? widget.detalhesProduto
+                                                        ? widget
+                                                            .detalhesProduto
                                                             ?.valorPromo
-                                                        : widget.detalhesProduto
+                                                        : widget
+                                                            .detalhesProduto
                                                             ?.valorVenda,
                                                   ),
                                                   produtoCarrinhoRecordReference2);

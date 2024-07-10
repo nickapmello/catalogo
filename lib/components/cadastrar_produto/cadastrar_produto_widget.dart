@@ -214,6 +214,7 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                           builder: (context) {
                             final img =
                                 FFAppState().imgProduto.map((e) => e).toList();
+
                             return Row(
                               mainAxisSize: MainAxisSize.max,
                               children: List.generate(img.length, (imgIndex) {
@@ -551,6 +552,7 @@ class _CadastrarProdutoWidgetState extends State<CadastrarProdutoWidget> {
                                 List<CategoriaRecord>
                                     dropDownCategoriaCategoriaRecordList =
                                     snapshot.data!;
+
                                 return FlutterFlowDropDown<String>(
                                   controller: _model
                                           .dropDownCategoriaValueController ??=

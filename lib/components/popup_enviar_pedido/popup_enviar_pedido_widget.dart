@@ -271,7 +271,9 @@ class _PopupEnviarPedidoWidgetState extends State<PopupEnviarPedidoWidget>
                         ),
                       );
                     }
+
                     final containerMinhaLojaRecord = snapshot.data!;
+
                     return Container(
                       width: double.infinity,
                       constraints: const BoxConstraints(
@@ -377,6 +379,7 @@ class _PopupEnviarPedidoWidgetState extends State<PopupEnviarPedidoWidget>
                                 List<ProdutoCarrinhoRecord>
                                     listViewProdutoCarrinhoRecordList =
                                     snapshot.data!;
+
                                 return ListView.builder(
                                   padding: EdgeInsets.zero,
                                   primary: false,
@@ -414,8 +417,10 @@ class _PopupEnviarPedidoWidgetState extends State<PopupEnviarPedidoWidget>
                                               ),
                                             );
                                           }
+
                                           final containerProdutoRecord =
                                               snapshot.data!;
+
                                           return Container(
                                             width: double.infinity,
                                             decoration: BoxDecoration(
@@ -484,8 +489,10 @@ class _PopupEnviarPedidoWidgetState extends State<PopupEnviarPedidoWidget>
                                                             ),
                                                           );
                                                         }
+
                                                         final listViewCategoriaRecord =
                                                             snapshot.data!;
+
                                                         return ListView(
                                                           padding:
                                                               EdgeInsets.zero,

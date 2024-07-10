@@ -547,6 +547,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
           );
         }
         List<PedidoRecord> meusPedidosPedidoRecordList = snapshot.data!;
+
         return Title(
             title: 'MeusPedidos',
             color: FlutterFlowTheme.of(context).primary.withAlpha(0XFF),
@@ -1336,6 +1337,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                   .toList()
                                                                   .map((e) => e)
                                                                   .toList();
+
                                                           return ListView
                                                               .builder(
                                                             padding:
@@ -1475,6 +1477,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                             List<ProdutoPedidoRecord>
                                                                                 listViewProdutoPedidoRecordList =
                                                                                 snapshot.data!;
+
                                                                             return ListView.builder(
                                                                               padding: EdgeInsets.zero,
                                                                               shrinkWrap: true,
@@ -1501,7 +1504,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                           ),
                                                                                         );
                                                                                       }
+
                                                                                       final rowProdutoRecord = snapshot.data!;
+
                                                                                       return Row(
                                                                                         mainAxisSize: MainAxisSize.max,
                                                                                         children: [
@@ -1560,7 +1565,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                                     ),
                                                                                                   );
                                                                                                 }
+
                                                                                                 final columnCategoriaRecord = snapshot.data!;
+
                                                                                                 return Column(
                                                                                                   mainAxisSize: MainAxisSize.max,
                                                                                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -1707,6 +1714,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                   .toList()
                                                                   .map((e) => e)
                                                                   .toList();
+
                                                           return ListView
                                                               .builder(
                                                             padding:
@@ -1881,6 +1889,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                 );
                                                                               }
                                                                               List<ProdutoPedidoRecord> listViewProdutoPedidoRecordList = snapshot.data!;
+
                                                                               return ListView.builder(
                                                                                 padding: EdgeInsets.zero,
                                                                                 shrinkWrap: true,
@@ -1907,7 +1916,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                             ),
                                                                                           );
                                                                                         }
+
                                                                                         final rowProdutoRecord = snapshot.data!;
+
                                                                                         return Row(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           children: [
@@ -1966,7 +1977,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                                       ),
                                                                                                     );
                                                                                                   }
+
                                                                                                   final columnCategoriaRecord = snapshot.data!;
+
                                                                                                   return Column(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -2109,6 +2122,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                   .toList()
                                                                   .map((e) => e)
                                                                   .toList();
+
                                                           return ListView
                                                               .builder(
                                                             padding:
@@ -2283,6 +2297,7 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                 );
                                                                               }
                                                                               List<ProdutoPedidoRecord> listViewProdutoPedidoRecordList = snapshot.data!;
+
                                                                               return ListView.builder(
                                                                                 padding: EdgeInsets.zero,
                                                                                 shrinkWrap: true,
@@ -2309,7 +2324,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                             ),
                                                                                           );
                                                                                         }
+
                                                                                         final rowProdutoRecord = snapshot.data!;
+
                                                                                         return Row(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           children: [
@@ -2368,7 +2385,9 @@ class _MeusPedidosWidgetState extends State<MeusPedidosWidget>
                                                                                                       ),
                                                                                                     );
                                                                                                   }
+
                                                                                                   final columnCategoriaRecord = snapshot.data!;
+
                                                                                                   return Column(
                                                                                                     mainAxisSize: MainAxisSize.max,
                                                                                                     crossAxisAlignment: CrossAxisAlignment.start,

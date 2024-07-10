@@ -132,6 +132,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
           );
         }
         List<MinhaLojaRecord> produtosMinhaLojaRecordList = snapshot.data!;
+
         // Return an empty Container when the item does not exist.
         if (snapshot.data!.isEmpty) {
           return Container();
@@ -370,6 +371,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                 }
                                 List<ProdutoRecord> containerProdutoRecordList =
                                     snapshot.data!;
+
                                 return Container(
                                   decoration: const BoxDecoration(),
                                   child: SingleChildScrollView(
@@ -958,6 +960,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                         .toList())
                                                                 ?.toList() ??
                                                             [];
+
                                                         return ListView.builder(
                                                           padding:
                                                               EdgeInsets.zero,
@@ -1033,9 +1036,11 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                           ),
                                                                         );
                                                                       }
+
                                                                       final rowCategoriaRecord =
                                                                           snapshot
                                                                               .data!;
+
                                                                       return Row(
                                                                         mainAxisSize:
                                                                             MainAxisSize.max,
@@ -1056,6 +1061,7 @@ class _ProdutosWidgetState extends State<ProdutosWidget>
                                                                                     child: Builder(
                                                                                       builder: (context) {
                                                                                         final imgProduto = listaProdutListviwItem.imgProduto.toList().take(1).toList();
+
                                                                                         return Row(
                                                                                           mainAxisSize: MainAxisSize.max,
                                                                                           children: List.generate(imgProduto.length, (imgProdutoIndex) {

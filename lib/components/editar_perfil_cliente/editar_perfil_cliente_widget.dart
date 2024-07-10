@@ -163,6 +163,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
               );
             }
             List<MinhaLojaRecord> columnMinhaLojaRecordList = snapshot.data!;
+
             // Return an empty Container when the item does not exist.
             if (snapshot.data!.isEmpty) {
               return Container();
@@ -218,7 +219,9 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                               ),
                             );
                           }
+
                           final columnUsersRecord = snapshot.data!;
+
                           return SingleChildScrollView(
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
@@ -261,6 +264,7 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                         List<ClienteRecord>
                                             columnClienteRecordList =
                                             snapshot.data!;
+
                                         // Return an empty Container when the item does not exist.
                                         if (snapshot.data!.isEmpty) {
                                           return Container();
@@ -861,6 +865,9 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                 validator: _model
                                                     .cpfTextControllerValidator
                                                     .asValidator(context),
+                                                inputFormatters: [
+                                                  _model.cpfMask
+                                                ],
                                               ),
                                             ),
                                             Padding(
@@ -980,6 +987,9 @@ class _EditarPerfilClienteWidgetState extends State<EditarPerfilClienteWidget>
                                                 validator: _model
                                                     .telefoneTextControllerValidator
                                                     .asValidator(context),
+                                                inputFormatters: [
+                                                  _model.telefoneMask
+                                                ],
                                               ),
                                             ),
                                             Container(
